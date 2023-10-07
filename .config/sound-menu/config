@@ -1,0 +1,16 @@
+WindowWidth=300
+WindowHeight=50
+WindowMarginTop=10
+WindowMarginRight=10
+WindowMarginBottom=0
+WindowMarginLeft=0
+WindowAnchor[]=Top,Right
+VolumeMute=
+VolumeUnmute=
+GetSinksCommand=pactl --format=json list sinks | sed -E 's/index/\n/g' | grep name | sed -E 's/\":[0-9]+,\"state\":\"[^\"]+\",\"name\":\"([^\"]+)\",\"description\":\"([^\"]+)\".+/\1\x1d\2/'
+SetDefaultSinkCommand=pactl set-default-sink '%value%'
+GetDefaultSinkCommand=pactl get-default-sink | tr -d '\n'
+SetVolumeCommand=pactl set-sink-volume @DEFAULT_SINK@ '%value%'%
+GetVolumeCommand=pactl get-sink-volume @DEFAULT_SINK@ | tr -d '\n' | sed -E 's/.+\s+([0-9]+)%.+/\1/'
+SetMuteCommand=pactl set-sink-mute @DEFAULT_SINK@ '%value%'
+GetMuteCommand=pactl get-sink-mute @DEFAULT_SINK@ | sed -E 's/Mute: yes/true/' | sed -E 's/Mute: no/false/'
