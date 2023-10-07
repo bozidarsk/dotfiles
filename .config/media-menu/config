@@ -1,0 +1,12 @@
+WindowMarginTop=10
+WindowMarginRight=0
+WindowMarginBottom=0
+WindowMarginLeft=10
+WindowAnchor[]=Top,Left
+ImageSize=100
+TimeAlive=5
+BrightnessSetCommand=brightnessctl set '%value%'% intel_backlight
+BrightnessGetCommand=brightnessctl -m | sed -E 's/[^,]+,[^,]+,[^,]+,([^,]+)%.+/\1/'
+VolumeSetCommand=pactl set-sink-volume @DEFAULT_SINK@ '%value%'%
+VolumeGetCommand=pactl get-sink-volume @DEFAULT_SINK@ | tr -d '\n' | sed -E 's/.+\s+([0-9]+)%.+/\1/'
+MuteGetCommand=pactl get-sink-mute @DEFAULT_SINK@ | tr -d '\n' | sed -E 's/Mute: no/false/' | sed -E 's/Mute: yes/true/'

@@ -1,0 +1,40 @@
+* {
+    font-family: "Source Code Pro Bold";
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+#window {
+    border: 2px solid @theme_selected_bg_color;
+    border-radius: 8px;
+    background-color: @theme_base_color;
+}
+
+#box {
+    padding: 10px;
+}
+
+#dropdown {
+}
+
+#dropdown cellview {
+    margin-top: 2px;
+}
+
+#box-controlls {
+    margin-top: 5px;
+}
+
+#mute {
+    margin-right: 5px;
+}
+
+#mute label {
+    font-family: "Font Awesome 6 Sharp";
+    font-size: 15px;
+}
+
+#slider value {
+    margin-left: 5px;
+    color: @theme_text_color;
+}

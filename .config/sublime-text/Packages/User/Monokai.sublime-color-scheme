@@ -1,0 +1,38 @@
+// Documentation at https://www.sublimetext.com/docs/color_schemes.html
+{
+	"variables":
+	{
+	},
+	"globals":
+	{
+		"foreground": "hsl(219, 28%, 88%)",
+		"background": "hsl(210, 15%, 22%)",
+		"accent": "hsl(210, 60%, 60%)",
+		"caret": "hsl(32, 93%, 66%)",
+		"line_highlight": "hsla(210, 13%, 40%, 0.7)",
+		"selection": "hsla(210, 13%, 40%, 0.7)",
+		"selection_border": "hsl(210, 13%, 45%)",
+		"inactive_selection": "hsla(210, 13%, 40%, 0.7)",
+		"misspelling": "hsl(357, 79%, 65%)",
+		"shadow": "color(hsl(0, 0%, 0%) alpha(0.25))",
+		"active_guide": "hsl(180, 36%, 54%)",
+		"stack_guide": "color(hsl(180, 36%, 54%) alpha(0.5))",
+		"highlight": "hsl(180, 36%, 54%)",
+		"find_highlight_foreground": "hsl(0, 0%, 20%)",
+		"find_highlight": "hsl(40, 94%, 68%)",
+		"brackets_options": "underline",
+		"brackets_foreground": "hsl(32, 93%, 66%)",
+		"bracket_contents_options": "underline",
+		"bracket_contents_foreground": "hsl(180, 36%, 54%)",
+		"tags_options": "stippled_underline",
+		"tags_foreground": "hsl(300, 30%, 68%)"
+	},
+	"rules":
+	[
+		{
+			"name": "Comment",
+			"scope": "comment, punctuation.definition.comment",
+			"foreground": "hsl(221, 12%, 69%)"
+		}
+	]
+}

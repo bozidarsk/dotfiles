@@ -1,0 +1,32 @@
+# format is 'NAME=VALUE'
+# each space is treated as part of NAME or VALUE depending on its position
+# lines that start with '#' are comments and are skipped
+# if a line starts with '!' environment variable expansion will not be used
+# each environment variable (starting with '$') will be expanded to its corresponding value
+# for directories VALUE must end with '/'
+# arrays are defined as:
+# 'NAME[]=ITEM0,ITEM1,ITEM2' (supports ony 1d arrays; again be carefull of spaces)
+
+# output of AllNetworksCommand must be 'SSID\x1dSECURITY\x1dSTRENGTH\x1dCONNECTEDSTRING\n...' (if CONNECTEDSTRING == Config.ConnectedString you are currently connected to this network, otherwise CONNECTEDSTRING == '')
+# output of KnownNetworksCommand must be 'SSID\n...'
+
+WindowWidth=400
+WindowHeight=450
+WindowMarginTop=10
+WindowMarginRight=10
+WindowMarginBottom=0
+WindowMarginLeft=0
+WindowAnchor[]=Top,Right
+EntryHeight=48
+EntrySpacing=5
+StrengthOpen[]=󰤯,󰤟,󰤢,󰤥,󰤨
+StrengthSecure[]=󰤬,󱛋,󱛌,󱛍,󰤪
+MaxStrength=4
+StrengthSpacing=43
+ConnectedString=>
+AllNetworksCommand=iwctl station wlan0 get-networks | grep \* | tr -d '\33' | sed -E 's/(\[0m)?\s*(\[1;90m(>) \[0m)?\s*(.+)/\4 \3/' | rev | sed -E 's/(>)?\s+(m0\[\*+m09;1\[)?(\*+)\s+([^ ]+)\s+(.+)/\1\x1d\3\x1d\4\x1d\5/' | rev
+KnownNetworksCommand=iwctl known-networks list | grep , | tr -d '\33' | sed -E 's/(\[0m)?\s*(.+)/\2/' | rev | sed -E 's/\s*MA?P? [0-9]+:[0-9]+\s+,[0-9]+ [a-zA-Z]+\s+[^ ]+\s+(.+)/\1/' | rev
+ConnectSecureCommand=iwctl --passphrase '%password%' station wlan0 connect '%ssid%'
+ConnectOpenCommand=iwctl station wlan0 connect '%ssid%'
+DisconnectCommand=iwctl station wlan0 disconnect
+ForgetCommand=iwctl known-networks '%ssid%' forget
