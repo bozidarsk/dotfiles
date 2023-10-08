@@ -1,6 +1,0 @@
-[Desktop Entry]
-Name=cs-protocol
-Exec=protocols %u
-Type=Application
-Terminal=false
-MimeType=x-scheme-handler/cs;

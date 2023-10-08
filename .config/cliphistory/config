@@ -1,8 +1,0 @@
-# Directories must end in '/'
-
-MinHeight = 48
-WindowWidth = 400
-WindowHeight = 450
-PathTmpDir = /tmp/cliphistory/
-PathPinnedDir = $HOME/.local/cliphistory/
-PathConfigDir = $HOME/.config/cliphistory/
