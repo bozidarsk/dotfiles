@@ -74,7 +74,7 @@ git config --global --add safe.directory '*'
 git config --global core.excludesfile .gitignore
 git config --global credential.helper store
 
-cat $dotfiles/hyprland-gsettings | sed -E 's/(.)/gsettings set \1/' > /tmp/gsettings.sh
+cat $dotfiles/gsettings/gnome | sed -E 's/(.+)/gsettings set \1/' > /tmp/gsettings.sh
 chmod +x /tmp/gsettings.sh
 /tmp/gsettings.sh 
 
@@ -83,7 +83,7 @@ cd /tmp/installaur
 makepkg -si
 cd ~
 
-installaur google-chrome spotify gnome-browser-connector sublime-text-4 unityhub android-sdk celluloid-git
+installaur google-chrome spotify gnome-browser-connector pulsemeeter-git sublime-text-4 unityhub android-sdk celluloid-git
 
 
 # WINE BEGIN

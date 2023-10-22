@@ -71,7 +71,7 @@ git config --global --add safe.directory '*'
 git config --global core.excludesfile .gitignore
 git config --global credential.helper store
 
-cat $dotfiles/hyprland-gsettings | sed -E 's/(.)/gsettings set \1/' > /tmp/gsettings.sh
+cat $dotfiles/gsettings/hyprland | sed -E 's/(.+)/gsettings set \1/' > /tmp/gsettings.sh
 chmod +x /tmp/gsettings.sh
 /tmp/gsettings.sh 
 
