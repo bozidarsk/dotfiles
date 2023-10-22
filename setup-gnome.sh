@@ -23,6 +23,11 @@ sudo lpadmin -p "$printername" -E -v "ipp://$printerip/ipp/print" -m everywhere
 sudo lpadmin -p PDF -E -v "cups-pdf:/" -m CUPS-PDF_opt.ppd
 sudo lpoptions -d "$printername"
 
+sudo pacman -Syu gdm gnome-shell gnome-shell-extensions gnome-terminal gnome-control-center gnome-tweaks ttf-liberation xdg-utils libcurl-gnutls libadwaita libxss networkmanager dconf-editor nemo
+
+sudo systemctl enable gdm
+sudo systemctl enable NetworkManager
+
 cd ~
 mkdir /mnt/external/Google\ Drive
 ln -sr /mnt/external/Google\ Drive Google\ Drive
@@ -81,55 +86,20 @@ cd ~
 installaur google-chrome spotify gnome-browser-connector sublime-text-4 unityhub android-sdk celluloid-git
 
 
-# TODO TODO TODO TODO TODO
-# git clone https://github.com/bozidarsk/cliphistory.git
-# cd cliphistory/
-# ./build.sh
-# cd ..
-# rm -rf cliphistory/
-
-# git clone https://github.com/bozidarsk/wifi-menu.git
-# cd wifi-menu/
-# ./build.sh
-# cd ..
-# rm -rf wifi-menu/
-
-# TODO TODO TODO TODO TODO
-# git clone https://github.com/bozidarsk/media-menu.git
-# cd media-menu/
-# ./build.sh
-# cd ..
-# rm -rf media-menu/
-
-# TODO TODO TODO TODO TODO
-# git clone https://github.com/bozidarsk/sound-menu.git
-# cd sound-menu/
-# ./build.sh
-# cd ..
-# rm -rf sound-menu/
-
-# TODO TODO TODO TODO TODO
-# git clone https://github.com/bozidarsk/power-menu.git
-# cd power-menu/
-# ./build.sh
-# cd ..
-# rm -rf power-menu/
-
-
-
 # WINE BEGIN
 echo "WARNING: COMPILING WINE WILL TAKE A LOT OF TIME (HOURS), A LOT OF DISK SPACE (~5.5GB) AND ALL OF YOUR BATTERY"
 printf "Do you want to proceed? [y/n] "
 read answer
 if [[ "$answer" =~ [yY][eE]?[sS]? ]]; then
-	sudo pacman -Sy  lib32-libpulse
-	# gpg --recv-keys ACEB29740C9A4E97 F9C3D6BDB8232B5D A48E86DB0B830498 7180713BE58D1ADC CEFAC8EAAF17519D
-	installaur lib32-dav1d wine-stable
-	sudo pacman -Sy wine-mono wine-gecko
-	WINEARCH=win32 WINEPREFIX=~/.config/win32 winecfg
-	WINEPREFIX=~/.config/win64 winecfg
+    sudo pacman -Sy  lib32-libpulse
+    # gpg --recv-keys ACEB29740C9A4E97 F9C3D6BDB8232B5D A48E86DB0B830498 7180713BE58D1ADC CEFAC8EAAF17519D
+    installaur lib32-dav1d wine-stable
+    sudo pacman -Sy wine-mono wine-gecko
+    WINEARCH=win32 WINEPREFIX=~/.config/win32 winecfg
+    WINEPREFIX=~/.config/win64 winecfg
 fi
 # WINE END
+
 
 sudo rm -rf $dotfiles
 
