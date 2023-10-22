@@ -47,18 +47,11 @@ mv $dotfiles/.icons .
 ln -sr ".themes/$GTK_THEME/gtk-3.0" .config/gtk-3.0
 ln -sr ".themes/$GTK_THEME/gtk-4.0" .config/gtk-4.0
 
-mv $dotfiles/.config/alacritty .config/
 mv $dotfiles/.config/cliphistory .config/
-mv $dotfiles/.config/hypr .config/
-mv $dotfiles/.config/media-menu .config/
-mv $dotfiles/.config/power-menu .config/
+# mv $dotfiles/.config/media-menu .config/
 mv $dotfiles/.config/pulsemeeter .config/
-mv $dotfiles/.config/sound-menu .config/
 mv $dotfiles/.config/sublime-text/Packages .config/sublime-text/
-mv $dotfiles/.config/swaync .config/
-mv $dotfiles/.config/waybar .config/
-mv $dotfiles/.config/wifi-menu .config/
-mv $dotfiles/.config/wofi .config/
+# mv $dotfiles/.config/wofi .config/
 
 mv $dotfiles/wallpapers Pictures/Wallpapers
 
