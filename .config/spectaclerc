@@ -1,0 +1,11 @@
+[$Version]
+update_info=spectacle_clipboard.upd:clipboard-settings-change,spectacle_rememberregion.upd:spectacle-migrate-rememberregion
+
+[General]
+autoSaveImage=true
+clipboardGroup=PostScreenshotCopyImage
+onLaunchAction=DoNotTakeScreenshot
+
+[Save]
+lastSaveLocation=file:///home/bozidarsk/Pictures/20231015_211001.png
+saveFilenameFormat=%Y%M%D_%H%m%S
