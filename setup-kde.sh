@@ -39,11 +39,6 @@ mkdir Videos
 mkdir Pictures
 mkdir Documents
 
-mv $dotfiles/.themes .
-mv $dotfiles/.icons .
-ln -sr ".themes/$GTK_THEME/gtk-3.0" .config/gtk-3.0
-ln -sr ".themes/$GTK_THEME/gtk-4.0" .config/gtk-4.0
-
 mv $dotfiles/.config/pulsemeeter .config/
 mv $dotfiles/.config/sublime-text/Packages .config/sublime-text/
 mv $dotfiles/.config/kcminputrc .config/
