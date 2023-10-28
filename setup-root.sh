@@ -32,7 +32,6 @@ cd "/home/$user"
 
 mkdir /mnt/android
 mkdir /mnt/external
-mount /dev/sdb1 /mnt/external
 echo "/dev/sdb1 /mnt/external ntfs defaults 0 2" >> /etc/fstab
 
 chown "$user:$user" /mnt/android
@@ -46,10 +45,7 @@ for script in $dotfiles/.sh/*.sh; do
     mv $script /usr/local/bin/$(basename "${script%.*}")
 done
 
-ufw enable
-ufw allow 22/tcp
-ufw allow 80/tcp
-ufw allow 443/tcp
+chmod +x /usr/local/bin/*
 
 mv $dotfiles/fonts /usr/local/share/
 fc-cache -fv
