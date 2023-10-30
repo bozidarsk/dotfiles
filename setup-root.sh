@@ -1,9 +1,6 @@
 user=bozidarsk
 hostname=archbtw
-SSID=Yana
 dotfiles=/usr/dotfiles
-
-iwctl station wlan0 connect "$SSID" 
 
 printf "\n[multilib]\nInclude = /etc/pacman.d/mirrorlist\n" >> /etc/pacman.conf
 pacman -Sy vim openssh sudo ntfs-3g ufw base-devel git zsh python3 python-pip brightnessctl pulseaudio ufw unzip wl-clipboard gtk4 rclone dosfstools exfatprogs cups cups-pdf sane-airscan mono gtk-sharp-3 gtk-layer-shell nasm qemu-system-x86 arduino-cli obs-studio android-udev android-file-transfer htop mpv x265 x264 gtk4 libadwaita rclone 
@@ -32,7 +29,6 @@ cd "/home/$user"
 
 mkdir /mnt/android
 mkdir /mnt/external
-mount /dev/sdb1 /mnt/external
 echo "/dev/sdb1 /mnt/external ntfs defaults 0 2" >> /etc/fstab
 
 chown "$user:$user" /mnt/android
@@ -46,10 +42,7 @@ for script in $dotfiles/.sh/*.sh; do
     mv $script /usr/local/bin/$(basename "${script%.*}")
 done
 
-ufw enable
-ufw allow 22/tcp
-ufw allow 80/tcp
-ufw allow 443/tcp
+chmod +x /usr/local/bin/*
 
 mv $dotfiles/fonts /usr/local/share/
 fc-cache -fv
