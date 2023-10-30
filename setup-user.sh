@@ -25,8 +25,6 @@ sudo lpadmin -p PDF -E -v "cups-pdf:/" -m CUPS-PDF_opt.ppd
 sudo lpoptions -d "$printername"
 
 cd ~
-mkdir /mnt/external/Google\ Drive
-ln -sr /mnt/external/Google\ Drive Google\ Drive
 ln -sr /mnt/external/Projects Projects
 
 mkdir .local
