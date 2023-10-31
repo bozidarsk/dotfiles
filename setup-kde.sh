@@ -28,10 +28,6 @@ cat $dotfiles/gsettings/kde | sed -E 's/(.+)/gsettings set \1/' > /tmp/gsettings
 chmod +x /tmp/gsettings.sh
 /tmp/gsettings.sh 
 
-# for android-sdk
-sudo pacman -Syu jdk-openjdk libxtst fontconfig freetype2 lib32-gcc-libs lib32-glibc libx11 libxext libxrender zlib
-installaur thorium-browser-bin spotify pulsemeeter-git sublime-text-4 unityhub android-sdk celluloid-git
-
 echo "Set GloblaTheme to 'Nordic-bluish'"
 echo "Set SplashScreen to 'Arch Simple Blue'"
 

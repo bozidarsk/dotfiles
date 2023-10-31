@@ -11,8 +11,6 @@ cat $dotfiles/gsettings/gnome | sed -E 's/(.+)/gsettings set \1/' > /tmp/gsettin
 chmod +x /tmp/gsettings.sh
 /tmp/gsettings.sh 
 
-# for android-sdk
-sudo pacman -Syu jdk-openjdk libxtst fontconfig freetype2 lib32-gcc-libs lib32-glibc libx11 libxext libxrender zlib
-installaur thorium-browser-bin spotify gnome-browser-connector pulsemeeter-git sublime-text-4 unityhub android-sdk celluloid-git
+installaur gnome-browser-connector
 
 sudo rm -rf $dotfiles
