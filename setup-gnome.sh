@@ -1,3 +1,5 @@
+dotfiles=/usr/dotfiles
+
 sudo pacman -Syu gdm gnome-shell gnome-shell-extensions gnome-terminal gnome-control-center gnome-tweaks ttf-liberation xdg-utils libcurl-gnutls libadwaita libxss networkmanager dconf-editor nemo
 
 sudo systemctl enable gdm
