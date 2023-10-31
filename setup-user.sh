@@ -38,8 +38,8 @@ mkdir Documents
 
 mv $dotfiles/.themes .
 mv $dotfiles/.icons .
-ln -sr ".themes/$GTK_THEME/gtk-3.0" .config/gtk-3.0
-ln -sr ".themes/$GTK_THEME/gtk-4.0" .config/gtk-4.0
+ln -sr ".themes/Colloid-Dark-Nord/gtk-3.0" .config/gtk-3.0
+ln -sr ".themes/Colloid-Dark-Nord/gtk-4.0" .config/gtk-4.0
 
 mv $dotfiles/.config/pulsemeeter .config/
 mv $dotfiles/.config/sublime-text/Packages .config/sublime-text/
@@ -65,7 +65,7 @@ cd ~
 
 # for android-sdk
 sudo pacman -Syu jdk-openjdk libxtst fontconfig freetype2 lib32-gcc-libs lib32-glibc libx11 libxext libxrender zlib
-installaur thorium-browser-bin spotify pulsemeeter-git sublime-text-4 unityhub android-sdk celluloid-git
+installaur thorium-browser-bin spotify pulsemeeter-git sublime-text-4 unityhub android-sdk celluloid-git teams
 
 # WINE BEGIN
 echo "WARNING: COMPILING WINE WILL TAKE A LOT OF TIME (HOURS), A LOT OF DISK SPACE (~5.5GB) AND ALL OF YOUR BATTERY"

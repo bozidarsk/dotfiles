@@ -1,6 +1,6 @@
 dotfiles=/usr/dotfiles
 
-sudo pacman -Syu gdm gnome-shell gnome-shell-extensions gnome-terminal gnome-control-center gnome-tweaks ttf-liberation xdg-utils libcurl-gnutls libadwaita libxss networkmanager dconf-editor nemo
+sudo pacman -Syu gdm gnome-shell gnome-shell-extensions gnome-terminal gnome-control-center gnome-tweaks ttf-liberation xdg-utils libcurl-gnutls libadwaita libxss networkmanager dconf-editor nemo gnome-menus
 
 sudo systemctl enable gdm
 sudo systemctl enable NetworkManager
@@ -14,5 +14,8 @@ chmod +x /tmp/gsettings.sh
 /tmp/gsettings.sh 
 
 installaur gnome-browser-connector
+
+echo "Gtk theme: Colloid-Dark-Nord"
+echo "Cursro theme: Nordic-cursors"
 
 sudo rm -rf $dotfiles
