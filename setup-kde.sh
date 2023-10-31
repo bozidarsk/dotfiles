@@ -1,3 +1,5 @@
+dotfiles=/usr/dotfiles
+
 sudo pacman -Syu plasma konsole dolphin
 
 mv $dotfiles/.config/pulsemeeter .config/

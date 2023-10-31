@@ -1,3 +1,5 @@
+dotfiles=/usr/dotfiles
+
 sudo pacman -Syu hyprland hyprpaper waybar wofi evemu alacritty grim slurp nemo
 
 mv $dotfiles/.config/alacritty .config/
