@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=Google Drive
+Exec=rclone mount "Google Drive:" "/home/bozidarsk/Google Drive"
+Type=Application
+Terminal=false
