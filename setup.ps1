@@ -1,7 +1,6 @@
 curl http://gist.githubusercontent.com/bozidarsk/0fd6584ed7b52e5b24768569e49728be/raw/0cae895abf7f391f840fc153dbded9e799a9b33a/.gitignore -o $HOME\.gitignore
 
 [System.IO.Directory]::CreateDirectory("$env:APPDATA\Sublime Text");
-[System.IO.Directory]::CreateDirectory("$env:APPDATA\Sublime Text\Packages");
 Move-Item -Path .\Packages -Destination "$env:APPDATA\Sublime Text"
 
 move .\onstartup.ps1 "$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Startup"
