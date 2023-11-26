@@ -1,5 +1,3 @@
-if ([System.IO.Directory]::Exists("E:\Google Drive")) { [System.IO.Directory]::Delete("E:\Google Drive"); }
-
 $MethodDefinition = @'
 	[DllImport("user32.dll")] public static extern uint ShowWindow(IntPtr hWnd, uint nCmdShow);
 '@
@@ -13,4 +11,6 @@ function StartProcess([string] $name, [string] $arguments)
 	$winapi::ShowWindow($process.MainWindowHandle, 0);
 }
 
-StartProcess "rclone" "mount `"Google Drive:`" `"E:\Google Drive`""
+StartProcess "rclone" "mount `"Google Drive:`" `"G:`""
+
+chkdsk e: /f
