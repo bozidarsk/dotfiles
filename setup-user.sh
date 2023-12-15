@@ -82,7 +82,7 @@ fi
 # WINE END
 
 # scanimage -L
-# scanimage -d "airscan:w0:CANON INC. TS6200 series" -p --format=png -o "$HOME/Documents/$(date +$DATE_FORMAT).png"
+# scanimage -d "airscan:w0:CANON INC. TS6200 series" -p --format=png -o "$HOME/Documents/$(date +'%Y%d%m_%H%M%S').png"
 
 #sudo ufw disable
 #rclone config
