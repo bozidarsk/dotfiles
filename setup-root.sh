@@ -3,7 +3,7 @@ hostname=archbtw
 dotfiles=/usr/dotfiles
 
 printf "\n[multilib]\nInclude = /etc/pacman.d/mirrorlist\n" >> /etc/pacman.conf
-pacman -Sy vim openssh sudo ntfs-3g ufw base-devel git zsh python3 python-pip brightnessctl pulseaudio ufw unzip wl-clipboard gtk4 rclone dosfstools exfatprogs cups cups-pdf sane-airscan mono gtk-sharp-3 gtk-layer-shell nasm qemu-system-x86 arduino-cli obs-studio android-udev android-file-transfer htop mpv x265 x264 gtk4 libadwaita rclone discord evemu libisoburn mtools qemu-ui-gtk blender dotnet-sdk wget
+pacman -Sy vim openssh sudo ntfs-3g ufw base-devel git zsh python3 python-pip brightnessctl pulseaudio ufw unzip wl-clipboard gtk4 rclone dosfstools exfatprogs cups cups-pdf sane-airscan mono gtk-sharp-3 gtk-layer-shell nasm qemu-system-x86 arduino-cli obs-studio android-udev android-file-transfer htop mpv x265 x264 gtk4 libadwaita rclone discord evemu libisoburn mtools qemu-ui-gtk blender dotnet-sdk wget tree
 
 systemctl enable sshd
 systemctl enable cups
@@ -25,6 +25,7 @@ echo "Enter new password for '$user'."
 passwd "$user"
 chown -R "$user:$user" "/home/$user"
 groupmems -g input -a "$user"
+groupmems -g uucp -a "$user"
 cd "/home/$user"
 
 mkdir /mnt/android
