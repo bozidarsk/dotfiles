@@ -28,7 +28,7 @@ ca.desrt.dconf-editor.Demo weird-enum 'only-choice'
 ca.desrt.dconf-editor.Demo weird-range 5
 ca.desrt.dconf-editor.Demo weird-triv ()
 ca.desrt.dconf-editor.Demo.Conflict1 a-non-conflicting-key true
-ca.desrt.dconf-editor.Demo.Conflict1 default-value-conflict 1
+ca.desrt.dconf-editor.Demo.Conflict1 default-value-conflict 2
 ca.desrt.dconf-editor.Demo.Conflict1 range-conflict uint32 0
 ca.desrt.dconf-editor.Demo.Conflict1 type-conflict 'test'
 ca.desrt.dconf-editor.Demo.Conflict1 warning-similar true
@@ -45,8 +45,8 @@ ca.desrt.dconf-editor.Settings refresh-settings-schema-source true
 ca.desrt.dconf-editor.Settings relocatable-schemas-enabled-mappings ['User', 'Built-in', 'Internal', 'Startup']
 ca.desrt.dconf-editor.Settings relocatable-schemas-user-paths {'ca.desrt.dconf-editor.Demo.Relocatable': '/ca/desrt/dconf-editor/Demo/relocatable/'}
 ca.desrt.dconf-editor.Settings restore-view true
-ca.desrt.dconf-editor.Settings saved-pathbar-path '/org/gnome/shell/extensions/'
-ca.desrt.dconf-editor.Settings saved-view '/org/gnome/shell/'
+ca.desrt.dconf-editor.Settings saved-pathbar-path '/org/gnome/shell/extensions/gestureImprovements/'
+ca.desrt.dconf-editor.Settings saved-view '/org/gnome/shell/extensions/'
 ca.desrt.dconf-editor.Settings show-warning false
 ca.desrt.dconf-editor.Settings small-keys-list-rows false
 ca.desrt.dconf-editor.Settings sort-case-sensitive false
@@ -79,15 +79,16 @@ io.github.celluloid-player.Celluloid use-skip-buttons-for-playlist false
 io.github.celluloid-player.Celluloid.window-state height 480
 io.github.celluloid-player.Celluloid.window-state last-folder-uri ''
 io.github.celluloid-player.Celluloid.window-state loop-playlist false
-io.github.celluloid-player.Celluloid.window-state maximized false
-io.github.celluloid-player.Celluloid.window-state playlist-width 250
+io.github.celluloid-player.Celluloid.window-state maximized true
+io.github.celluloid-player.Celluloid.window-state playlist-width -1080
 io.github.celluloid-player.Celluloid.window-state show-controls true
-io.github.celluloid-player.Celluloid.window-state show-playlist false
-io.github.celluloid-player.Celluloid.window-state volume 1.0
+io.github.celluloid-player.Celluloid.window-state show-playlist true
+io.github.celluloid-player.Celluloid.window-state volume 0.69999999999999996
 io.github.celluloid-player.Celluloid.window-state width 640
 org.cinnamon.desktop.a11y.applications screen-keyboard-enabled false
 org.cinnamon.desktop.a11y.applications screen-magnifier-enabled false
 org.cinnamon.desktop.a11y.applications screen-reader-enabled false
+org.cinnamon.desktop.a11y.keyboard always-show-text-caret false
 org.cinnamon.desktop.a11y.keyboard bouncekeys-beep-reject false
 org.cinnamon.desktop.a11y.keyboard bouncekeys-delay 300
 org.cinnamon.desktop.a11y.keyboard bouncekeys-enable false
@@ -377,7 +378,10 @@ org.cinnamon.desktop.notifications bottom-notifications false
 org.cinnamon.desktop.notifications display-notifications true
 org.cinnamon.desktop.notifications fade-on-mouseover true
 org.cinnamon.desktop.notifications fade-opacity 40
+org.cinnamon.desktop.notifications fullscreen-notifications false
 org.cinnamon.desktop.notifications notification-duration 4
+org.cinnamon.desktop.notifications notification-fixed-screen 1
+org.cinnamon.desktop.notifications notification-screen-display 'primary-screen'
 org.cinnamon.desktop.notifications remove-old false
 org.cinnamon.desktop.notifications timeout 1800
 org.cinnamon.desktop.peripherals.tablet area [0.0, 0.0, 0.0, 0.0]
@@ -661,7 +665,7 @@ org.gnome.SessionManager auto-save-session false
 org.gnome.SessionManager auto-save-session-one-shot false
 org.gnome.SessionManager logout-prompt true
 org.gnome.SessionManager show-fallback-warning true
-org.gnome.Settings last-panel 'display'
+org.gnome.Settings last-panel 'universal-access'
 org.gnome.Settings show-development-warning true
 org.gnome.Settings window-state (980, 692, false)
 org.gnome.Terminal.Legacy.Settings always-check-default-terminal true
@@ -682,7 +686,7 @@ org.gnome.Terminal.Legacy.Settings theme-variant 'system'
 org.gnome.Terminal.Legacy.Settings unified-menu true
 org.gnome.Terminal.Legacy.Keybindings close-tab '<Control><Shift>w'
 org.gnome.Terminal.Legacy.Keybindings close-window '<Control><Shift>q'
-org.gnome.Terminal.Legacy.Keybindings copy '<Primary><Shift>c'
+org.gnome.Terminal.Legacy.Keybindings copy '<Control><Shift>c'
 org.gnome.Terminal.Legacy.Keybindings copy-html 'disabled'
 org.gnome.Terminal.Legacy.Keybindings detach-tab 'disabled'
 org.gnome.Terminal.Legacy.Keybindings export 'disabled'
@@ -698,7 +702,7 @@ org.gnome.Terminal.Legacy.Keybindings move-tab-right '<Control><Shift>Page_Down'
 org.gnome.Terminal.Legacy.Keybindings new-tab '<Control><Shift>t'
 org.gnome.Terminal.Legacy.Keybindings new-window '<Control><Shift>n'
 org.gnome.Terminal.Legacy.Keybindings next-tab '<Control>Page_Down'
-org.gnome.Terminal.Legacy.Keybindings paste '<Primary><Shift>v'
+org.gnome.Terminal.Legacy.Keybindings paste '<Control><Shift>v'
 org.gnome.Terminal.Legacy.Keybindings preferences 'disabled'
 org.gnome.Terminal.Legacy.Keybindings prev-tab '<Control>Page_Up'
 org.gnome.Terminal.Legacy.Keybindings print 'disabled'
@@ -817,8 +821,6 @@ org.gnome.desktop.app-folders folder-children ['Utilities', 'YaST', 'Pardus']
 org.gnome.desktop.background color-shading-type 'solid'
 org.gnome.desktop.background picture-opacity 100
 org.gnome.desktop.background picture-options 'zoom'
-org.gnome.desktop.background picture-uri 'file:///home/bozidarsk/.local/share/backgrounds/2023-10-28-21-27-23-11.jpg'
-org.gnome.desktop.background picture-uri-dark 'file:///home/bozidarsk/.local/share/backgrounds/2023-10-28-21-27-23-11.jpg'
 org.gnome.desktop.background primary-color '#000000000000'
 org.gnome.desktop.background secondary-color '#000000000000'
 org.gnome.desktop.background show-desktop-icons false
@@ -896,7 +898,7 @@ org.gnome.desktop.media-handling autorun-never true
 org.gnome.desktop.media-handling autorun-x-content-ignore @as []
 org.gnome.desktop.media-handling autorun-x-content-open-folder @as []
 org.gnome.desktop.media-handling autorun-x-content-start-app ['x-content/unix-software', 'x-content/ostree-repository']
-org.gnome.desktop.notifications application-children ['spotify', 'thorium-browser', 'gnome-power-panel', 'teams']
+org.gnome.desktop.notifications application-children ['spotify', 'thorium-browser', 'gnome-power-panel', 'teams', 'unityhub', 'sublime-text', 'org-gnome-extensions-desktop', 'gnome-network-panel', 'org-gnome-terminal', 'google-chrome', 'discord', 'org-inkscape-inkscape']
 org.gnome.desktop.notifications show-banners true
 org.gnome.desktop.notifications show-in-lock-screen true
 org.gnome.desktop.peripherals.tablet area [0.0, 0.0, 0.0, 0.0]
@@ -922,7 +924,7 @@ org.gnome.desktop.peripherals.pointingstick scroll-method 'default'
 org.gnome.desktop.peripherals.pointingstick speed 0.0
 org.gnome.desktop.peripherals.touchpad accel-profile 'default'
 org.gnome.desktop.peripherals.touchpad click-method 'fingers'
-org.gnome.desktop.peripherals.touchpad disable-while-typing true
+org.gnome.desktop.peripherals.touchpad disable-while-typing false
 org.gnome.desktop.peripherals.touchpad edge-scrolling-enabled false
 org.gnome.desktop.peripherals.touchpad left-handed 'mouse'
 org.gnome.desktop.peripherals.touchpad middle-click-emulation false
@@ -965,7 +967,7 @@ org.gnome.desktop.screensaver logout-delay uint32 7200
 org.gnome.desktop.screensaver logout-enabled false
 org.gnome.desktop.screensaver picture-opacity 100
 org.gnome.desktop.screensaver picture-options 'zoom'
-org.gnome.desktop.screensaver picture-uri 'file:///home/bozidarsk/.local/share/backgrounds/2023-10-28-21-27-23-11.jpg'
+org.gnome.desktop.screensaver picture-uri 'file:///home/bozidarsk/.local/share/backgrounds/2023-10-31-21-05-24-11.jpg'
 org.gnome.desktop.screensaver primary-color '#000000000000'
 org.gnome.desktop.screensaver secondary-color '#000000000000'
 org.gnome.desktop.screensaver show-full-name-in-top-bar true
@@ -980,7 +982,7 @@ org.gnome.desktop.session session-name 'gnome'
 org.gnome.desktop.sound allow-volume-above-100-percent false
 org.gnome.desktop.sound event-sounds true
 org.gnome.desktop.sound input-feedback-sounds false
-org.gnome.desktop.sound theme-name 'freedesktop'
+org.gnome.desktop.sound theme-name '__custom'
 org.gnome.desktop.thumbnail-cache maximum-age 180
 org.gnome.desktop.thumbnail-cache maximum-size 512
 org.gnome.desktop.thumbnailers disable @as []
@@ -1065,7 +1067,7 @@ org.gnome.desktop.wm.keybindings switch-to-workspace-up ['<Control><Alt>Up']
 org.gnome.desktop.wm.keybindings switch-windows ['<Alt>Tab']
 org.gnome.desktop.wm.keybindings switch-windows-backward ['<Shift><Alt>Tab']
 org.gnome.desktop.wm.keybindings toggle-above @as []
-org.gnome.desktop.wm.keybindings toggle-fullscreen @as []
+org.gnome.desktop.wm.keybindings toggle-fullscreen ['F11']
 org.gnome.desktop.wm.keybindings toggle-maximized ['<Alt>F10']
 org.gnome.desktop.wm.keybindings toggle-on-all-workspaces @as []
 org.gnome.desktop.wm.keybindings unmaximize ['<Super>Down', '<Alt>F5']
@@ -1089,6 +1091,13 @@ org.gnome.desktop.wm.preferences titlebar-uses-system-font true
 org.gnome.desktop.wm.preferences visual-bell false
 org.gnome.desktop.wm.preferences visual-bell-type 'fullscreen-flash'
 org.gnome.desktop.wm.preferences workspace-names @as []
+org.gnome.gnome-screenshot auto-save-directory ''
+org.gnome.gnome-screenshot default-file-type 'png'
+org.gnome.gnome-screenshot delay 0
+org.gnome.gnome-screenshot include-icc-profile true
+org.gnome.gnome-screenshot include-pointer false
+org.gnome.gnome-screenshot last-save-directory ''
+org.gnome.gnome-screenshot take-window-shot false
 org.gnome.libgnomekbd.desktop default-group -1
 org.gnome.libgnomekbd.desktop group-per-window false
 org.gnome.libgnomekbd.desktop handle-indicators false
@@ -1161,12 +1170,12 @@ org.gnome.settings-daemon.peripherals.keyboard click-volume 0
 org.gnome.settings-daemon.peripherals.smartcard removal-action 'none'
 org.gnome.settings-daemon.peripherals.touchscreen orientation-lock false
 org.gnome.settings-daemon.plugins whitelisted-plugins ['all']
-org.gnome.settings-daemon.plugins.color night-light-enabled false
+org.gnome.settings-daemon.plugins.color night-light-enabled true
 org.gnome.settings-daemon.plugins.color night-light-last-coordinates (91.0, 181.0)
 org.gnome.settings-daemon.plugins.color night-light-schedule-automatic true
 org.gnome.settings-daemon.plugins.color night-light-schedule-from 20.0
 org.gnome.settings-daemon.plugins.color night-light-schedule-to 6.0
-org.gnome.settings-daemon.plugins.color night-light-temperature uint32 2700
+org.gnome.settings-daemon.plugins.color night-light-temperature uint32 4700
 org.gnome.settings-daemon.plugins.color recalibrate-display-threshold uint32 0
 org.gnome.settings-daemon.plugins.color recalibrate-printer-threshold uint32 0
 org.gnome.settings-daemon.plugins.housekeeping free-percent-notify 0.050000000000000003
@@ -1178,7 +1187,7 @@ org.gnome.settings-daemon.plugins.media-keys battery-status ['']
 org.gnome.settings-daemon.plugins.media-keys battery-status-static ['XF86Battery']
 org.gnome.settings-daemon.plugins.media-keys calculator ['']
 org.gnome.settings-daemon.plugins.media-keys calculator-static ['XF86Calculator']
-org.gnome.settings-daemon.plugins.media-keys control-center ['']
+org.gnome.settings-daemon.plugins.media-keys control-center @as []
 org.gnome.settings-daemon.plugins.media-keys control-center-static ['XF86Tools']
 org.gnome.settings-daemon.plugins.media-keys custom-keybindings ['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/']
 org.gnome.settings-daemon.plugins.media-keys decrease-text-size ['']
@@ -1237,7 +1246,7 @@ org.gnome.settings-daemon.plugins.media-keys screen-brightness-down ['']
 org.gnome.settings-daemon.plugins.media-keys screen-brightness-down-static ['XF86MonBrightnessDown']
 org.gnome.settings-daemon.plugins.media-keys screen-brightness-up ['']
 org.gnome.settings-daemon.plugins.media-keys screen-brightness-up-static ['XF86MonBrightnessUp']
-org.gnome.settings-daemon.plugins.media-keys screenreader ['<Alt><Super>s']
+org.gnome.settings-daemon.plugins.media-keys screenreader @as []
 org.gnome.settings-daemon.plugins.media-keys screensaver ['<Super>l']
 org.gnome.settings-daemon.plugins.media-keys screensaver-static ['XF86ScreenSaver']
 org.gnome.settings-daemon.plugins.media-keys search ['']
@@ -1291,9 +1300,9 @@ org.gnome.shell command-history @as []
 org.gnome.shell development-tools true
 org.gnome.shell disable-extension-version-validation false
 org.gnome.shell disable-user-extensions false
-org.gnome.shell disabled-extensions ['apps-menu@gnome-shell-extensions.gcampax.github.com']
-org.gnome.shell enabled-extensions ['user-theme@gnome-shell-extensions.gcampax.github.com', 'arcmenu@arcmenu.com', 'panel-date-format@keiii.github.com', 'clipboard-indicator@tudmotu.com', 'dash-to-panel@jderose9.github.com']
-org.gnome.shell favorite-apps ['teams.desktop', 'nemo.desktop', 'thorium-browser.desktop', 'sublime_text.desktop', 'unityhub.desktop', 'com.obsproject.Studio.desktop', 'spotify.desktop', 'discord.desktop']
+org.gnome.shell disabled-extensions ['apps-menu@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'ding@rastersoft.com']
+org.gnome.shell enabled-extensions ['user-theme@gnome-shell-extensions.gcampax.github.com', 'panel-date-format@keiii.github.com', 'clipboard-indicator@tudmotu.com', 'dash-to-panel@jderose9.github.com', 'arcmenu@arcmenu.com', 'gestureImprovements@gestures']
+org.gnome.shell favorite-apps ['teams.desktop', 'nemo.desktop', 'google-chrome.desktop', 'sublime_text.desktop', 'unityhub.desktop', 'blender.desktop', 'com.obsproject.Studio.desktop', 'spotify.desktop', 'discord.desktop']
 org.gnome.shell last-selected-power-profile 'power-saver'
 org.gnome.shell looking-glass-history @as []
 org.gnome.shell remember-mount-password false
@@ -1327,7 +1336,7 @@ org.gnome.shell.keybindings switch-to-application-8 ['<Super>8']
 org.gnome.shell.keybindings switch-to-application-9 ['<Super>9']
 org.gnome.shell.keybindings toggle-application-view ['<Super>a']
 org.gnome.shell.keybindings toggle-message-tray @as []
-org.gnome.shell.keybindings toggle-overview @as []
+org.gnome.shell.keybindings toggle-overview ['<Super>Tab']
 org.gnome.shell.keybindings toggle-quick-settings ['<Super>s']
 org.gnome.shell.weather automatic-location false
 org.gnome.shell.weather locations @av []
@@ -1366,17 +1375,17 @@ org.gtk.Settings.FileChooser date-format 'regular'
 org.gtk.Settings.FileChooser expand-folders false
 org.gtk.Settings.FileChooser last-folder-uri ''
 org.gtk.Settings.FileChooser location-mode 'path-bar'
-org.gtk.Settings.FileChooser show-hidden false
+org.gtk.Settings.FileChooser show-hidden true
 org.gtk.Settings.FileChooser show-size-column true
 org.gtk.Settings.FileChooser show-type-column true
-org.gtk.Settings.FileChooser sidebar-width 165
+org.gtk.Settings.FileChooser sidebar-width 176
 org.gtk.Settings.FileChooser sort-column 'name'
 org.gtk.Settings.FileChooser sort-directories-first true
 org.gtk.Settings.FileChooser sort-order 'ascending'
 org.gtk.Settings.FileChooser startup-mode 'recent'
 org.gtk.Settings.FileChooser type-format 'category'
 org.gtk.Settings.FileChooser window-position (103, 103)
-org.gtk.Settings.FileChooser window-size (1231, 932)
+org.gtk.Settings.FileChooser window-size (1231, 772)
 org.gtk.gtk4.Settings.ColorChooser custom-colors @a(dddd) []
 org.gtk.gtk4.Settings.ColorChooser selected-color (false, 1.0, 1.0, 1.0, 1.0)
 org.gtk.gtk4.Settings.Debug enable-inspector-keybinding true
@@ -1397,7 +1406,7 @@ org.gtk.gtk4.Settings.FileChooser startup-mode 'recent'
 org.gtk.gtk4.Settings.FileChooser type-format 'category'
 org.gtk.gtk4.Settings.FileChooser view-type 'list'
 org.gtk.gtk4.Settings.FileChooser window-position (-1, -1)
-org.gtk.gtk4.Settings.FileChooser window-size (847, 650)
+org.gtk.gtk4.Settings.FileChooser window-size (847, 652)
 org.nemo.compact-view all-columns-have-same-width true
 org.nemo.compact-view default-zoom-level 'standard'
 org.nemo.desktop background-fade true
@@ -1541,7 +1550,7 @@ org.nemo.search search-visible-columns @as []
 org.nemo.sidebar-panels.tree show-only-directories true
 org.nemo.window-state bookmarks-expanded true
 org.nemo.window-state devices-expanded true
-org.nemo.window-state geometry '1065x626+103+103'
+org.nemo.window-state geometry '1024x627+103+103'
 org.nemo.window-state maximized false
 org.nemo.window-state my-computer-expanded true
 org.nemo.window-state network-expanded true
