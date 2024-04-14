@@ -1,0 +1,6 @@
+sudo pacman -Sy nvidia-dkms nvidia-utils
+in /etc/mkinitcpio.conf add to MODULES nvidia nvidia_modeset nvidia_uvm nvidia_drm
+sudo mkinitcpio -P
+sudo ln -s /dev/null /etc/udev/rules.d/61-gdm.rules
+in /boot/grub/grub.cfg where x => x.Contains("linux /boot/vmlinuz-linux root=UUID=... rw") add to the end of the line nvidia_drm.modeset=1
+
