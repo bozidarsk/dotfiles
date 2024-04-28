@@ -1,5 +1,5 @@
 {
 	"font_size": 11,
-	"default_line_ending": "LF",
+	"default_line_ending": "unix",
 	"show_line_endings": true,
 }
