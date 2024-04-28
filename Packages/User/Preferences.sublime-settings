@@ -1,3 +1,5 @@
 {
 	"font_size": 11,
+	"default_line_ending": "LF",
+	"show_line_endings": true,
 }
