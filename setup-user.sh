@@ -57,6 +57,8 @@ git config --global user.name "$gitname"
 git config --global --add safe.directory '*'
 git config --global core.excludesfile .gitignore
 git config --global credential.helper store
+git config --global core.autocrlf false
+git config --global push.autoSetupRemote true
 
 git clone https://aur.archlinux.org/installaur-git.git /tmp/installaur
 cd /tmp/installaur
