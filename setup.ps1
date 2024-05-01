@@ -14,5 +14,7 @@ git config --global --add safe.directory "*"
 git config --global init.defaultBranch main
 git config --global credential.helper store
 git config --global core.excludesfile $HOME\.gitignore
+git config --global core.autocrlf false
+git config --global push.autoSetupRemote true
 
 pause
