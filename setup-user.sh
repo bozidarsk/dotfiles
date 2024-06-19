@@ -5,6 +5,8 @@ printerip='192.168.1.10'
 printername=TS6250
 dotfiles=/usr/dotfiles
 
+systemctl --user enable pipewire
+
 sudo ufw enable
 sudo ufw allow 22/tcp
 sudo ufw allow 80/tcp
@@ -67,7 +69,7 @@ cd ~
 
 # for android-sdk
 sudo pacman -Syu jdk-openjdk libxtst fontconfig freetype2 lib32-gcc-libs lib32-glibc libx11 libxext libxrender zlib
-installaur google-chrome spotify pulsemeeter-git sublime-text-4 unityhub android-sdk celluloid-git teams
+installaur google-chrome spotify pulsemeeter-git sublime-text-4 unityhub android-sdk celluloid-git teams wlrobs
 
 # WINE BEGIN
 echo "WARNING: COMPILING WINE WILL TAKE A LOT OF TIME (HOURS), A LOT OF DISK SPACE (~5.5GB) AND ALL OF YOUR BATTERY"
