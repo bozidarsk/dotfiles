@@ -266,7 +266,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 #Tooltip {
-  border-radius: 9999px;
+  border-radius: 12px;
   padding: 6px 12px;
   background-color: rgba(22, 24, 29, 0.9);
   color: #ffffff;
@@ -965,12 +965,11 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .calendar-event-button {
   margin: 6px 0 6px 0;
   border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.04);
 }
 
 .calendar-event-button:hover {
-  background-gradient-direction: vertical;
-  background-gradient-start: rgba(255, 255, 255, 0.04);
-  background-gradient-end: rgba(255, 255, 255, 0.04);
+  background-color: rgba(255, 255, 255, 0.12);
   box-shadow: none;
 }
 
@@ -1038,7 +1037,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   margin-from-right-edge-of-screen: 18px;
   width: 28em;
   color: #ffffff;
-  background-color: rgba(36, 41, 50, 0.8);
+  background-color: rgba(22, 24, 29, 0.9);
   box-shadow: 0 5px 12px rgba(0, 0, 0, 0.35);
   margin: 7px 12px 17px 12px;
 }
@@ -1050,13 +1049,13 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .menu #notification, .popup-menu #notification {
   border: none;
   border-radius: 6px;
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(255, 255, 255, 0.04);
   box-shadow: none;
   margin: 0;
 }
 
 .menu #notification:hover, .popup-menu #notification:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.12);
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
 }
 
@@ -1852,7 +1851,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   z-index: 120;
   text-shadow: none;
   color: rgba(0, 0, 0, 0.87);
-  padding: 0;
+  padding: 0 1px;
 }
 
 .grouped-window-list-button-label {
