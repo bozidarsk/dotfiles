@@ -1,9 +1,15 @@
-timezone="Europe/Sofia"
-gitname="bozidarsk"
-gitemail="bozidarkabahcijski@gmail.com"
-printerip='192.168.1.10'
-printername=TS6250
-dotfiles=/usr/dotfiles
+printf 'timezone: '
+read timezone
+printf 'gitname: '
+read gitname
+printf 'gitemail: '
+read gitemail
+printf 'printerip: '
+read printerip
+printf 'printername: '
+read printername
+printf 'dotfiles: '
+read dotfiles
 
 sudo ufw enable
 sudo ufw allow 22/tcp

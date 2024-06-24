@@ -1,4 +1,5 @@
-dotfiles=/usr/dotfiles
+printf 'dotfiles: '
+read dotfiles
 
 sudo pacman -Syu plasma konsole dolphin
 

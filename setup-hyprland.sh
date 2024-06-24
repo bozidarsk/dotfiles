@@ -1,4 +1,5 @@
-dotfiles=/usr/dotfiles
+printf 'dotfiles: '
+read dotfiles
 
 sudo pacman -Syu hyprland hyprpaper waybar wofi evemu alacritty grim slurp nemo
 

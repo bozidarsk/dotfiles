@@ -1,4 +1,5 @@
-dotfiles=/usr/dotfiles
+printf 'dotfiles: '
+read dotfiles
 
 sudo pacman -Syu gdm gnome-shell gnome-shell-extensions gnome-terminal gnome-control-center gnome-tweaks ttf-liberation xdg-utils libcurl-gnutls libadwaita libxss networkmanager dconf-editor nemo gnome-menus
 
