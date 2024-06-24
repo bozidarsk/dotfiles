@@ -80,7 +80,7 @@ io.github.celluloid-player.Celluloid.window-state height 480
 io.github.celluloid-player.Celluloid.window-state last-folder-uri ''
 io.github.celluloid-player.Celluloid.window-state loop-playlist false
 io.github.celluloid-player.Celluloid.window-state maximized true
-io.github.celluloid-player.Celluloid.window-state playlist-width -1080
+io.github.celluloid-player.Celluloid.window-state playlist-width -1077
 io.github.celluloid-player.Celluloid.window-state show-controls true
 io.github.celluloid-player.Celluloid.window-state show-playlist true
 io.github.celluloid-player.Celluloid.window-state volume 0.69999999999999996
@@ -495,167 +495,9 @@ org.cinnamon.desktop.wm.preferences workspace-names @as []
 org.freedesktop.ColorHelper display-gamma 2.3999999999999999
 org.freedesktop.ColorHelper display-whitepoint 6500
 org.freedesktop.ColorHelper sample-delay 400
-org.freedesktop.pulseaudio.module-group args0 ''
-org.freedesktop.pulseaudio.module-group args1 ''
-org.freedesktop.pulseaudio.module-group args2 ''
-org.freedesktop.pulseaudio.module-group args3 ''
-org.freedesktop.pulseaudio.module-group args4 ''
-org.freedesktop.pulseaudio.module-group args5 ''
-org.freedesktop.pulseaudio.module-group args6 ''
-org.freedesktop.pulseaudio.module-group args7 ''
-org.freedesktop.pulseaudio.module-group args8 ''
-org.freedesktop.pulseaudio.module-group args9 ''
-org.freedesktop.pulseaudio.module-group enabled false
-org.freedesktop.pulseaudio.module-group locked false
-org.freedesktop.pulseaudio.module-group name ''
-org.freedesktop.pulseaudio.module-group name0 ''
-org.freedesktop.pulseaudio.module-group name1 ''
-org.freedesktop.pulseaudio.module-group name2 ''
-org.freedesktop.pulseaudio.module-group name3 ''
-org.freedesktop.pulseaudio.module-group name4 ''
-org.freedesktop.pulseaudio.module-group name5 ''
-org.freedesktop.pulseaudio.module-group name6 ''
-org.freedesktop.pulseaudio.module-group name7 ''
-org.freedesktop.pulseaudio.module-group name8 ''
-org.freedesktop.pulseaudio.module-group name9 ''
-org.freedesktop.pulseaudio.module-group args0 ''
-org.freedesktop.pulseaudio.module-group args1 ''
-org.freedesktop.pulseaudio.module-group args2 ''
-org.freedesktop.pulseaudio.module-group args3 ''
-org.freedesktop.pulseaudio.module-group args4 ''
-org.freedesktop.pulseaudio.module-group args5 ''
-org.freedesktop.pulseaudio.module-group args6 ''
-org.freedesktop.pulseaudio.module-group args7 ''
-org.freedesktop.pulseaudio.module-group args8 ''
-org.freedesktop.pulseaudio.module-group args9 ''
-org.freedesktop.pulseaudio.module-group enabled false
-org.freedesktop.pulseaudio.module-group locked false
-org.freedesktop.pulseaudio.module-group name ''
-org.freedesktop.pulseaudio.module-group name0 ''
-org.freedesktop.pulseaudio.module-group name1 ''
-org.freedesktop.pulseaudio.module-group name2 ''
-org.freedesktop.pulseaudio.module-group name3 ''
-org.freedesktop.pulseaudio.module-group name4 ''
-org.freedesktop.pulseaudio.module-group name5 ''
-org.freedesktop.pulseaudio.module-group name6 ''
-org.freedesktop.pulseaudio.module-group name7 ''
-org.freedesktop.pulseaudio.module-group name8 ''
-org.freedesktop.pulseaudio.module-group name9 ''
-org.freedesktop.pulseaudio.module-group args0 ''
-org.freedesktop.pulseaudio.module-group args1 ''
-org.freedesktop.pulseaudio.module-group args2 ''
-org.freedesktop.pulseaudio.module-group args3 ''
-org.freedesktop.pulseaudio.module-group args4 ''
-org.freedesktop.pulseaudio.module-group args5 ''
-org.freedesktop.pulseaudio.module-group args6 ''
-org.freedesktop.pulseaudio.module-group args7 ''
-org.freedesktop.pulseaudio.module-group args8 ''
-org.freedesktop.pulseaudio.module-group args9 ''
-org.freedesktop.pulseaudio.module-group enabled false
-org.freedesktop.pulseaudio.module-group locked false
-org.freedesktop.pulseaudio.module-group name ''
-org.freedesktop.pulseaudio.module-group name0 ''
-org.freedesktop.pulseaudio.module-group name1 ''
-org.freedesktop.pulseaudio.module-group name2 ''
-org.freedesktop.pulseaudio.module-group name3 ''
-org.freedesktop.pulseaudio.module-group name4 ''
-org.freedesktop.pulseaudio.module-group name5 ''
-org.freedesktop.pulseaudio.module-group name6 ''
-org.freedesktop.pulseaudio.module-group name7 ''
-org.freedesktop.pulseaudio.module-group name8 ''
-org.freedesktop.pulseaudio.module-group name9 ''
-org.freedesktop.pulseaudio.module-group args0 ''
-org.freedesktop.pulseaudio.module-group args1 ''
-org.freedesktop.pulseaudio.module-group args2 ''
-org.freedesktop.pulseaudio.module-group args3 ''
-org.freedesktop.pulseaudio.module-group args4 ''
-org.freedesktop.pulseaudio.module-group args5 ''
-org.freedesktop.pulseaudio.module-group args6 ''
-org.freedesktop.pulseaudio.module-group args7 ''
-org.freedesktop.pulseaudio.module-group args8 ''
-org.freedesktop.pulseaudio.module-group args9 ''
-org.freedesktop.pulseaudio.module-group enabled false
-org.freedesktop.pulseaudio.module-group locked false
-org.freedesktop.pulseaudio.module-group name ''
-org.freedesktop.pulseaudio.module-group name0 ''
-org.freedesktop.pulseaudio.module-group name1 ''
-org.freedesktop.pulseaudio.module-group name2 ''
-org.freedesktop.pulseaudio.module-group name3 ''
-org.freedesktop.pulseaudio.module-group name4 ''
-org.freedesktop.pulseaudio.module-group name5 ''
-org.freedesktop.pulseaudio.module-group name6 ''
-org.freedesktop.pulseaudio.module-group name7 ''
-org.freedesktop.pulseaudio.module-group name8 ''
-org.freedesktop.pulseaudio.module-group name9 ''
-org.freedesktop.pulseaudio.module-group args0 ''
-org.freedesktop.pulseaudio.module-group args1 ''
-org.freedesktop.pulseaudio.module-group args2 ''
-org.freedesktop.pulseaudio.module-group args3 ''
-org.freedesktop.pulseaudio.module-group args4 ''
-org.freedesktop.pulseaudio.module-group args5 ''
-org.freedesktop.pulseaudio.module-group args6 ''
-org.freedesktop.pulseaudio.module-group args7 ''
-org.freedesktop.pulseaudio.module-group args8 ''
-org.freedesktop.pulseaudio.module-group args9 ''
-org.freedesktop.pulseaudio.module-group enabled false
-org.freedesktop.pulseaudio.module-group locked false
-org.freedesktop.pulseaudio.module-group name ''
-org.freedesktop.pulseaudio.module-group name0 ''
-org.freedesktop.pulseaudio.module-group name1 ''
-org.freedesktop.pulseaudio.module-group name2 ''
-org.freedesktop.pulseaudio.module-group name3 ''
-org.freedesktop.pulseaudio.module-group name4 ''
-org.freedesktop.pulseaudio.module-group name5 ''
-org.freedesktop.pulseaudio.module-group name6 ''
-org.freedesktop.pulseaudio.module-group name7 ''
-org.freedesktop.pulseaudio.module-group name8 ''
-org.freedesktop.pulseaudio.module-group name9 ''
-org.freedesktop.pulseaudio.module-group args0 ''
-org.freedesktop.pulseaudio.module-group args1 ''
-org.freedesktop.pulseaudio.module-group args2 ''
-org.freedesktop.pulseaudio.module-group args3 ''
-org.freedesktop.pulseaudio.module-group args4 ''
-org.freedesktop.pulseaudio.module-group args5 ''
-org.freedesktop.pulseaudio.module-group args6 ''
-org.freedesktop.pulseaudio.module-group args7 ''
-org.freedesktop.pulseaudio.module-group args8 ''
-org.freedesktop.pulseaudio.module-group args9 ''
-org.freedesktop.pulseaudio.module-group enabled false
-org.freedesktop.pulseaudio.module-group locked false
-org.freedesktop.pulseaudio.module-group name ''
-org.freedesktop.pulseaudio.module-group name0 ''
-org.freedesktop.pulseaudio.module-group name1 ''
-org.freedesktop.pulseaudio.module-group name2 ''
-org.freedesktop.pulseaudio.module-group name3 ''
-org.freedesktop.pulseaudio.module-group name4 ''
-org.freedesktop.pulseaudio.module-group name5 ''
-org.freedesktop.pulseaudio.module-group name6 ''
-org.freedesktop.pulseaudio.module-group name7 ''
-org.freedesktop.pulseaudio.module-group name8 ''
-org.freedesktop.pulseaudio.module-group name9 ''
-org.freedesktop.pulseaudio.module-group args0 ''
-org.freedesktop.pulseaudio.module-group args1 ''
-org.freedesktop.pulseaudio.module-group args2 ''
-org.freedesktop.pulseaudio.module-group args3 ''
-org.freedesktop.pulseaudio.module-group args4 ''
-org.freedesktop.pulseaudio.module-group args5 ''
-org.freedesktop.pulseaudio.module-group args6 ''
-org.freedesktop.pulseaudio.module-group args7 ''
-org.freedesktop.pulseaudio.module-group args8 ''
-org.freedesktop.pulseaudio.module-group args9 ''
-org.freedesktop.pulseaudio.module-group enabled false
-org.freedesktop.pulseaudio.module-group locked false
-org.freedesktop.pulseaudio.module-group name ''
-org.freedesktop.pulseaudio.module-group name0 ''
-org.freedesktop.pulseaudio.module-group name1 ''
-org.freedesktop.pulseaudio.module-group name2 ''
-org.freedesktop.pulseaudio.module-group name3 ''
-org.freedesktop.pulseaudio.module-group name4 ''
-org.freedesktop.pulseaudio.module-group name5 ''
-org.freedesktop.pulseaudio.module-group name6 ''
-org.freedesktop.pulseaudio.module-group name7 ''
-org.freedesktop.pulseaudio.module-group name8 ''
-org.freedesktop.pulseaudio.module-group name9 ''
+org.gnome.Extensions window-height 671
+org.gnome.Extensions window-maximized false
+org.gnome.Extensions window-width 800
 org.gnome.GWeather4 default-location ('', 'KNYC', @m(dd) nothing)
 org.gnome.GWeather4 distance-unit 'default'
 org.gnome.GWeather4 pressure-unit 'default'
@@ -665,7 +507,7 @@ org.gnome.SessionManager auto-save-session false
 org.gnome.SessionManager auto-save-session-one-shot false
 org.gnome.SessionManager logout-prompt true
 org.gnome.SessionManager show-fallback-warning true
-org.gnome.Settings last-panel 'universal-access'
+org.gnome.Settings last-panel 'mouse'
 org.gnome.Settings show-development-warning true
 org.gnome.Settings window-state (980, 692, false)
 org.gnome.Terminal.Legacy.Settings always-check-default-terminal true
@@ -753,6 +595,8 @@ org.gnome.Terminal.Legacy.Keybindings zoom-normal '<Control>0'
 org.gnome.Terminal.Legacy.Keybindings zoom-out '<Control>minus'
 org.gnome.Terminal.ProfilesList default 'b1dcc9dd-5262-4d8d-a863-c897e6d979b9'
 org.gnome.Terminal.ProfilesList list ['b1dcc9dd-5262-4d8d-a863-c897e6d979b9']
+org.gnome.crypto.cache gpg-cache-method 'session'
+org.gnome.crypto.cache gpg-cache-ttl 300
 org.gnome.crypto.pgp ascii-armor true
 org.gnome.crypto.pgp default-key ''
 org.gnome.crypto.pgp encrypt-to-self true
@@ -765,6 +609,7 @@ org.gnome.desktop.a11y.applications screen-keyboard-enabled false
 org.gnome.desktop.a11y.applications screen-magnifier-enabled false
 org.gnome.desktop.a11y.applications screen-reader-enabled false
 org.gnome.desktop.a11y.interface high-contrast false
+org.gnome.desktop.a11y.interface show-status-shapes false
 org.gnome.desktop.a11y.keyboard bouncekeys-beep-reject false
 org.gnome.desktop.a11y.keyboard bouncekeys-delay 300
 org.gnome.desktop.a11y.keyboard bouncekeys-enable false
@@ -821,6 +666,8 @@ org.gnome.desktop.app-folders folder-children ['Utilities', 'YaST', 'Pardus']
 org.gnome.desktop.background color-shading-type 'solid'
 org.gnome.desktop.background picture-opacity 100
 org.gnome.desktop.background picture-options 'zoom'
+org.gnome.desktop.background picture-uri 'file:///home/bozidarsk/.local/share/backgrounds/2023-10-31-21-05-24-11.jpg'
+org.gnome.desktop.background picture-uri-dark 'file:///home/bozidarsk/.local/share/backgrounds/2023-10-31-21-05-24-11.jpg'
 org.gnome.desktop.background primary-color '#000000000000'
 org.gnome.desktop.background secondary-color '#000000000000'
 org.gnome.desktop.background show-desktop-icons false
@@ -837,6 +684,7 @@ org.gnome.desktop.input-sources mru-sources [('xkb', 'us')]
 org.gnome.desktop.input-sources per-window false
 org.gnome.desktop.input-sources show-all-sources false
 org.gnome.desktop.input-sources sources [('xkb', 'us+euro'), ('xkb', 'bg+phonetic'), ('xkb', 'gr+polytonic')]
+org.gnome.desktop.input-sources xkb-model 'pc105+inet'
 org.gnome.desktop.input-sources xkb-options @as []
 org.gnome.desktop.interface avatar-directories @as []
 org.gnome.desktop.interface can-change-accels false
@@ -898,7 +746,7 @@ org.gnome.desktop.media-handling autorun-never true
 org.gnome.desktop.media-handling autorun-x-content-ignore @as []
 org.gnome.desktop.media-handling autorun-x-content-open-folder @as []
 org.gnome.desktop.media-handling autorun-x-content-start-app ['x-content/unix-software', 'x-content/ostree-repository']
-org.gnome.desktop.notifications application-children ['spotify', 'thorium-browser', 'gnome-power-panel', 'teams', 'unityhub', 'sublime-text', 'org-gnome-extensions-desktop', 'gnome-network-panel', 'org-gnome-terminal', 'google-chrome', 'discord', 'org-inkscape-inkscape']
+org.gnome.desktop.notifications application-children ['spotify', 'thorium-browser', 'gnome-power-panel', 'teams', 'unityhub', 'sublime-text', 'org-gnome-extensions-desktop', 'gnome-network-panel', 'org-gnome-terminal', 'google-chrome', 'discord', 'org-inkscape-inkscape', 'gnome-printers-panel', 'org-gnome-settings', 'org-gnome-extensions', 'com-obsproject-studio']
 org.gnome.desktop.notifications show-banners true
 org.gnome.desktop.notifications show-in-lock-screen true
 org.gnome.desktop.peripherals.tablet area [0.0, 0.0, 0.0, 0.0]
@@ -918,7 +766,7 @@ org.gnome.desktop.peripherals.mouse drag-threshold 8
 org.gnome.desktop.peripherals.mouse left-handed false
 org.gnome.desktop.peripherals.mouse middle-click-emulation false
 org.gnome.desktop.peripherals.mouse natural-scroll false
-org.gnome.desktop.peripherals.mouse speed 0.0
+org.gnome.desktop.peripherals.mouse speed -0.29999999999999988
 org.gnome.desktop.peripherals.pointingstick accel-profile 'default'
 org.gnome.desktop.peripherals.pointingstick scroll-method 'default'
 org.gnome.desktop.peripherals.pointingstick speed 0.0
@@ -1161,6 +1009,7 @@ org.gnome.mutter.wayland.keybindings switch-to-session-7 ['<Primary><Alt>F7']
 org.gnome.mutter.wayland.keybindings switch-to-session-8 ['<Primary><Alt>F8']
 org.gnome.mutter.wayland.keybindings switch-to-session-9 ['<Primary><Alt>F9']
 org.gnome.online-accounts whitelisted-providers ['all']
+org.gnome.portal.filechooser last-folder-path ''
 org.gnome.settings-daemon.peripherals.keyboard bell-custom-file ''
 org.gnome.settings-daemon.peripherals.keyboard bell-duration 100
 org.gnome.settings-daemon.peripherals.keyboard bell-mode 'on'
@@ -1294,14 +1143,15 @@ org.gnome.settings-daemon.plugins.wwan unlock-sim false
 org.gnome.settings-daemon.plugins.xsettings disabled-gtk-modules @as []
 org.gnome.settings-daemon.plugins.xsettings enabled-gtk-modules @as []
 org.gnome.settings-daemon.plugins.xsettings overrides @a{sv} {}
+org.gnome.shell allow-extension-installation true
 org.gnome.shell always-show-log-out false
 org.gnome.shell app-picker-layout [{'org.gnome.Geary.desktop': <{'position': <0>}>, 'org.gnome.Contacts.desktop': <{'position': <1>}>, 'org.gnome.Weather.desktop': <{'position': <2>}>, 'org.gnome.clocks.desktop': <{'position': <3>}>, 'org.gnome.Maps.desktop': <{'position': <4>}>, 'org.gnome.Books.desktop': <{'position': <5>}>, 'org.gnome.Photos.desktop': <{'position': <6>}>, 'org.gnome.Totem.desktop': <{'position': <7>}>, 'org.gnome.Calculator.desktop': <{'position': <8>}>, 'org.gnome.gedit.desktop': <{'position': <9>}>, 'simple-scan.desktop': <{'position': <10>}>, 'org.gnome.Settings.desktop': <{'position': <11>}>, 'gnome-system-monitor.desktop': <{'position': <12>}>, 'org.gnome.Boxes.desktop': <{'position': <13>}>, 'org.gnome.Terminal.desktop': <{'position': <14>}>, 'Utilities': <{'position': <15>}>, 'org.gnome.Characters.desktop': <{'position': <16>}>, 'yelp.desktop': <{'position': <17>}>, 'org.gnome.Screenshot.desktop': <{'position': <18>}>, 'org.gnome.Cheese.desktop': <{'position': <19>}>, 'org.gnome.font-viewer.desktop': <{'position': <20>}>}]
 org.gnome.shell command-history @as []
 org.gnome.shell development-tools true
 org.gnome.shell disable-extension-version-validation false
-org.gnome.shell disable-user-extensions false
+org.gnome.shell disable-user-extensions true
 org.gnome.shell disabled-extensions ['apps-menu@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'ding@rastersoft.com']
-org.gnome.shell enabled-extensions ['user-theme@gnome-shell-extensions.gcampax.github.com', 'panel-date-format@keiii.github.com', 'clipboard-indicator@tudmotu.com', 'dash-to-panel@jderose9.github.com', 'arcmenu@arcmenu.com', 'gestureImprovements@gestures']
+org.gnome.shell enabled-extensions ['user-theme@gnome-shell-extensions.gcampax.github.com', 'panel-date-format@keiii.github.com', 'dash-to-panel@jderose9.github.com', 'arcmenu@arcmenu.com', 'clipboard-indicator@tudmotu.com', 'gestureImprovements@gestures']
 org.gnome.shell favorite-apps ['teams.desktop', 'nemo.desktop', 'google-chrome.desktop', 'sublime_text.desktop', 'unityhub.desktop', 'blender.desktop', 'com.obsproject.Studio.desktop', 'spotify.desktop', 'discord.desktop']
 org.gnome.shell last-selected-power-profile 'power-saver'
 org.gnome.shell looking-glass-history @as []
@@ -1314,11 +1164,25 @@ org.gnome.shell.extensions.native-window-placement use-more-screen true
 org.gnome.shell.extensions.native-window-placement window-captions-on-top true
 org.gnome.shell.extensions.screenshot-window-sizer cycle-screenshot-sizes ['<Alt><Control>s']
 org.gnome.shell.extensions.screenshot-window-sizer cycle-screenshot-sizes-backward ['<Shift><Alt><Control>s']
+org.gnome.shell.extensions.system-monitor show-cpu true
+org.gnome.shell.extensions.system-monitor show-download true
+org.gnome.shell.extensions.system-monitor show-memory true
+org.gnome.shell.extensions.system-monitor show-swap true
+org.gnome.shell.extensions.system-monitor show-upload true
 org.gnome.shell.extensions.user-theme name 'Colloid-Dark-Nord'
 org.gnome.shell.extensions.window-list display-all-workspaces false
 org.gnome.shell.extensions.window-list grouping-mode 'never'
 org.gnome.shell.extensions.window-list show-on-all-monitors false
 org.gnome.shell.keybindings focus-active-notification ['<Super>n']
+org.gnome.shell.keybindings open-new-window-application-1 ['<Super><Control>1']
+org.gnome.shell.keybindings open-new-window-application-2 ['<Super><Control>2']
+org.gnome.shell.keybindings open-new-window-application-3 ['<Super><Control>3']
+org.gnome.shell.keybindings open-new-window-application-4 ['<Super><Control>4']
+org.gnome.shell.keybindings open-new-window-application-5 ['<Super><Control>5']
+org.gnome.shell.keybindings open-new-window-application-6 ['<Super><Control>6']
+org.gnome.shell.keybindings open-new-window-application-7 ['<Super><Control>7']
+org.gnome.shell.keybindings open-new-window-application-8 ['<Super><Control>8']
+org.gnome.shell.keybindings open-new-window-application-9 ['<Super><Control>9']
 org.gnome.shell.keybindings screenshot ['<Super>Print']
 org.gnome.shell.keybindings screenshot-window ['<Alt>Print']
 org.gnome.shell.keybindings shift-overview-down ['<Super><Alt>Down']
@@ -1343,8 +1207,6 @@ org.gnome.shell.weather locations @av []
 org.gnome.shell.window-switcher app-icon-mode 'both'
 org.gnome.shell.window-switcher current-workspace-only true
 org.gnome.shell.world-clocks locations @av []
-org.gnome.system.dns_sd display-local 'merged'
-org.gnome.system.dns_sd extra-domains ''
 org.gnome.system.locale region 'en_US.UTF-8'
 org.gnome.system.location enabled false
 org.gnome.system.location max-accuracy-level 'exact'
@@ -1379,9 +1241,9 @@ org.gtk.Settings.FileChooser show-hidden true
 org.gtk.Settings.FileChooser show-size-column true
 org.gtk.Settings.FileChooser show-type-column true
 org.gtk.Settings.FileChooser sidebar-width 176
-org.gtk.Settings.FileChooser sort-column 'name'
+org.gtk.Settings.FileChooser sort-column 'modified'
 org.gtk.Settings.FileChooser sort-directories-first true
-org.gtk.Settings.FileChooser sort-order 'ascending'
+org.gtk.Settings.FileChooser sort-order 'descending'
 org.gtk.Settings.FileChooser startup-mode 'recent'
 org.gtk.Settings.FileChooser type-format 'category'
 org.gtk.Settings.FileChooser window-position (103, 103)
@@ -1390,7 +1252,7 @@ org.gtk.gtk4.Settings.ColorChooser custom-colors @a(dddd) []
 org.gtk.gtk4.Settings.ColorChooser selected-color (false, 1.0, 1.0, 1.0, 1.0)
 org.gtk.gtk4.Settings.Debug enable-inspector-keybinding true
 org.gtk.gtk4.Settings.Debug inspector-warning true
-org.gtk.gtk4.Settings.EmojiChooser recent-emoji @a((ausasu)u) []
+org.gtk.gtk4.Settings.EmojiChooser recently-used-emoji @a((aussasasu)u) []
 org.gtk.gtk4.Settings.FileChooser clock-format '24h'
 org.gtk.gtk4.Settings.FileChooser date-format 'regular'
 org.gtk.gtk4.Settings.FileChooser expand-folders false
@@ -1534,7 +1396,7 @@ org.nemo.preferences.menu-config selection-menu-pin false
 org.nemo.preferences.menu-config selection-menu-properties true
 org.nemo.preferences.menu-config selection-menu-rename true
 org.nemo.preferences.menu-config selection-menu-scripts true
-org.nemo.search search-content-case-sensitive false
+org.nemo.search search-content-case-sensitive true
 org.nemo.search search-content-history @as []
 org.nemo.search search-content-history-length 10
 org.nemo.search search-content-use-raw false
@@ -1545,7 +1407,7 @@ org.nemo.search search-files-recursively true
 org.nemo.search search-regex-format 'pcre'
 org.nemo.search search-reverse-sort false
 org.nemo.search search-skip-folders ['/dev', '/proc', '/sys', 'dosdevices', '.git']
-org.nemo.search search-sort-column ''
+org.nemo.search search-sort-column 'name'
 org.nemo.search search-visible-columns @as []
 org.nemo.sidebar-panels.tree show-only-directories true
 org.nemo.window-state bookmarks-expanded true
@@ -1567,6 +1429,7 @@ org.x.apps.favorites root-metadata @as []
 org.x.apps.mate-panel-applet color-icon-offset 8
 org.x.apps.mate-panel-applet symbolic-icon-offset 8
 org.x.apps.portal color-scheme 'default'
+org.x.apps.portal high-contrast false
 org.x.apps.statusicon left-click-activate-apps ['onboard']
 org.x.apps.statusicon sn-watcher-advertise-host true
 org.x.apps.statusicon sn-watcher-debug false
