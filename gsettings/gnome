@@ -1149,7 +1149,7 @@ org.gnome.shell app-picker-layout [{'org.gnome.Geary.desktop': <{'position': <0>
 org.gnome.shell command-history @as []
 org.gnome.shell development-tools true
 org.gnome.shell disable-extension-version-validation false
-org.gnome.shell disable-user-extensions true
+org.gnome.shell disable-user-extensions false
 org.gnome.shell disabled-extensions ['apps-menu@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'ding@rastersoft.com']
 org.gnome.shell enabled-extensions ['user-theme@gnome-shell-extensions.gcampax.github.com', 'panel-date-format@keiii.github.com', 'dash-to-panel@jderose9.github.com', 'arcmenu@arcmenu.com', 'clipboard-indicator@tudmotu.com', 'gestureImprovements@gestures']
 org.gnome.shell favorite-apps ['teams.desktop', 'nemo.desktop', 'google-chrome.desktop', 'sublime_text.desktop', 'unityhub.desktop', 'blender.desktop', 'com.obsproject.Studio.desktop', 'spotify.desktop', 'discord.desktop']
