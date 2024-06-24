@@ -6,7 +6,6 @@ sudo systemctl enable gdm
 sudo systemctl enable NetworkManager
 sudo systemctl disable iwd
 
-mv $dotfiles/.config/pulsemeeter .config/
 mv $dotfiles/.config/sublime-text/Packages .config/sublime-text/
 mv $dotfiles/.config/libinput-gestures.conf .config/libinput-gestures.conf
 
