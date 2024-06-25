@@ -41,6 +41,7 @@ mkdir .config/sublime-text
 mkdir Videos
 mkdir Pictures
 mkdir Documents
+mkdir "Google Drive"
 
 mv $dotfiles/.themes .
 mv $dotfiles/.icons .
