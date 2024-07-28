@@ -73,7 +73,7 @@ cd ~
 
 # for android-sdk
 sudo pacman -Syu jdk-openjdk libxtst fontconfig freetype2 lib32-gcc-libs lib32-glibc libx11 libxext libxrender zlib
-installaur google-chrome spotify sublime-text-4 unityhub android-sdk celluloid-git teams wlrobs
+installaur google-chrome spotify sublime-text-4 unityhub android-sdk celluloid-git teams wlrobs gnome-network-displays
 
 # WINE BEGIN
 echo "WARNING: COMPILING WINE WILL TAKE A LOT OF TIME (HOURS), A LOT OF DISK SPACE (~5.5GB) AND ALL OF YOUR BATTERY"
