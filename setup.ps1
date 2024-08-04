@@ -6,7 +6,7 @@ Move-Item -Path .\Packages -Destination "$env:APPDATA\Sublime Text"
 move .\onstartup.ps1 "$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Startup"
 $env:Path += "E:\Programs"
 
-choco install 7zip blender git GoogleChrome microsoft-teams mono obs-studio potplayer rclone spotify steam sublimetext4 unity-hub voicemeeter-potato winfsp python3 dotnet dotnet-sdk discord minecraft-launcher gradle openjdk
+choco install 7zip arduino-cli blender chrome-remote-desktop-host discord dotnet dotnet-sdk git glfw3 GoogleChrome InkScape microsoft-teams minecraft-launcher obs-studio openjdk potplayer python3 rclone spotify steam sublimetext4 unity-hub winfsp
 
 git config --global user.email "bozidarkabahcijski@gmail.com"
 git config --global user.name "bozidarsk"
