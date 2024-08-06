@@ -4,3 +4,7 @@ sudo mkinitcpio -P
 sudo ln -s /dev/null /etc/udev/rules.d/61-gdm.rules
 in /boot/grub/grub.cfg where x => x.Contains("linux /boot/vmlinuz-linux root=UUID=... rw") add to the end of the line nvidia_drm.modeset=1
 
+sudo pacman -Sy switcheroo-control
+sudo systemctl enable switcheroo-control
+in gnome right click on a program and choose Launch using Discrete Graphics Card.
+
