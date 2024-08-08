@@ -2,6 +2,9 @@
 	"color_scheme": "Mariana.sublime-color-scheme",
 	"dark_color_scheme": "Mariana.sublime-color-scheme",
 	"light_color_scheme": "Celeste.sublime-color-scheme",
-	"font_size": 12,
+	"font_size": 11,
 	"theme": "auto",
+	"auto_find_in_selection": true,
+	"show_line_endings": true,
+	"show_encoding": true,
 }
