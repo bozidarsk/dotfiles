@@ -1,5 +1,7 @@
 {
 	"font_size": 11,
-	"default_line_ending": "unix",
+	"auto_find_in_selection": true,
 	"show_line_endings": true,
+	"show_encoding": true,
+	"default_line_ending": "unix",
 }
