@@ -6,7 +6,7 @@ printf 'dotfiles: '
 read dotfiles
 
 printf "\n[multilib]\nInclude = /etc/pacman.d/mirrorlist\n" >> /etc/pacman.conf
-pacman -Sy vim openssh sudo ntfs-3g ufw base-devel git zsh python3 python-pip brightnessctl pipewire pipewire-pulse ufw zip unzip unrar wl-clipboard gtk4 rclone dosfstools exfatprogs cups cups-pdf sane-airscan mono gtk-sharp-3 gtk-layer-shell nasm qemu-system-x86 arduino-cli obs-studio android-udev android-file-transfer htop mpv x265 x264 gtk4 libadwaita rclone discord evemu libisoburn mtools qemu-ui-gtk blender dotnet-sdk wget tree qt6-wayland gstreamer gst-plugin-pipewire glib2-devel iw steam xorg-xauth
+pacman -Sy vim openssh sudo ntfs-3g ufw base-devel git zsh python3 python-pip brightnessctl pipewire pipewire-pulse ufw zip unzip unrar wl-clipboard gtk4 rclone dosfstools exfatprogs cups cups-pdf sane-airscan mono gtk-sharp-3 gtk-layer-shell nasm qemu-system-x86 arduino-cli obs-studio android-udev android-file-transfer htop mpv x265 x264 gtk4 libadwaita rclone discord evemu libisoburn mtools qemu-ui-gtk blender dotnet-sdk wget tree qt6-wayland gstreamer gst-plugin-pipewire glib2-devel iw steam-native-runtime gamemode lib32-gamemode xorg-xauth 
 
 echo 'X11Forwarding yes' >> /etc/ssh/sshd_config
 echo 'AllowTcpForwarding yes' >> /etc/ssh/sshd_config
@@ -39,7 +39,7 @@ cd "/home/$user"
 
 mkdir /mnt/android
 mkdir /mnt/external
-echo "/dev/sdb1 /mnt/external ntfs defaults 0 2" >> /etc/fstab
+echo "/dev/sdb1 /mnt/external ntfs defaults,$(userdbctl user $user | grep -E '[GU]ID' | tr -d '\n' | sed -E 's/\s+UID:\s+([0-9]+)\s+GID:\s+([0-9]+).+/uid=\1,gid=\2/') 0 2" >> /etc/fstab
 
 chown "$user:$user" /mnt/android
 chown "$user:$user" /mnt/external
