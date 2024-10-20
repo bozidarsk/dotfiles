@@ -6,7 +6,7 @@ printf 'dotfiles: '
 read dotfiles
 
 printf "\n[multilib]\nInclude = /etc/pacman.d/mirrorlist\n" >> /etc/pacman.conf
-pacman -Sy vim openssh sudo ntfs-3g ufw base-devel git zsh python3 python-pip brightnessctl pipewire pipewire-pulse ufw zip unzip unrar wl-clipboard gtk4 rclone dosfstools exfatprogs cups cups-pdf sane-airscan mono gtk-sharp-3 gtk-layer-shell nasm qemu-system-x86 arduino-cli obs-studio android-udev android-file-transfer htop mpv x265 x264 gtk4 libadwaita rclone discord evemu libisoburn mtools qemu-ui-gtk blender dotnet-sdk wget tree qt6-wayland gstreamer gst-plugin-pipewire glib2-devel iw steam-native-runtime gamemode lib32-gamemode xorg-xauth 
+pacman -Sy vim openssh sudo ntfs-3g ufw base-devel git zsh python3 python-pip brightnessctl pipewire pipewire-pulse ufw zip unzip unrar wl-clipboard gtk4 rclone dosfstools exfatprogs cups cups-pdf sane-airscan mono gtk-sharp-3 gtk-layer-shell nasm qemu-system-x86 arduino-cli obs-studio android-udev android-file-transfer htop mpv x265 x264 gtk4 libadwaita rclone discord evemu libisoburn mtools qemu-ui-gtk blender dotnet-sdk wget tree qt6-wayland gstreamer gst-plugin-pipewire glib2-devel iw steam-native-runtime gamemode lib32-gamemode xorg-xauth wireshark-cli
 
 echo 'X11Forwarding yes' >> /etc/ssh/sshd_config
 echo 'AllowTcpForwarding yes' >> /etc/ssh/sshd_config
@@ -35,6 +35,7 @@ passwd "$user"
 chown -R "$user:$user" "/home/$user"
 groupmems -g input -a "$user"
 groupmems -g uucp -a "$user"
+groupmems -g wireshark -a "$user"
 cd "/home/$user"
 
 mkdir /mnt/android
