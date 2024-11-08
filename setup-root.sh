@@ -16,6 +16,7 @@ echo 'X11DisplayOffset 10' >> /etc/ssh/sshd_config
 systemctl enable sshd
 systemctl enable cups
 systemctl enable avahi-daemon.socket
+systemctl enable docker
 
 echo 'Out ${HOME}/Documents' >> /etc/cups/cups-pdf.conf
 
