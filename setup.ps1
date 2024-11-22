@@ -7,7 +7,7 @@ move .\onstartup.cmd "$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Startup
 move .\onstartup.ps1 "$env:USERPROFILE"
 $env:Path += "E:\Programs"
 
-choco install 7zip arduino-cli blender chrome-remote-desktop-host discord dotnet dotnet-sdk git glfw3 GoogleChrome InkScape microsoft-teams minecraft-launcher obs-studio openjdk potplayer python3 rclone spotify steam sublimetext4 unity-hub winfsp
+choco install 7zip arduino-cli blender chrome-remote-desktop-host discord dotnet dotnet-sdk git glfw3 GoogleChrome InkScape microsoft-teams minecraft-launcher obs-studio openjdk potplayer python3 rclone spotify steam sublimetext4 unity-hub winfsp webview2-runtime
 
 git config --global user.email "bozidarkabahcijski@gmail.com"
 git config --global user.name "bozidarsk"
