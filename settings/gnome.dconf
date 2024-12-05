@@ -1,0 +1,336 @@
+[ca/desrt/dconf-editor]
+saved-pathbar-path='/org/gnome/shell/extensions/panel-date-format/format'
+saved-view='/org/gnome/shell/extensions/panel-date-format/format'
+show-warning=false
+window-height=501
+window-is-maximized=false
+window-width=964
+
+[io/github/celluloid-player/celluloid/window-state]
+height=996
+loop-playlist=false
+maximized=true
+volume=1.0
+width=412
+
+[org/cinnamon/desktop/media-handling]
+autorun-never=true
+
+[org/gnome/Extensions]
+window-height=678
+window-maximized=false
+window-width=951
+
+[org/gnome/control-center]
+last-panel='power'
+window-state=(1028, 738, false)
+
+[org/gnome/desktop/app-folders]
+folder-children=['Utilities', 'YaST', 'Pardus']
+
+[org/gnome/desktop/app-folders/folders/Pardus]
+categories=['X-Pardus-Apps']
+name='X-Pardus-Apps.directory'
+translate=true
+
+[org/gnome/desktop/app-folders/folders/Utilities]
+apps=['org.freedesktop.GnomeAbrt.desktop', 'nm-connection-editor.desktop', 'org.gnome.baobab.desktop', 'org.gnome.Connections.desktop', 'org.gnome.DejaDup.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.Evince.desktop', 'org.gnome.FileRoller.desktop', 'org.gnome.font-viewer.desktop', 'org.gnome.Loupe.desktop', 'org.gnome.seahorse.Application.desktop', 'org.gnome.tweaks.desktop', 'org.gnome.Usage.desktop']
+categories=['X-GNOME-Utilities']
+name='X-GNOME-Utilities.directory'
+translate=true
+
+[org/gnome/desktop/app-folders/folders/YaST]
+categories=['X-SuSE-YaST']
+name='suse-yast.directory'
+translate=true
+
+[org/gnome/desktop/background]
+color-shading-type='solid'
+picture-options='zoom'
+picture-uri='file:///home/bozidarsk/.local/share/backgrounds/2024-12-03-21-23-08-0.png'
+picture-uri-dark='file:///home/bozidarsk/.local/share/backgrounds/2024-12-03-21-23-08-0.png'
+primary-color='#000000000000'
+secondary-color='#000000000000'
+
+[org/gnome/desktop/input-sources]
+mru-sources=[('xkb', 'us')]
+sources=[('xkb', 'us+euro'), ('xkb', 'bg+phonetic'), ('xkb', 'gr+polytonic')]
+xkb-options=@as []
+
+[org/gnome/desktop/interface]
+accent-color='blue'
+color-scheme='prefer-dark'
+cursor-theme='Nordic-cursors'
+enable-hot-corners=false
+gtk-theme='Colloid-Dark-Nord'
+
+[org/gnome/desktop/notifications]
+application-children=['gnome-power-panel', 'zen-alpha', 'teams', 'spotify']
+show-in-lock-screen=false
+
+[org/gnome/desktop/notifications/application/gnome-power-panel]
+application-id='gnome-power-panel.desktop'
+
+[org/gnome/desktop/notifications/application/spotify]
+application-id='spotify.desktop'
+
+[org/gnome/desktop/notifications/application/teams]
+application-id='teams.desktop'
+
+[org/gnome/desktop/notifications/application/zen-alpha]
+application-id='zen-alpha.desktop'
+
+[org/gnome/desktop/peripherals/keyboard]
+numlock-state=true
+
+[org/gnome/desktop/peripherals/mouse]
+accel-profile='flat'
+speed=0.09578544061302674
+
+[org/gnome/desktop/peripherals/touchpad]
+disable-while-typing=false
+edge-scrolling-enabled=false
+speed=0.09578544061302674
+two-finger-scrolling-enabled=true
+
+[org/gnome/desktop/screensaver]
+color-shading-type='solid'
+picture-options='zoom'
+picture-uri='file:///home/bozidarsk/.local/share/backgrounds/2024-12-03-21-23-08-0.png'
+primary-color='#000000000000'
+secondary-color='#000000000000'
+
+[org/gnome/desktop/search-providers]
+sort-order=['org.gnome.Settings.desktop', 'org.gnome.Contacts.desktop', 'org.gnome.Nautilus.desktop']
+
+[org/gnome/desktop/sound]
+event-sounds=true
+theme-name='__custom'
+
+[org/gnome/desktop/wm/keybindings]
+move-to-workspace-1=['<Shift><Super>1']
+move-to-workspace-2=['<Shift><Super>2']
+move-to-workspace-3=['<Shift><Super>3']
+move-to-workspace-4=['<Shift><Super>4']
+move-to-workspace-last=@as []
+move-to-workspace-left=['<Shift><Control><Super>Left']
+move-to-workspace-right=['<Shift><Control><Super>Right']
+panel-run-dialog=['<Super>r']
+show-desktop=['<Super>d']
+switch-applications=@as []
+switch-applications-backward=@as []
+switch-to-workspace-1=@as []
+switch-to-workspace-left=['<Control><Super>Left']
+switch-to-workspace-right=['<Control><Super>Right']
+switch-windows=['<Alt>Tab']
+switch-windows-backward=['<Shift><Alt>Tab']
+toggle-fullscreen=['F11']
+
+[org/gnome/desktop/wm/preferences]
+button-layout='appmenu:minimize,maximize,close'
+resize-with-right-button=true
+theme='Adwaita'
+
+[org/gnome/mutter]
+overlay-key='Super_L'
+
+[org/gnome/nautilus/preferences]
+default-folder-viewer='list-view'
+migrated-gtk-settings=true
+search-filter-time-type='last_modified'
+
+[org/gnome/nautilus/window-state]
+initial-size=(1008, 567)
+initial-size-file-chooser=(890, 550)
+
+[org/gnome/nm-applet/eap/75df17d9-3d30-41d2-b81b-6897069c452a]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/portal/filechooser/org.gnome.Settings]
+last-folder-path='/home/bozidarsk/Pictures/Wallpapers'
+
+[org/gnome/portal/filechooser/steam]
+last-folder-path='/mnt/external/Steam Library/Linux'
+
+[org/gnome/settings-daemon/plugins/color]
+night-light-schedule-automatic=false
+
+[org/gnome/settings-daemon/plugins/media-keys]
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/']
+next=['AudioNext']
+play=['AudioPlay']
+previous=['AudioPrev']
+screenreader=@as []
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
+binding='<Super>e'
+command='nemo'
+name='Open File Explorer'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1]
+binding='<Super>i'
+command='gnome-control-center'
+name='Open Settings'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2]
+binding='<Shift><Control>Escape'
+command='htop'
+name='Open Task Manager'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3]
+binding='<Super>t'
+command='gnome-terminal'
+name='Open Terminal'
+
+[org/gnome/settings-daemon/plugins/power]
+idle-dim=false
+
+[org/gnome/shell]
+disabled-extensions=@as []
+enabled-extensions=['status-icons@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'color-picker@tuberry', 'dash-to-panel@jderose9.github.com', 'arcmenu@arcmenu.com', 'clipboard-indicator@tudmotu.com', 'panel-date-format@keiii.github.com', 'gestureImprovements@gestures']
+favorite-apps=['teams.desktop', 'nemo.desktop', 'zen-alpha.desktop', 'sublime_text.desktop', 'unityhub.desktop', 'blender.desktop', 'com.obsproject.Studio.desktop', 'spotify.desktop', 'discord.desktop']
+welcome-dialog-last-shown-version='47.2'
+
+[org/gnome/shell/extensions/arcmenu]
+application-shortcuts=[{'id': 'ca.desrt.dconf-editor.desktop'}, {'id': 'org.gnome.tweaks.desktop'}, {'id': 'org.gnome.Settings.desktop'}, {'id': 'org.gnome.Extensions.desktop'}, {'id': 'org.gnome.Terminal.desktop'}]
+button-padding=6
+context-menu-items=[{'id': 'ca.desrt.dconf-editor.desktop'}, {'id': 'org.gnome.tweaks.desktop'}, {'id': 'org.gnome.Settings.desktop'}, {'id': 'org.gnome.Extensions.desktop'}, {'id': 'org.gnome.Terminal.desktop'}, {'id': 'ArcMenu_Separator', 'name': 'Separator', 'icon': 'list-remove-symbolic'}, {'id': 'gnome-about-panel.desktop'}, {'id': 'ArcMenu_PowerOptions', 'name': 'Power Options', 'icon': 'system-shutdown-symbolic'}]
+custom-menu-button-icon-size=28.0
+default-menu-view-tognee='All_Programs'
+directory-shortcuts=[{'id': 'ArcMenu_Home', 'name': 'Home', 'icon': 'ArcMenu_Home'}, {'name': 'Computer', 'icon': 'ArcMenu_Computer', 'id': 'ArcMenu_Computer'}, {'name': 'External', 'icon': 'ArcMenu_Folder', 'id': '/mnt/external'}, {'name': 'Projects', 'icon': 'ArcMenu_Folder', 'id': '/home/bozidarsk/Projects'}]
+distro-icon=6
+extra-categories=[(0, false), (1, false), (2, false), (3, false), (4, false)]
+hide-overview-on-startup=true
+max-search-results=10
+menu-button-border-radius=(true, 25)
+menu-button-icon='Distro_Icon'
+menu-button-middle-click-action='None'
+menu-layout='Tognee'
+multi-monitor=true
+pinned-apps=@aa{ss} []
+power-options=[(1, true), (0, true), (2, true), (3, true), (4, false), (5, false), (6, false), (7, false)]
+prefs-visible-page=0
+recently-installed-apps=['nvtop.desktop']
+search-entry-border-radius=(true, 25)
+search-provider-recent-files=true
+
+[org/gnome/shell/extensions/clipboard-indicator]
+history-size=25
+toggle-menu=['<Super>v']
+
+[org/gnome/shell/extensions/color-picker]
+enable-sound=false
+
+[org/gnome/shell/extensions/dash-to-panel]
+animate-appicon-hover-animation-extent={'RIPPLE': 4, 'PLANK': 4, 'SIMPLE': 1}
+appicon-margin=2
+appicon-padding=6
+available-monitors=[0]
+dot-position='BOTTOM'
+hide-overview-on-startup=true
+hot-keys=true
+hotkeys-overlay-combo='NEVER'
+isolate-workspaces=true
+leftbox-padding=-1
+middle-click-action='LAUNCH'
+panel-anchors='{"0":"MIDDLE"}'
+panel-element-positions='{"0":[{"element":"showAppsButton","visible":false,"position":"stackedTL"},{"element":"activitiesButton","visible":false,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"stackedTL"},{"element":"centerBox","visible":true,"position":"stackedBR"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"dateMenu","visible":true,"position":"stackedBR"},{"element":"desktopButton","visible":true,"position":"stackedBR"}]}'
+panel-lengths='{"0":100}'
+panel-sizes='{"0":48}'
+primary-monitor=0
+secondarymenu-contains-showdetails=true
+shift-click-action='MINIMIZE'
+shift-middle-click-action='LAUNCH'
+show-showdesktop-delay=500
+show-showdesktop-hover=true
+showdesktop-button-width=6
+status-icon-padding=-1
+tray-padding=-1
+window-preview-size=160
+window-preview-title-position='TOP'
+
+[org/gnome/shell/extensions/gestureImprovements]
+overview-navifation-states='WINDOW_PICKER_ONLY'
+pinch-4-finger-gesture='NONE'
+
+[org/gnome/shell/extensions/panel-date-format]
+format='      %H:%M\n%d/%m/%Y'
+
+[org/gnome/shell/extensions/user-theme]
+name='Colloid-Dark-Nord'
+
+[org/gnome/shell/keybindings]
+focus-active-notification=@as []
+screenshot=['<Super>Print']
+show-screenshot-ui=['<Shift><Super>s']
+toggle-message-tray=['<Super>n']
+toggle-overview=['<Super>Tab']
+
+[org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+background-color='rgb(255,255,255)'
+default-size-columns=120
+default-size-rows=30
+foreground-color='rgb(23,20,33)'
+palette=['rgb(23,20,33)', 'rgb(192,28,40)', 'rgb(38,162,105)', 'rgb(162,115,76)', 'rgb(18,72,139)', 'rgb(163,71,186)', 'rgb(42,161,179)', 'rgb(208,207,204)', 'rgb(94,92,100)', 'rgb(246,97,81)', 'rgb(51,209,122)', 'rgb(233,173,12)', 'rgb(42,123,222)', 'rgb(192,97,203)', 'rgb(51,199,222)', 'rgb(255,255,255)']
+use-theme-colors=true
+
+[org/gnome/tweaks]
+show-extensions-notice=false
+
+[org/gtk/gtk4/settings/file-chooser]
+show-hidden=false
+sort-directories-first=false
+
+[org/gtk/settings/file-chooser]
+date-format='regular'
+location-mode='path-bar'
+show-hidden=false
+show-size-column=true
+show-type-column=true
+sidebar-width=174
+sort-column='name'
+sort-directories-first=false
+sort-order='ascending'
+type-format='category'
+window-position=(103, 103)
+window-size=(1231, 902)
+
+[org/nemo/list-view]
+default-column-order=['name', 'size', 'date_modified', 'type', 'date_created_with_time', 'date_accessed', 'date_created', 'detailed_type', 'group', 'where', 'mime_type', 'date_modified_with_time', 'octal_permissions', 'owner', 'permissions']
+default-visible-columns=['name', 'size', 'date_modified', 'mime_type', 'permissions']
+
+[org/nemo/preferences]
+close-device-view-on-device-eject=true
+date-font-choice='no-mono'
+date-format='iso'
+quick-renames-with-pause-in-between=true
+show-compact-view-icon-toolbar=false
+show-edit-icon-toolbar=false
+show-hidden-files=true
+show-icon-view-icon-toolbar=false
+show-list-view-icon-toolbar=false
+show-open-in-terminal-toolbar=true
+show-reload-icon-toolbar=true
+thumbnail-limit=uint64 5242880
+
+[org/nemo/preferences/menu-config]
+background-menu-paste=false
+background-menu-properties=false
+background-menu-show-hidden-files=false
+selection-menu-copy=false
+selection-menu-copy-to=true
+selection-menu-cut=false
+selection-menu-favorite=false
+selection-menu-make-link=true
+selection-menu-move-to=true
+selection-menu-open-in-new-tab=false
+selection-menu-paste=false
+selection-menu-pin=false
+
+[org/nemo/window-state]
+geometry='1061x616+103+103'
+maximized=false
+side-pane-view='places'
+sidebar-bookmark-breakpoint=5
+start-with-sidebar=true
