@@ -18,6 +18,16 @@ sudo ufw allow 443/tcp
 sudo ufw allow from $printerip
 sudo ufw allow to $printerip
 
+lsblk -o NAME,UUID
+printf 'Enter external device partition name (or leave empty): '
+read edev
+if [[ "$edev" != "" ]]; then
+    sudo mkdir /mnt/external
+    sudo chmod 666 /etc/fstab
+    echo "UUID=$(lsblk /dev/$edev -o UUID -n) /mnt/external ntfs rw,nosuid,nodev,user_id=$UID,group_id=$GID,allow_other,blksize=4096 0 0" >> /etc/fstab
+    sudo chmod 644 /etc/fstab
+fi
+
 sudo timedatectl set-timezone "$timezone"
 sudo timedatectl set-ntp true
 
@@ -31,7 +41,10 @@ sudo lpadmin -p PDF -E -v "cups-pdf:/" -m CUPS-PDF_opt.ppd
 sudo lpoptions -d "$printername"
 
 cd ~
-ln -sr /mnt/external/Projects Projects
+
+if [[ "$edev" != "" ]]; then
+    ln -sr /mnt/external/Projects Projects
+fi
 
 mkdir .local
 mkdir .local/share
