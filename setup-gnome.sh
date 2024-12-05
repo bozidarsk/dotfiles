@@ -7,7 +7,6 @@ sudo systemctl enable gdm
 sudo systemctl enable NetworkManager
 sudo systemctl disable iwd
 
-mv $dotfiles/.config/sublime-text/Packages .config/sublime-text/
 mv $dotfiles/.config/libinput-gestures.conf .config/libinput-gestures.conf
 
 cat $dotfiles/gsettings/gnome | sed -E 's/(.+)/gsettings set \1/' > /tmp/gsettings.sh
