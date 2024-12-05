@@ -27,7 +27,7 @@ mv $dotfiles/.config/plasmawindowed-appletsrc .config/
 mv $dotfiles/.config/powermanagementprofilesrc .config/
 mv $dotfiles/.config/kded5rc .config/
 
-cat $dotfiles/gsettings/kde | sed -E 's/(.+)/gsettings set \1/' > /tmp/gsettings.sh
+cat $dotfiles/settings/kde | sed -E 's/(.+)/gsettings set \1/' > /tmp/gsettings.sh
 chmod +x /tmp/gsettings.sh
 /tmp/gsettings.sh 
 
