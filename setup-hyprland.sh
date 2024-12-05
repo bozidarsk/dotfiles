@@ -16,7 +16,7 @@ mv $dotfiles/.config/waybar .config/
 mv $dotfiles/.config/wifi-menu .config/
 mv $dotfiles/.config/wofi .config/
 
-cat $dotfiles/gsettings/hyprland | sed -E 's/(.+)/gsettings set \1/' > /tmp/gsettings.sh
+cat $dotfiles/settings/hyprland | sed -E 's/(.+)/gsettings set \1/' > /tmp/gsettings.sh
 chmod +x /tmp/gsettings.sh
 /tmp/gsettings.sh 
 
