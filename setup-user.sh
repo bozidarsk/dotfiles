@@ -55,6 +55,7 @@ mkdir Videos
 mkdir Pictures
 mkdir Documents
 mkdir "Google Drive"
+mkdir "Proton Drive"
 
 mv $dotfiles/.themes .
 mv $dotfiles/.icons .

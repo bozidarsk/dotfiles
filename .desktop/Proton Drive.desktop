@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=Proton Drive
+Exec=rclone mount "Proton Drive:" "/home/bozidarsk/Proton Drive"
+Type=Application
+Terminal=false
