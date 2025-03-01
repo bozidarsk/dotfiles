@@ -3,7 +3,7 @@ RPROMPT="[%?]"
 
 alias camera-disable='sudo modprobe -r uvcvideo'
 alias camera-enable='sudo modprobe uvcvideo'
-alias ll='ls -la'
+alias ll='ls -lA'
 alias scan='scanimage -d "airscan:w0:CANNON INC. TS6250 series" -p --format=png -o "$HOME/Documents/$(date +'%Y%m%d_%H%M%S').png"'
 alias installaur=installaur-git
 
