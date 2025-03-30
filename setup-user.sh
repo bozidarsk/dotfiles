@@ -18,15 +18,9 @@ sudo ufw allow 443/tcp
 sudo ufw allow from $printerip
 sudo ufw allow to $printerip
 
-lsblk -o NAME,UUID
-printf 'Enter external device partition name (or leave empty): '
-read edev
-if [[ "$edev" != "" ]]; then
-    sudo mkdir /mnt/external
-    sudo chmod 666 /etc/fstab
-    echo "UUID=$(lsblk /dev/$edev -o UUID -n) /mnt/external ntfs rw,nosuid,nodev,user_id=$UID,group_id=$GID,allow_other,blksize=4096 0 0" >> /etc/fstab
-    sudo chmod 644 /etc/fstab
-fi
+sudo chmod 777
+echo "UUID=8C346B12346AFE98 /mnt/external ntfs defaults,uid=$UID,gid=$GID 0 2" >> /etc/fstab
+sudo chmod 644
 
 sudo timedatectl set-timezone "$timezone"
 sudo timedatectl set-ntp true

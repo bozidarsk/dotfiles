@@ -40,6 +40,7 @@ groupmems -g wireshark -a "$user"
 groupmems -g docker -a "$user"
 cd "/home/$user"
 
+mkdir /mnt/external
 mkdir /mnt/android
 mkdir /mnt/usb
 
