@@ -7,6 +7,8 @@ sudo systemctl enable gdm
 sudo systemctl enable NetworkManager
 sudo systemctl disable iwd
 
+cp -r $dotfiles/extensions/gnome/* .local/share/gnome-shell/extensions/
+
 mv $dotfiles/.config/libinput-gestures.conf .config/libinput-gestures.conf
 
 cat $dotfiles/settings/gnome.dconf | dconf load
