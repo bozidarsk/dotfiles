@@ -89,6 +89,8 @@ cd ~
 sudo pacman -Syu jdk-openjdk libxtst fontconfig freetype2 lib32-gcc-libs lib32-glibc libx11 libxext libxrender zlib
 installaur zen-browser-bin spotify sublime-text-4 unityhub android-sdk celluloid-git teams wlrobs gnome-network-displays minecraft-launcher
 
+docker container create --name mysql-server -e MYSQL_ALLOW_EMPTY_PASSWORD=yes -e MYSQL_ROOT_PASSWORD= mysql:latest
+
 # WINE BEGIN
 echo "WARNING: COMPILING WINE WILL TAKE A LOT OF TIME (HOURS), A LOT OF DISK SPACE (~5.5GB) AND ALL OF YOUR BATTERY"
 printf "Do you want to proceed? [y/n] "
