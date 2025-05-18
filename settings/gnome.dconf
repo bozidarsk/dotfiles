@@ -11,7 +11,7 @@ height=996
 loop-playlist=false
 maximized=true
 show-controls=true
-volume=0.59999999999999998
+volume=1.0
 width=412
 
 [org/cinnamon/desktop/media-handling]
@@ -23,7 +23,7 @@ window-maximized=false
 window-width=951
 
 [org/gnome/control-center]
-last-panel='system'
+last-panel='display'
 window-state=(1028, 738, false)
 
 [org/gnome/desktop/app-folders]
@@ -160,13 +160,21 @@ theme='Adwaita'
 [org/gnome/mutter]
 overlay-key='Super_L'
 
+[org/gnome/nautilus/icon-view]
+default-zoom-level='large'
+
+[org/gnome/nautilus/list-view]
+default-column-order=['name', 'size', 'type', 'owner', 'group', 'permissions', 'date_modified', 'date_accessed', 'date_created', 'recency', 'detailed_type']
+default-visible-columns=['name', 'size', 'permissions', 'date_modified', 'detailed_type']
+
 [org/gnome/nautilus/preferences]
+date-time-format='detailed'
 default-folder-viewer='list-view'
 migrated-gtk-settings=true
 search-filter-time-type='last_modified'
 
 [org/gnome/nautilus/window-state]
-initial-size=(1008, 567)
+initial-size=(1267, 761)
 initial-size-file-chooser=(890, 550)
 
 [org/gnome/nm-applet/eap/75df17d9-3d30-41d2-b81b-6897069c452a]
@@ -181,11 +189,18 @@ ignore-phase2-ca-cert=false
 ignore-ca-cert=false
 ignore-phase2-ca-cert=false
 
+[org/gnome/nm-applet/eap/f9a0ed52-7352-4db0-9a12-1b310ca41aed]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/portal/filechooser/io.github.celluloid_player.Celluloid]
+last-folder-path='/home/bozidarsk/Videos/Movies/Supernatural/S6'
+
 [org/gnome/portal/filechooser/org.gnome.Settings]
-last-folder-path='/home/bozidarsk/Pictures/Wallpapers'
+last-folder-path='/home/bozidarsk/Downloads'
 
 [org/gnome/portal/filechooser/steam]
-last-folder-path='/mnt/external/Steam Library/Linux'
+last-folder-path='/mnt/win/Program Files/Google/Play Games/25.3.341.12'
 
 [org/gnome/settings-daemon/plugins/color]
 night-light-schedule-automatic=false
@@ -226,7 +241,7 @@ sleep-inactive-battery-type='suspend'
 command-history=['cmd', 'gnome-terminl', 'gnome-terminal', 'python3']
 disabled-extensions=@as []
 enabled-extensions=['status-icons@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'dash-to-panel@jderose9.github.com', 'arcmenu@arcmenu.com', 'clipboard-indicator@tudmotu.com', 'panel-date-format@keiii.github.com', 'color-picker@tuberry', 'gestureImprovements@gestures']
-favorite-apps=['discord.desktop', 'nemo.desktop', 'zen-alpha.desktop', 'sublime_text.desktop', 'unityhub.desktop', 'blender.desktop', 'com.obsproject.Studio.desktop', 'spotify.desktop']
+favorite-apps=['discord.desktop', 'nemo.desktop', 'zen.desktop', 'sublime_text.desktop', 'unityhub.desktop', 'blender.desktop', 'com.obsproject.Studio.desktop', 'spotify.desktop']
 welcome-dialog-last-shown-version='47.2'
 
 [org/gnome/shell/extensions/arcmenu]
@@ -248,18 +263,19 @@ multi-monitor=true
 pinned-apps=@aa{ss} []
 power-options=[(1, true), (0, true), (2, true), (3, true), (4, false), (5, false), (6, false), (7, false)]
 prefs-visible-page=0
-recently-installed-apps=['steam-native.desktop']
+recently-installed-apps=['zen.desktop']
 search-entry-border-radius=(true, 25)
 search-provider-recent-files=true
 show-update-notification-v64=false
 update-notifier-project-version=65
 
 [org/gnome/shell/extensions/clipboard-indicator]
+display-mode=0
 history-size=25
 toggle-menu=['<Super>v']
 
 [org/gnome/shell/extensions/color-picker]
-color-history=[uint32 2369842]
+color-history=[uint32 8659561, 2369842]
 enable-sound=false
 
 [org/gnome/shell/extensions/dash-to-panel]
@@ -276,7 +292,7 @@ isolate-workspaces=true
 leftbox-padding=-1
 middle-click-action='LAUNCH'
 panel-anchors='{"AUO-0x00000000":"MIDDLE"}'
-panel-element-positions='{"AUO-0x00000000":[{"element":"showAppsButton","visible":false,"position":"stackedTL"},{"element":"activitiesButton","visible":false,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"stackedTL"},{"element":"centerBox","visible":true,"position":"stackedBR"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"dateMenu","visible":true,"position":"stackedBR"},{"element":"desktopButton","visible":true,"position":"stackedBR"}]}'
+panel-element-positions='{"AUO-0x00000000":[{"element":"showAppsButton","visible":false,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"stackedTL"},{"element":"activitiesButton","visible":false,"position":"stackedTL"},{"element":"centerBox","visible":true,"position":"stackedBR"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"dateMenu","visible":true,"position":"stackedBR"},{"element":"desktopButton","visible":true,"position":"stackedBR"}]}'
 panel-lengths='{"AUO-0x00000000":100}'
 panel-positions='{}'
 panel-sizes='{"AUO-0x00000000":48}'
@@ -326,7 +342,7 @@ show-extensions-notice=false
 [org/gtk/gtk4/settings/file-chooser]
 date-format='regular'
 location-mode='path-bar'
-show-hidden=false
+show-hidden=true
 sidebar-width=140
 sort-column='name'
 sort-directories-first=false
@@ -338,16 +354,16 @@ window-size=(805, 702)
 [org/gtk/settings/file-chooser]
 date-format='regular'
 location-mode='path-bar'
-show-hidden=false
+show-hidden=true
 show-size-column=true
 show-type-column=true
-sidebar-width=203
+sidebar-width=183
 sort-column='name'
 sort-directories-first=false
 sort-order='ascending'
 type-format='category'
 window-position=(103, 103)
-window-size=(1231, 902)
+window-size=(1244, 607)
 
 [org/nemo/list-view]
 default-column-order=['name', 'size', 'date_modified', 'type', 'date_created_with_time', 'date_accessed', 'date_created', 'detailed_type', 'group', 'where', 'mime_type', 'date_modified_with_time', 'octal_permissions', 'owner', 'permissions']
@@ -366,6 +382,7 @@ show-full-path-titles=true
 show-hidden-files=true
 show-icon-view-icon-toolbar=false
 show-list-view-icon-toolbar=false
+show-location-entry=false
 show-open-in-terminal-toolbar=true
 show-reload-icon-toolbar=true
 thumbnail-limit=uint64 5242880
