@@ -62,6 +62,7 @@ io.github.celluloid-player.Celluloid controls-unhide-cursor-speed 0.0
 io.github.celluloid-player.Celluloid csd-enable true
 io.github.celluloid-player.Celluloid dark-theme-enable true
 io.github.celluloid-player.Celluloid draggable-video-area-enable false
+io.github.celluloid-player.Celluloid graphics-offload-enable false
 io.github.celluloid-player.Celluloid ignore-playback-errors false
 io.github.celluloid-player.Celluloid inhibit-idle true
 io.github.celluloid-player.Celluloid last-folder-enable false
@@ -75,7 +76,8 @@ io.github.celluloid-player.Celluloid mpv-options ''
 io.github.celluloid-player.Celluloid prefetch-metadata true
 io.github.celluloid-player.Celluloid present-window-on-file-open false
 io.github.celluloid-player.Celluloid settings-migrated false
-io.github.celluloid-player.Celluloid use-skip-buttons-for-playlist false
+io.github.celluloid-player.Celluloid show-durations-in-playlist true
+io.github.celluloid-player.Celluloid use-skip-buttons-for-playlist true
 io.github.celluloid-player.Celluloid.window-state height 996
 io.github.celluloid-player.Celluloid.window-state last-folder-uri ''
 io.github.celluloid-player.Celluloid.window-state loop-playlist false
@@ -83,7 +85,7 @@ io.github.celluloid-player.Celluloid.window-state maximized true
 io.github.celluloid-player.Celluloid.window-state playlist-width 250
 io.github.celluloid-player.Celluloid.window-state show-controls true
 io.github.celluloid-player.Celluloid.window-state show-playlist false
-io.github.celluloid-player.Celluloid.window-state volume 0.59999999999999998
+io.github.celluloid-player.Celluloid.window-state volume 1.0
 io.github.celluloid-player.Celluloid.window-state width 412
 org.cinnamon.desktop.a11y.applications screen-keyboard-enabled false
 org.cinnamon.desktop.a11y.applications screen-magnifier-enabled false
@@ -685,11 +687,12 @@ org.gnome.GWeather4 distance-unit 'default'
 org.gnome.GWeather4 pressure-unit 'default'
 org.gnome.GWeather4 speed-unit 'default'
 org.gnome.GWeather4 temperature-unit 'default'
+org.gnome.Loupe show-properties false
 org.gnome.SessionManager auto-save-session false
 org.gnome.SessionManager auto-save-session-one-shot false
 org.gnome.SessionManager logout-prompt true
 org.gnome.SessionManager show-fallback-warning true
-org.gnome.Settings last-panel 'system'
+org.gnome.Settings last-panel 'display'
 org.gnome.Settings show-development-warning true
 org.gnome.Settings window-state (1028, 738, false)
 org.gnome.Terminal.Legacy.Settings always-check-default-terminal true
@@ -1215,14 +1218,14 @@ org.gnome.mutter.wayland.keybindings switch-to-session-8 ['<Primary><Alt>F8']
 org.gnome.mutter.wayland.keybindings switch-to-session-9 ['<Primary><Alt>F9']
 org.gnome.nautilus.compression default-compression-format 'zip'
 org.gnome.nautilus.icon-view captions ['none', 'none', 'none']
-org.gnome.nautilus.icon-view default-zoom-level 'medium'
-org.gnome.nautilus.list-view default-column-order ['name', 'size', 'type', 'owner', 'group', 'permissions', 'mime_type', 'where', 'date_modified', 'date_modified_with_time', 'date_accessed', 'date_created', 'recency', 'starred']
-org.gnome.nautilus.list-view default-visible-columns ['name', 'size', 'date_modified']
+org.gnome.nautilus.icon-view default-zoom-level 'large'
+org.gnome.nautilus.list-view default-column-order ['name', 'size', 'type', 'owner', 'group', 'permissions', 'date_modified', 'date_accessed', 'date_created', 'recency', 'detailed_type']
+org.gnome.nautilus.list-view default-visible-columns ['name', 'size', 'permissions', 'date_modified', 'detailed_type']
 org.gnome.nautilus.list-view default-zoom-level 'medium'
 org.gnome.nautilus.list-view use-tree-view false
 org.gnome.nautilus.preferences always-use-location-entry false
 org.gnome.nautilus.preferences click-policy 'double'
-org.gnome.nautilus.preferences date-time-format 'simple'
+org.gnome.nautilus.preferences date-time-format 'detailed'
 org.gnome.nautilus.preferences default-folder-viewer 'list-view'
 org.gnome.nautilus.preferences default-sort-in-reverse-order false
 org.gnome.nautilus.preferences default-sort-order 'name'
@@ -1241,7 +1244,7 @@ org.gnome.nautilus.preferences show-directory-item-counts 'local-only'
 org.gnome.nautilus.preferences show-hidden-files false
 org.gnome.nautilus.preferences show-image-thumbnails 'local-only'
 org.gnome.nautilus.preferences thumbnail-limit uint64 50
-org.gnome.nautilus.window-state initial-size (1008, 567)
+org.gnome.nautilus.window-state initial-size (1267, 761)
 org.gnome.nautilus.window-state initial-size-file-chooser (890, 550)
 org.gnome.nautilus.window-state maximized false
 org.gnome.online-accounts whitelisted-providers ['all']
@@ -1391,7 +1394,7 @@ org.gnome.shell disable-extension-version-validation false
 org.gnome.shell disable-user-extensions false
 org.gnome.shell disabled-extensions @as []
 org.gnome.shell enabled-extensions ['status-icons@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'dash-to-panel@jderose9.github.com', 'arcmenu@arcmenu.com', 'clipboard-indicator@tudmotu.com', 'panel-date-format@keiii.github.com', 'color-picker@tuberry', 'gestureImprovements@gestures']
-org.gnome.shell favorite-apps ['discord.desktop', 'nemo.desktop', 'zen-alpha.desktop', 'sublime_text.desktop', 'unityhub.desktop', 'blender.desktop', 'com.obsproject.Studio.desktop', 'spotify.desktop']
+org.gnome.shell favorite-apps ['discord.desktop', 'nemo.desktop', 'zen.desktop', 'sublime_text.desktop', 'unityhub.desktop', 'blender.desktop', 'com.obsproject.Studio.desktop', 'spotify.desktop']
 org.gnome.shell last-selected-power-profile 'power-saver'
 org.gnome.shell looking-glass-history @as []
 org.gnome.shell remember-mount-password false
@@ -1478,17 +1481,17 @@ org.gtk.Settings.FileChooser date-format 'regular'
 org.gtk.Settings.FileChooser expand-folders false
 org.gtk.Settings.FileChooser last-folder-uri ''
 org.gtk.Settings.FileChooser location-mode 'path-bar'
-org.gtk.Settings.FileChooser show-hidden false
+org.gtk.Settings.FileChooser show-hidden true
 org.gtk.Settings.FileChooser show-size-column true
 org.gtk.Settings.FileChooser show-type-column true
-org.gtk.Settings.FileChooser sidebar-width 203
+org.gtk.Settings.FileChooser sidebar-width 183
 org.gtk.Settings.FileChooser sort-column 'name'
 org.gtk.Settings.FileChooser sort-directories-first false
 org.gtk.Settings.FileChooser sort-order 'ascending'
 org.gtk.Settings.FileChooser startup-mode 'recent'
 org.gtk.Settings.FileChooser type-format 'category'
 org.gtk.Settings.FileChooser window-position (103, 103)
-org.gtk.Settings.FileChooser window-size (1231, 902)
+org.gtk.Settings.FileChooser window-size (1244, 607)
 org.gtk.gtk4.Inspector.Recorder dark false
 org.gtk.gtk4.Inspector.Recorder debug-nodes false
 org.gtk.gtk4.Inspector.Recorder highlight-sequences false
@@ -1502,7 +1505,7 @@ org.gtk.gtk4.Settings.FileChooser clock-format '24h'
 org.gtk.gtk4.Settings.FileChooser date-format 'regular'
 org.gtk.gtk4.Settings.FileChooser expand-folders false
 org.gtk.gtk4.Settings.FileChooser location-mode 'path-bar'
-org.gtk.gtk4.Settings.FileChooser show-hidden false
+org.gtk.gtk4.Settings.FileChooser show-hidden true
 org.gtk.gtk4.Settings.FileChooser show-size-column true
 org.gtk.gtk4.Settings.FileChooser show-type-column true
 org.gtk.gtk4.Settings.FileChooser sidebar-width 140
