@@ -1,0 +1,23 @@
+diskpart
+sel disk 0
+convert gpt
+create part efi size=100
+create part primary
+sel part 1
+format fs=fat32 quick
+assign letter g:
+sel part 2
+format fs=ntfs quick
+assign letter c:
+exit
+
+dism /get-imageinfo /imagefile:install.wim
+# if install.wim is not found go to d:\sources
+dism /apply-image /imagefile:install.wim /index:10 /applydir:c:
+bcdbood c:\Windows /s G: /f ALL
+
+# disconnect from the internet
+oobe\bypassnro
+
+irm https://christitus.com/win | iex
+irm https://get.activated.win | iex
