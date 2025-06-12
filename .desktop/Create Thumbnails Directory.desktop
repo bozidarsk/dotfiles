@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Create Thumbnails Directory
+Comment=~/.config/thumbnails is a symlink to /tmp/thumbnails so they are clean after reboot, run this at startup
+Exec=mkdir /tmp/thumbnails
+Type=Application
+Terminal=false
