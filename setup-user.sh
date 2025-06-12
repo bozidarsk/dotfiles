@@ -51,6 +51,9 @@ mkdir Documents
 mkdir "Google Drive"
 mkdir "Proton Drive"
 
+mkdir /tmp/thumbnails
+ln -sr /tmp/thumbnails .config/thumbnails
+
 mv $dotfiles/.themes .
 mv $dotfiles/.icons .
 ln -sr ".themes/Colloid-Dark-Nord/gtk-3.0" .config/gtk-3.0
