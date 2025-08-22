@@ -29,6 +29,7 @@ sudo localectl set-locale LANG="en_US.UTF-8"
 sudo localectl set-locale LC_TIME="en_GB.UTF-8"
 sudo localectl set-keymap us
 sudo localectl set-x11-keymap us
+echo "FONT=eurlatgr" | sudo tee -a /etc/vconsole.conf
 
 sudo lpadmin -p "$printername" -E -v "ipp://$printerip/ipp/print" -m everywhere
 sudo lpadmin -p PDF -E -v "cups-pdf:/" -m CUPS-PDF_opt.ppd
@@ -84,7 +85,7 @@ cd ~
 
 # for android-sdk
 sudo pacman -Syu jdk-openjdk libxtst fontconfig freetype2 lib32-gcc-libs lib32-glibc libx11 libxext libxrender zlib
-installaur zen-browser-bin spotify sublime-text-4 unityhub android-sdk teams wlrobs gnome-network-displays minecraft-launcher looking-glass
+installaur zen-browser-bin spotify sublime-text-4 unityhub android-sdk teams wlrobs gnome-network-displays minecraft-launcher looking-glass mkinitcpio-firmware
 
 docker container create --name mysql-server -e MYSQL_ALLOW_EMPTY_PASSWORD=yes -e MYSQL_ROOT_PASSWORD= mysql:latest
 
