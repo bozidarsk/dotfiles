@@ -1,17 +1,29 @@
 [ca/desrt/dconf-editor]
-saved-pathbar-path='/org/gnome/desktop/privacy/'
-saved-view='/org/gnome/desktop/privacy/'
+saved-pathbar-path='/org/gnome/desktop/wm/keybindings/show-desktop'
+saved-view='/org/gnome/desktop/wm/keybindings/show-desktop'
 show-warning=false
 window-height=501
 window-is-maximized=false
 window-width=964
+
+[com/github/rafostar/Clapper]
+adaptive-start-bitrate=0
+fullscreened=true
+maximized=false
+mute=false
+plugin-feature-ranks=''
+progression-mode=0
+seek-method=2
+speed=1.0
+subtitles-enabled=true
+volume=1.0
 
 [io/github/celluloid-player/celluloid/window-state]
 height=996
 loop-playlist=false
 maximized=true
 show-controls=true
-volume=1.0
+volume=0.90000000000000002
 width=412
 
 [org/cinnamon/desktop/media-handling]
@@ -22,8 +34,19 @@ window-height=678
 window-maximized=false
 window-width=951
 
+[org/gnome/Loupe]
+show-properties=false
+
+[org/gnome/Showtime/State]
+is-maximized=false
+
+[org/gnome/Totem]
+active-plugins=['rotation', 'save-file', 'open-directory', 'skipto', 'recent', 'screensaver', 'autoload-subtitles', 'variable-rate', 'mpris', 'screenshot', 'movie-properties']
+open-uri='file:///home/bozidarsk/Videos/Movies/Supernatural/S9'
+subtitle-encoding='UTF-8'
+
 [org/gnome/control-center]
-last-panel='display'
+last-panel='keyboard'
 window-state=(1028, 738, false)
 
 [org/gnome/desktop/app-folders]
@@ -53,6 +76,14 @@ picture-uri-dark='file:///home/bozidarsk/.local/share/backgrounds/2024-12-03-21-
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
+[org/gnome/desktop/break-reminders/eyesight]
+play-sound=true
+
+[org/gnome/desktop/break-reminders/movement]
+duration-seconds=uint32 300
+interval-seconds=uint32 1800
+play-sound=true
+
 [org/gnome/desktop/input-sources]
 mru-sources=[('xkb', 'us')]
 sources=[('xkb', 'us+euro'), ('xkb', 'bg+phonetic'), ('xkb', 'gr+polytonic')]
@@ -70,8 +101,12 @@ automount=false
 automount-open=false
 
 [org/gnome/desktop/notifications]
-application-children=['gnome-power-panel', 'zen-alpha', 'teams', 'spotify', 'discord', 'tor-browser', 'sublime-text', 'steam', 'org-gnome-extensions', 'org-qbittorrent-qbittorrent']
+application-children=['gnome-power-panel', 'zen-alpha', 'teams', 'spotify', 'discord', 'tor-browser', 'sublime-text', 'steam', 'org-gnome-extensions', 'org-qbittorrent-qbittorrent', 'zen', 'unityhub', 'remote-viewer', 'looking-glass-client', 'com-github-rafostar-clapper']
+show-banners=true
 show-in-lock-screen=false
+
+[org/gnome/desktop/notifications/application/com-github-rafostar-clapper]
+application-id='com.github.rafostar.Clapper.desktop'
 
 [org/gnome/desktop/notifications/application/discord]
 application-id='discord.desktop'
@@ -79,11 +114,17 @@ application-id='discord.desktop'
 [org/gnome/desktop/notifications/application/gnome-power-panel]
 application-id='gnome-power-panel.desktop'
 
+[org/gnome/desktop/notifications/application/looking-glass-client]
+application-id='looking-glass-client.desktop'
+
 [org/gnome/desktop/notifications/application/org-gnome-extensions]
 application-id='org.gnome.Extensions.desktop'
 
 [org/gnome/desktop/notifications/application/org-qbittorrent-qbittorrent]
 application-id='org.qbittorrent.qBittorrent.desktop'
+
+[org/gnome/desktop/notifications/application/remote-viewer]
+application-id='remote-viewer.desktop'
 
 [org/gnome/desktop/notifications/application/spotify]
 application-id='spotify.desktop'
@@ -100,8 +141,14 @@ application-id='teams.desktop'
 [org/gnome/desktop/notifications/application/tor-browser]
 application-id='tor-browser.desktop'
 
+[org/gnome/desktop/notifications/application/unityhub]
+application-id='unityhub.desktop'
+
 [org/gnome/desktop/notifications/application/zen-alpha]
 application-id='zen-alpha.desktop'
+
+[org/gnome/desktop/notifications/application/zen]
+application-id='zen.desktop'
 
 [org/gnome/desktop/peripherals/keyboard]
 numlock-state=true
@@ -128,6 +175,9 @@ secondary-color='#000000000000'
 
 [org/gnome/desktop/search-providers]
 sort-order=['org.gnome.Settings.desktop', 'org.gnome.Contacts.desktop', 'org.gnome.Nautilus.desktop']
+
+[org/gnome/desktop/session]
+idle-delay=uint32 600
 
 [org/gnome/desktop/sound]
 event-sounds=true
@@ -177,11 +227,19 @@ search-filter-time-type='last_modified'
 initial-size=(1267, 761)
 initial-size-file-chooser=(890, 550)
 
+[org/gnome/nm-applet/eap/3794dab0-edae-4fb1-9f5d-2f533aa6897d]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
 [org/gnome/nm-applet/eap/75df17d9-3d30-41d2-b81b-6897069c452a]
 ignore-ca-cert=false
 ignore-phase2-ca-cert=false
 
 [org/gnome/nm-applet/eap/8449863c-dfed-4595-96ec-fe109b40896e]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/b76e101e-fa37-42ab-b64e-52cd40eff6c0]
 ignore-ca-cert=false
 ignore-phase2-ca-cert=false
 
@@ -193,20 +251,31 @@ ignore-phase2-ca-cert=false
 ignore-ca-cert=false
 ignore-phase2-ca-cert=false
 
+[org/gnome/portal/filechooser/code-oss]
+last-folder-path='/home/bozidarsk/Projects/cs2obj'
+
 [org/gnome/portal/filechooser/io.github.celluloid_player.Celluloid]
-last-folder-path='/home/bozidarsk/Videos/Movies/Supernatural/S6'
+last-folder-path='/home/bozidarsk/Videos/Movies/Supernatural/S9'
+
+[org/gnome/portal/filechooser/org.gnome.Loupe]
+last-folder-path='/home/bozidarsk/Documents'
 
 [org/gnome/portal/filechooser/org.gnome.Settings]
 last-folder-path='/home/bozidarsk/Downloads'
 
+[org/gnome/portal/filechooser/org.gnome.Showtime]
+last-folder-path='/home/bozidarsk/Videos/Movies/Supernatural/S9'
+
 [org/gnome/portal/filechooser/steam]
-last-folder-path='/mnt/win/Program Files/Google/Play Games/25.3.341.12'
+last-folder-path='/home/bozidarsk/paint/PaintApp'
 
 [org/gnome/settings-daemon/plugins/color]
+night-light-enabled=false
 night-light-schedule-automatic=false
 
 [org/gnome/settings-daemon/plugins/media-keys]
 custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/']
+mic-mute=['F8']
 next=['AudioNext']
 play=['AudioPlay']
 previous=['AudioPrev']
@@ -235,6 +304,7 @@ name='Open Terminal'
 [org/gnome/settings-daemon/plugins/power]
 idle-dim=false
 sleep-inactive-ac-type='suspend'
+sleep-inactive-battery-timeout=900
 sleep-inactive-battery-type='suspend'
 
 [org/gnome/shell]
@@ -243,6 +313,9 @@ disabled-extensions=@as []
 enabled-extensions=['status-icons@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'dash-to-panel@jderose9.github.com', 'arcmenu@arcmenu.com', 'clipboard-indicator@tudmotu.com', 'panel-date-format@keiii.github.com', 'color-picker@tuberry', 'gestureImprovements@gestures']
 favorite-apps=['discord.desktop', 'nemo.desktop', 'zen.desktop', 'sublime_text.desktop', 'unityhub.desktop', 'blender.desktop', 'com.obsproject.Studio.desktop', 'spotify.desktop']
 welcome-dialog-last-shown-version='47.2'
+
+[org/gnome/shell/app-switcher]
+current-workspace-only=true
 
 [org/gnome/shell/extensions/arcmenu]
 application-shortcuts=[{'id': 'ca.desrt.dconf-editor.desktop'}, {'id': 'org.gnome.tweaks.desktop'}, {'id': 'org.gnome.Settings.desktop'}, {'id': 'org.gnome.Extensions.desktop'}, {'id': 'org.gnome.Terminal.desktop'}]
@@ -263,11 +336,11 @@ multi-monitor=true
 pinned-apps=@aa{ss} []
 power-options=[(1, true), (0, true), (2, true), (3, true), (4, false), (5, false), (6, false), (7, false)]
 prefs-visible-page=0
-recently-installed-apps=['zen.desktop']
+recently-installed-apps=['electron35.desktop', 'waydroid.com.android.deskclock.desktop', 'waydroid.org.lineageos.recorder.desktop', 'waydroid.com.google.android.contacts.desktop', 'waydroid.com.android.vending.desktop', 'waydroid.com.google.android.apps.messaging.desktop', 'scrcpy-console.desktop', 'scrcpy.desktop', 'waydroid.com.touch.simulator.desktop']
 search-entry-border-radius=(true, 25)
 search-provider-recent-files=true
 show-update-notification-v64=false
-update-notifier-project-version=65
+update-notifier-project-version=68
 
 [org/gnome/shell/extensions/clipboard-indicator]
 display-mode=0
@@ -275,8 +348,11 @@ history-size=25
 toggle-menu=['<Super>v']
 
 [org/gnome/shell/extensions/color-picker]
-color-history=[uint32 8659561, 2369842]
+color-collection=@au []
+color-history=[uint32 3487806, 1842982, 3686734, 16750218, 8659561, 2369842]
 enable-sound=false
+menu-type=false
+preview-style=uint32 1
 
 [org/gnome/shell/extensions/dash-to-panel]
 animate-appicon-hover-animation-extent={'RIPPLE': 4, 'PLANK': 4, 'SIMPLE': 1}
@@ -284,7 +360,7 @@ appicon-margin=2
 appicon-padding=6
 available-monitors=[0]
 dot-position='BOTTOM'
-extension-version=68
+extension-version=70
 hide-overview-on-startup=true
 hot-keys=true
 hotkeys-overlay-combo='NEVER'
@@ -305,6 +381,7 @@ show-showdesktop-delay=500
 show-showdesktop-hover=true
 showdesktop-button-width=6
 status-icon-padding=-1
+taskbar-locked=false
 tray-padding=-1
 window-preview-size=160
 window-preview-title-position='TOP'
@@ -320,7 +397,7 @@ format='      %H:%M\n%d/%m/%Y'
 name='Colloid-Dark-Nord'
 
 [org/gnome/shell/keybindings]
-focus-active-notification=@as []
+focus-active-notification=['<Super>f']
 screenshot=['<Super>Print']
 show-screenshot-ui=['<Shift><Super>s']
 toggle-message-tray=['<Super>n']
@@ -354,16 +431,16 @@ window-size=(805, 702)
 [org/gtk/settings/file-chooser]
 date-format='regular'
 location-mode='path-bar'
-show-hidden=true
+show-hidden=false
 show-size-column=true
 show-type-column=true
-sidebar-width=183
+sidebar-width=206
 sort-column='name'
 sort-directories-first=false
 sort-order='ascending'
 type-format='category'
 window-position=(103, 103)
-window-size=(1244, 607)
+window-size=(1064, 475)
 
 [org/nemo/list-view]
 default-column-order=['name', 'size', 'date_modified', 'type', 'date_created_with_time', 'date_accessed', 'date_created', 'detailed_type', 'group', 'where', 'mime_type', 'date_modified_with_time', 'octal_permissions', 'owner', 'permissions']
@@ -381,11 +458,12 @@ show-edit-icon-toolbar=false
 show-full-path-titles=true
 show-hidden-files=true
 show-icon-view-icon-toolbar=false
+show-image-thumbnails='always'
 show-list-view-icon-toolbar=false
 show-location-entry=false
 show-open-in-terminal-toolbar=true
 show-reload-icon-toolbar=true
-thumbnail-limit=uint64 5242880
+thumbnail-limit=uint64 68719476736
 
 [org/nemo/preferences/menu-config]
 background-menu-paste=false

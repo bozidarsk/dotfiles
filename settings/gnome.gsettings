@@ -45,48 +45,28 @@ ca.desrt.dconf-editor.Settings refresh-settings-schema-source true
 ca.desrt.dconf-editor.Settings relocatable-schemas-enabled-mappings ['User', 'Built-in', 'Internal', 'Startup']
 ca.desrt.dconf-editor.Settings relocatable-schemas-user-paths {'ca.desrt.dconf-editor.Demo.Relocatable': '/ca/desrt/dconf-editor/Demo/relocatable/'}
 ca.desrt.dconf-editor.Settings restore-view true
-ca.desrt.dconf-editor.Settings saved-pathbar-path '/org/gnome/desktop/privacy/'
-ca.desrt.dconf-editor.Settings saved-view '/org/gnome/desktop/privacy/'
+ca.desrt.dconf-editor.Settings saved-pathbar-path '/org/gnome/desktop/wm/keybindings/show-desktop'
+ca.desrt.dconf-editor.Settings saved-view '/org/gnome/desktop/wm/keybindings/show-desktop'
 ca.desrt.dconf-editor.Settings show-warning false
 ca.desrt.dconf-editor.Settings small-keys-list-rows false
 ca.desrt.dconf-editor.Settings sort-case-sensitive false
 ca.desrt.dconf-editor.Settings use-shortpaths false
-io.github.celluloid-player.Celluloid always-append-to-playlist false
-io.github.celluloid-player.Celluloid always-autohide-cursor false
-io.github.celluloid-player.Celluloid always-open-new-window false
-io.github.celluloid-player.Celluloid always-show-title-buttons false
-io.github.celluloid-player.Celluloid always-use-floating-controls false
-io.github.celluloid-player.Celluloid autofit-enable true
-io.github.celluloid-player.Celluloid controls-dead-zone-size 0.0
-io.github.celluloid-player.Celluloid controls-unhide-cursor-speed 0.0
-io.github.celluloid-player.Celluloid csd-enable true
-io.github.celluloid-player.Celluloid dark-theme-enable true
-io.github.celluloid-player.Celluloid draggable-video-area-enable false
-io.github.celluloid-player.Celluloid graphics-offload-enable false
-io.github.celluloid-player.Celluloid ignore-playback-errors false
-io.github.celluloid-player.Celluloid inhibit-idle true
-io.github.celluloid-player.Celluloid last-folder-enable false
-io.github.celluloid-player.Celluloid menubar-accel-enable true
-io.github.celluloid-player.Celluloid mpris-enable true
-io.github.celluloid-player.Celluloid mpv-config-enable false
-io.github.celluloid-player.Celluloid mpv-config-file ''
-io.github.celluloid-player.Celluloid mpv-input-config-enable false
-io.github.celluloid-player.Celluloid mpv-input-config-file ''
-io.github.celluloid-player.Celluloid mpv-options ''
-io.github.celluloid-player.Celluloid prefetch-metadata true
-io.github.celluloid-player.Celluloid present-window-on-file-open false
-io.github.celluloid-player.Celluloid settings-migrated false
-io.github.celluloid-player.Celluloid show-durations-in-playlist true
-io.github.celluloid-player.Celluloid use-skip-buttons-for-playlist true
-io.github.celluloid-player.Celluloid.window-state height 996
-io.github.celluloid-player.Celluloid.window-state last-folder-uri ''
-io.github.celluloid-player.Celluloid.window-state loop-playlist false
-io.github.celluloid-player.Celluloid.window-state maximized true
-io.github.celluloid-player.Celluloid.window-state playlist-width 250
-io.github.celluloid-player.Celluloid.window-state show-controls true
-io.github.celluloid-player.Celluloid.window-state show-playlist false
-io.github.celluloid-player.Celluloid.window-state volume 1.0
-io.github.celluloid-player.Celluloid.window-state width 412
+com.github.rafostar.Clapper adaptive-start-bitrate 0
+com.github.rafostar.Clapper audio-offset 0.0
+com.github.rafostar.Clapper fullscreened true
+com.github.rafostar.Clapper maximized false
+com.github.rafostar.Clapper mute false
+com.github.rafostar.Clapper plugin-feature-ranks ''
+com.github.rafostar.Clapper progression-mode 0
+com.github.rafostar.Clapper seek-method 2
+com.github.rafostar.Clapper seek-unit 0
+com.github.rafostar.Clapper seek-value 10
+com.github.rafostar.Clapper server-enabled false
+com.github.rafostar.Clapper speed 1.0
+com.github.rafostar.Clapper subtitle-font-desc 'Sans 12'
+com.github.rafostar.Clapper subtitle-offset 0.0
+com.github.rafostar.Clapper subtitles-enabled true
+com.github.rafostar.Clapper volume 1.0
 org.cinnamon.desktop.a11y.applications screen-keyboard-enabled false
 org.cinnamon.desktop.a11y.applications screen-magnifier-enabled false
 org.cinnamon.desktop.a11y.applications screen-reader-enabled false
@@ -692,7 +672,7 @@ org.gnome.SessionManager auto-save-session false
 org.gnome.SessionManager auto-save-session-one-shot false
 org.gnome.SessionManager logout-prompt true
 org.gnome.SessionManager show-fallback-warning true
-org.gnome.Settings last-panel 'display'
+org.gnome.Settings last-panel 'keyboard'
 org.gnome.Settings show-development-warning true
 org.gnome.Settings window-state (1028, 738, false)
 org.gnome.Terminal.Legacy.Settings always-check-default-terminal true
@@ -954,7 +934,7 @@ org.gnome.desktop.media-handling autorun-never true
 org.gnome.desktop.media-handling autorun-x-content-ignore @as []
 org.gnome.desktop.media-handling autorun-x-content-open-folder @as []
 org.gnome.desktop.media-handling autorun-x-content-start-app ['x-content/unix-software', 'x-content/ostree-repository']
-org.gnome.desktop.notifications application-children ['gnome-power-panel', 'zen-alpha', 'teams', 'spotify', 'discord', 'tor-browser', 'sublime-text', 'steam', 'org-gnome-extensions', 'org-qbittorrent-qbittorrent']
+org.gnome.desktop.notifications application-children ['gnome-power-panel', 'zen-alpha', 'teams', 'spotify', 'discord', 'tor-browser', 'sublime-text', 'steam', 'org-gnome-extensions', 'org-qbittorrent-qbittorrent', 'zen', 'unityhub', 'remote-viewer', 'looking-glass-client', 'com-github-rafostar-clapper']
 org.gnome.desktop.notifications show-banners true
 org.gnome.desktop.notifications show-in-lock-screen false
 org.gnome.desktop.peripherals.tablet area [0.0, 0.0, 0.0, 0.0]
@@ -1037,7 +1017,7 @@ org.gnome.desktop.search-providers disable-external false
 org.gnome.desktop.search-providers disabled @as []
 org.gnome.desktop.search-providers enabled @as []
 org.gnome.desktop.search-providers sort-order ['org.gnome.Settings.desktop', 'org.gnome.Contacts.desktop', 'org.gnome.Nautilus.desktop']
-org.gnome.desktop.session idle-delay uint32 300
+org.gnome.desktop.session idle-delay uint32 600
 org.gnome.desktop.session session-name 'gnome'
 org.gnome.desktop.sound allow-volume-above-100-percent false
 org.gnome.desktop.sound event-sounds true
@@ -1302,7 +1282,7 @@ org.gnome.settings-daemon.plugins.media-keys magnifier-zoom-in ['<Alt><Super>equ
 org.gnome.settings-daemon.plugins.media-keys magnifier-zoom-out ['<Alt><Super>minus']
 org.gnome.settings-daemon.plugins.media-keys media ['']
 org.gnome.settings-daemon.plugins.media-keys media-static ['XF86AudioMedia']
-org.gnome.settings-daemon.plugins.media-keys mic-mute ['']
+org.gnome.settings-daemon.plugins.media-keys mic-mute ['F8']
 org.gnome.settings-daemon.plugins.media-keys mic-mute-static ['XF86AudioMicMute']
 org.gnome.settings-daemon.plugins.media-keys next ['AudioNext']
 org.gnome.settings-daemon.plugins.media-keys next-static ['XF86AudioNext', '<Ctrl>XF86AudioNext']
@@ -1399,7 +1379,7 @@ org.gnome.shell last-selected-power-profile 'power-saver'
 org.gnome.shell looking-glass-history @as []
 org.gnome.shell remember-mount-password false
 org.gnome.shell welcome-dialog-last-shown-version '47.2'
-org.gnome.shell.app-switcher current-workspace-only false
+org.gnome.shell.app-switcher current-workspace-only true
 org.gnome.shell.extensions.apps-menu apps-menu-toggle-menu ['<Alt>F1']
 org.gnome.shell.extensions.auto-move-windows application-list @as []
 org.gnome.shell.extensions.native-window-placement use-more-screen true
@@ -1417,7 +1397,7 @@ org.gnome.shell.extensions.window-list embed-previews true
 org.gnome.shell.extensions.window-list grouping-mode 'never'
 org.gnome.shell.extensions.window-list show-on-all-monitors false
 org.gnome.shell.extensions.workspace-indicator embed-previews true
-org.gnome.shell.keybindings focus-active-notification @as []
+org.gnome.shell.keybindings focus-active-notification ['<Super>f']
 org.gnome.shell.keybindings open-new-window-application-1 ['<Super><Control>1']
 org.gnome.shell.keybindings open-new-window-application-2 ['<Super><Control>2']
 org.gnome.shell.keybindings open-new-window-application-3 ['<Super><Control>3']
@@ -1481,17 +1461,17 @@ org.gtk.Settings.FileChooser date-format 'regular'
 org.gtk.Settings.FileChooser expand-folders false
 org.gtk.Settings.FileChooser last-folder-uri ''
 org.gtk.Settings.FileChooser location-mode 'path-bar'
-org.gtk.Settings.FileChooser show-hidden true
+org.gtk.Settings.FileChooser show-hidden false
 org.gtk.Settings.FileChooser show-size-column true
 org.gtk.Settings.FileChooser show-type-column true
-org.gtk.Settings.FileChooser sidebar-width 183
+org.gtk.Settings.FileChooser sidebar-width 206
 org.gtk.Settings.FileChooser sort-column 'name'
 org.gtk.Settings.FileChooser sort-directories-first false
 org.gtk.Settings.FileChooser sort-order 'ascending'
 org.gtk.Settings.FileChooser startup-mode 'recent'
 org.gtk.Settings.FileChooser type-format 'category'
 org.gtk.Settings.FileChooser window-position (103, 103)
-org.gtk.Settings.FileChooser window-size (1244, 607)
+org.gtk.Settings.FileChooser window-size (1064, 475)
 org.gtk.gtk4.Inspector.Recorder dark false
 org.gtk.gtk4.Inspector.Recorder debug-nodes false
 org.gtk.gtk4.Inspector.Recorder highlight-sequences false
@@ -1587,7 +1567,7 @@ org.nemo.preferences show-full-path-titles true
 org.nemo.preferences show-hidden-files true
 org.nemo.preferences show-home-icon-toolbar false
 org.nemo.preferences show-icon-view-icon-toolbar false
-org.nemo.preferences show-image-thumbnails 'local-only'
+org.nemo.preferences show-image-thumbnails 'always'
 org.nemo.preferences show-list-view-icon-toolbar false
 org.nemo.preferences show-location-entry false
 org.nemo.preferences show-new-folder-icon-toolbar false
@@ -1606,7 +1586,7 @@ org.nemo.preferences sort-favorites-first true
 org.nemo.preferences start-with-dual-pane false
 org.nemo.preferences swap-trash-delete false
 org.nemo.preferences tabs-open-position 'after-current-tab'
-org.nemo.preferences thumbnail-limit uint64 5242880
+org.nemo.preferences thumbnail-limit uint64 68719476736
 org.nemo.preferences thumbnail-threads -1
 org.nemo.preferences tooltips-in-icon-view false
 org.nemo.preferences tooltips-in-list-view false
@@ -1677,6 +1657,7 @@ org.x.apps.favorites list @as []
 org.x.apps.favorites root-metadata @as []
 org.x.apps.mate-panel-applet color-icon-offset 8
 org.x.apps.mate-panel-applet symbolic-icon-offset 8
+org.x.apps.portal accent-rgb ''
 org.x.apps.portal color-scheme 'default'
 org.x.apps.portal high-contrast false
 org.x.apps.statusicon left-click-activate-apps ['onboard']
@@ -1684,4 +1665,4 @@ org.x.apps.statusicon sn-watcher-advertise-host true
 org.x.apps.statusicon sn-watcher-debug false
 org.x.apps.statusicon sn-watcher-debug-flags 'SnWatcher,StatusIcon'
 org.x.apps.statusicon sn-watcher-replace-tooltip ['qbittorrent']
-org.x.apps.statusicon status-notifier-enabled-desktops ['Cinnamon', 'X-Cinnamon']
+org.x.apps.statusicon status-notifier-enabled-desktops ['MATE', 'Cinnamon', 'X-Cinnamon']
