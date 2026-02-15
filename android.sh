@@ -1,5 +1,5 @@
 sudo pacman -Sy jdk-openjdk
-installaur android-sdk android-sdk-cmdline-tools-latest android-sdk-platform-tools android-emulator
+installaur android-sdk android-sdk-cmdline-tools-latest android-sdk-build-tools android-sdk-platform-tools android-emulator
 
 export PATH="$ANDROID_SDK_ROOT/cmdline-tools/latest/bin:$PATH"
 ANDROID_TOOLS="$ANDROID_SDK_ROOT/cmdline-tools/latest/bin"
