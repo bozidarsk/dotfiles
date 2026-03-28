@@ -8,7 +8,8 @@ read dotfiles
 dinitctl enable dhcpcd
 dinitctl enable iwd
 
-printf "\n[multilib]\nInclude = /etc/pacman.d/mirrorlist\n" >> /etc/pacman.conf
+printf "\n[lib32-gremlins]\nInclude = /etc/pacman.d/mirrorlist\n\n" >> /etc/pacman.conf
+printf "\n[lib32]\nInclude = /etc/pacman.d/mirrorlist\n\n" >> /etc/pacman.conf
 pacman -Sy vim openssh sudo ntfs-3g ufw base-devel git zsh python3 python-pip brightnessctl pipewire pipewire-pulse ufw zip unzip unrar wl-clipboard gtk4 rclone dosfstools exfatprogs cups cups-pdf sane-airscan mono gtk-sharp-3 gtk-layer-shell nasm qemu-full arduino-cli obs-studio android-udev android-file-transfer htop mpv x265 x264 gtk4 libadwaita rclone discord evemu libisoburn mtools qemu-ui-gtk blender dotnet-sdk wget tree qt6-wayland gstreamer gst-plugin-pipewire glib2-devel iw steam gamemode lib32-gamemode xorg-xauth wireshark-cli docker docker-compose loupe ffmpegthumbnailer edk2-ovmf swtpm virt-viewer clapper man-db man-pages
 
 echo 'X11Forwarding yes' >> /etc/ssh/sshd_config
