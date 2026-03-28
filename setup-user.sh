@@ -64,8 +64,6 @@ mv $dotfiles/.config/sublime-text/Packages .config/sublime-text/
 mv $dotfiles/wallpapers Pictures/Wallpapers
 
 mv $dotfiles/.desktop/* .local/share/applications/
-echo "x-scheme-handler/cs=cs.desktop" >> .config/mimeapps.list
-echo "x-scheme-handler/sof=sof.desktop" >> .config/mimeapps.list
 
 curl https://gist.githubusercontent.com/bozidarsk/0fd6584ed7b52e5b24768569e49728be/raw/0cae895abf7f391f840fc153dbded9e799a9b33a/.gitignore > .gitignore
 git config --global init.defaultBranch main
@@ -84,7 +82,7 @@ cd ~
 
 # for android-sdk
 sudo pacman -Syu jdk-openjdk libxtst fontconfig freetype2 lib32-gcc-libs lib32-glibc libx11 libxext libxrender zlib
-installaur clapper-git zen-browser-bin sublime-text-4 unityhub android-sdk teams wlrobs gnome-network-displays minecraft-launcher looking-glass mkinitcpio-firmware
+installaur clapper-git zen-browser-bin sublime-text-4 unityhub android-sdk wlrobs minecraft-launcher looking-glass mkinitcpio-firmware
 
 docker container create --name mysql-server -e MYSQL_ALLOW_EMPTY_PASSWORD=yes -e MYSQL_ROOT_PASSWORD= mysql:latest
 
