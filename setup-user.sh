@@ -24,13 +24,12 @@ sudo chmod 777 /etc/fstab
 echo "UUID=8C346B12346AFE98 /mnt/external ntfs defaults,uid=$UID,gid=$GID 0 2" >> /etc/fstab
 sudo chmod 644 /etc/fstab
 
-sudo timedatectl set-timezone "$timezone"
-sudo timedatectl set-ntp true
+sudo ln -sf /usr/share/zoneinfo/$timezone /etc/localtime
+hwclock --systohc
+sudo dinitctl start ntpd
 
-sudo localectl set-locale LANG="en_US.UTF-8"
-sudo localectl set-locale LC_TIME="en_GB.UTF-8"
-sudo localectl set-keymap us
-sudo localectl set-x11-keymap us
+echo 'export LANG="en_US.UTF-8"' | sudo tee -a /etc/locale.conf
+echo 'export LC_TIME="en_GB.UTF-8"' | sudo tee -a /etc/locale.conf
 echo "FONT=eurlatgr" | sudo tee -a /etc/vconsole.conf
 
 sudo lpadmin -p "$printername" -E -v "ipp://$printerip/ipp/print" -m everywhere
