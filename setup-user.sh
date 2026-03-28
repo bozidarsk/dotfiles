@@ -23,8 +23,8 @@ sudo ufw allow to $printerip
 echo "UUID=8C346B12346AFE98 /mnt/external ntfs defaults,uid=$UID,gid=$GID 0 2" | sudo tee -a /etc/fstab
 
 sudo ln -sf /usr/share/zoneinfo/$timezone /etc/localtime
-hwclock --systohc
-sudo dinitctl start ntpd
+sudo hwclock --systohc
+sudo dinitctl enable ntpd
 
 echo 'export LANG="en_US.UTF-8"' | sudo tee -a /etc/locale.conf
 echo 'export LC_TIME="en_GB.UTF-8"' | sudo tee -a /etc/locale.conf
