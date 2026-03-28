@@ -20,9 +20,7 @@ sudo ufw allow 443/tcp
 sudo ufw allow from $printerip
 sudo ufw allow to $printerip
 
-sudo chmod 777 /etc/fstab
-echo "UUID=8C346B12346AFE98 /mnt/external ntfs defaults,uid=$UID,gid=$GID 0 2" >> /etc/fstab
-sudo chmod 644 /etc/fstab
+echo "UUID=8C346B12346AFE98 /mnt/external ntfs defaults,uid=$UID,gid=$GID 0 2" | sudo tee -a /etc/fstab
 
 sudo ln -sf /usr/share/zoneinfo/$timezone /etc/localtime
 hwclock --systohc
