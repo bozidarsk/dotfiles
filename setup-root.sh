@@ -10,12 +10,16 @@ dinitctl enable iwd
 
 printf "\n[lib32-gremlins]\nInclude = /etc/pacman.d/mirrorlist\n\n" >> /etc/pacman.conf
 printf "\n[lib32]\nInclude = /etc/pacman.d/mirrorlist\n\n" >> /etc/pacman.conf
-pacman -Sy vim openssh sudo ntfs-3g ufw base-devel git zsh python3 python-pip brightnessctl pipewire pipewire-pulse ufw zip unzip unrar wl-clipboard gtk4 rclone dosfstools exfatprogs cups cups-pdf sane-airscan mono gtk-sharp-3 gtk-layer-shell nasm qemu-full arduino-cli obs-studio android-udev android-file-transfer htop mpv x265 x264 gtk4 libadwaita rclone discord evemu libisoburn mtools qemu-ui-gtk blender dotnet-sdk wget tree qt6-wayland gstreamer gst-plugin-pipewire glib2-devel iw steam gamemode lib32-gamemode xorg-xauth wireshark-cli docker docker-compose loupe ffmpegthumbnailer edk2-ovmf swtpm virt-viewer clapper man-db man-pages
-
-echo 'X11Forwarding yes' >> /etc/ssh/sshd_config
-echo 'AllowTcpForwarding yes' >> /etc/ssh/sshd_config
-echo 'X11UseLocalhost yes' >> /etc/ssh/sshd_config
-echo 'X11DisplayOffset 10' >> /etc/ssh/sshd_config
+pacman -Sy \
+    sudo man-db man-pages base-devel glib2-devel qt6-wayland libadwaita gtk4 \
+    ntfs-3g dosfstools exfatprogs mtools libisoburn android-udev android-file-transfer \
+    openssh openssh-dinit ufw ufw-dinit vim git zsh wget less tree zip unzip unrar \
+    dotnet-sdk mono nasm gtk-sharp-3 gtk-layer-shell docker docker-compose docker-dinit \
+    qemu-full qemu-ui-gtk edk2-ovmf swtpm virt-viewer \
+    cups cups-dinit cups-pdf sane sane-dinit avahi avahi-dinit \
+    pipewire pipewire-pulse gstreamer gst-plugin-pipewire mpv x265 x264 ffmpegthumbnailer \
+    steam gamemode lib32-gamemode \
+    obs-studio blender loupe rclone htop brightnessctl wl-clipboard \
 
 dinitctl enable sshd
 dinitctl enable cups

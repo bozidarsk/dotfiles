@@ -85,7 +85,7 @@ cd ~
 
 # for android-sdk
 sudo pacman -Syu jdk-openjdk libxtst fontconfig freetype2 lib32-gcc-libs lib32-glibc libx11 libxext libxrender zlib
-installaur zen-browser-bin spotify sublime-text-4 unityhub android-sdk teams wlrobs gnome-network-displays minecraft-launcher looking-glass mkinitcpio-firmware
+installaur clapper-git zen-browser-bin sublime-text-4 unityhub android-sdk teams wlrobs gnome-network-displays minecraft-launcher looking-glass mkinitcpio-firmware
 
 docker container create --name mysql-server -e MYSQL_ALLOW_EMPTY_PASSWORD=yes -e MYSQL_ROOT_PASSWORD= mysql:latest
 
