@@ -8,23 +8,22 @@ read dotfiles
 dinitctl enable dhcpcd
 dinitctl enable iwd
 
-printf "\n[lib32-gremlins]\nInclude = /etc/pacman.d/mirrorlist\n\n" >> /etc/pacman.conf
-printf "\n[lib32]\nInclude = /etc/pacman.d/mirrorlist\n\n" >> /etc/pacman.conf
-pacman -Sy \
-    sudo man-db man-pages base-devel glib2-devel qt6-wayland libadwaita gtk4 \
+printf "\n[lib32]\nInclude = /etc/pacman.d/mirrorlist\n" >> /etc/pacman.conf
+pacman -Syy \
+    sudo man-db man-pages base-devel glib2-devel qt6-wayland libadwaita gtk4 ttf-liberation \
     ntfs-3g dosfstools exfatprogs mtools libisoburn android-udev android-file-transfer \
     openssh openssh-dinit ufw ufw-dinit vim git zsh wget less tree zip unzip unrar \
     dotnet-sdk mono nasm gtk-sharp-3 gtk-layer-shell docker docker-compose docker-dinit \
     qemu-full qemu-ui-gtk edk2-ovmf swtpm virt-viewer \
     cups cups-dinit cups-pdf sane sane-dinit avahi avahi-dinit \
-    pipewire pipewire-pulse gstreamer gst-plugin-pipewire mpv x265 x264 ffmpegthumbnailer \
+    pipewire pipewire-pulse jack2 gstreamer gst-plugin-pipewire mpv x265 x264 ffmpegthumbnailer \
     steam gamemode lib32-gamemode \
     obs-studio blender loupe rclone htop brightnessctl wl-clipboard \
 
 dinitctl enable sshd
-dinitctl enable cups
-dinitctl enable avahi-daemon.socket
-dinitctl enable docker
+dinitctl enable cupsd
+dinitctl enable avahi-daemon
+dinitctl enable dockerd
 
 echo 'Out ${HOME}/Documents' >> /etc/cups/cups-pdf.conf
 
@@ -44,7 +43,6 @@ passwd "$user"
 chown -R "$user:$user" "/home/$user"
 groupmems -g input -a "$user"
 groupmems -g uucp -a "$user"
-groupmems -g wireshark -a "$user"
 groupmems -g docker -a "$user"
 cd "/home/$user"
 
