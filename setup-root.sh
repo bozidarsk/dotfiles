@@ -1,3 +1,5 @@
+set -e
+
 printf 'user: '
 read user
 printf 'hostname: '

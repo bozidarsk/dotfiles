@@ -1,3 +1,5 @@
+set -e
+
 printf 'dotfiles: '
 read dotfiles
 

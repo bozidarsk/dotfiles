@@ -1,3 +1,5 @@
+set -e
+
 printf 'timezone: '
 read timezone
 printf 'gitname: '
