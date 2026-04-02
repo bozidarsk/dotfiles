@@ -13,6 +13,10 @@ read printername
 printf 'dotfiles: '
 read dotfiles
 
+dinitctl enable pipewire
+dinitctl enable pipewire-pulse
+dinitctl enable wireplumber
+
 sudo ufw enable
 sudo ufw allow 22/tcp
 sudo ufw allow 80/tcp

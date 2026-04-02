@@ -12,13 +12,13 @@ dinitctl enable iwd
 
 printf "\n[lib32]\nInclude = /etc/pacman.d/mirrorlist\n" >> /etc/pacman.conf
 pacman -Syy \
-    sudo man-db man-pages base-devel glib2-devel qt6-wayland libadwaita gtk4 ttf-liberation \
+    sudo man-db man-pages base-devel dinit-user-spawn glib2-devel qt6-wayland libadwaita gtk4 ttf-liberation \
     ntfs-3g dosfstools exfatprogs mtools libisoburn android-udev android-file-transfer \
     openssh openssh-dinit ntp ntp-dinit ufw ufw-dinit vim git zsh wget less tree zip unzip unrar \
     dotnet-sdk mono nasm gtk-sharp-3 gtk-layer-shell docker docker-compose docker-dinit \
     qemu-full qemu-ui-gtk edk2-ovmf swtpm virt-viewer \
     cups cups-dinit cups-pdf sane sane-dinit avahi avahi-dinit \
-    pipewire pipewire-pulse jack2 gstreamer gst-plugin-pipewire mpv x265 x264 ffmpegthumbnailer \
+    playerctl pipewire pipewire-dinit pipewire-pulse pipewire-pulse-dinit wireplumber wireplumber-dinit jack2 gstreamer gst-plugin-pipewire mpv x265 x264 ffmpegthumbnailer \
     steam gamemode lib32-gamemode \
     obs-studio blender loupe rclone htop brightnessctl wl-clipboard \
 
