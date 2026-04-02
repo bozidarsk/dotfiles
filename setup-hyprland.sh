@@ -3,7 +3,7 @@ set -e
 printf 'dotfiles: '
 read dotfiles
 
-sudo pacman -Syu hyprland hyprpaper waybar wofi evemu alacritty grim slurp nemo
+sudo pacman -Syu hyprland hyprpaper hyprpicker hyprlock alacritty nemo grim slurp rofi wl-clip-persist quickshell
 
 mv $dotfiles/.config/alacritty .config/
 mv $dotfiles/.config/cliphistory .config/
