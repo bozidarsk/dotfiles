@@ -69,6 +69,8 @@ mv $dotfiles/wallpapers Pictures/Wallpapers
 
 mv $dotfiles/.desktop/* .local/share/applications/
 
+ssh-keygen -t ed25519 -C "$gitemail"
+
 curl https://gist.githubusercontent.com/bozidarsk/0fd6584ed7b52e5b24768569e49728be/raw/0cae895abf7f391f840fc153dbded9e799a9b33a/.gitignore > .gitignore
 git config --global init.defaultBranch main
 git config --global user.email "$gitemail"
@@ -78,6 +80,10 @@ git config --global core.excludesfile .gitignore
 git config --global credential.helper store
 git config --global core.autocrlf false
 git config --global push.autoSetupRemote true
+git config --global gpg.format ssh
+git config --global user.signingkey ~/.ssh/id_ed25519.pub
+git config --global commit.gpgsign true
+git config --global tag.gpgsign true
 
 git clone https://aur.archlinux.org/installaur-git.git /tmp/installaur
 cd /tmp/installaur
