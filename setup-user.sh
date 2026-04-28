@@ -77,7 +77,6 @@ git config --global user.email "$gitemail"
 git config --global user.name "$gitname"
 git config --global --add safe.directory '*'
 git config --global core.excludesfile .gitignore
-git config --global credential.helper store
 git config --global core.autocrlf false
 git config --global push.autoSetupRemote true
 git config --global gpg.format ssh
