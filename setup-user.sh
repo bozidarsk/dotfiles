@@ -80,9 +80,9 @@ git config --global core.excludesfile .gitignore
 git config --global core.autocrlf false
 git config --global push.autoSetupRemote true
 git config --global gpg.format ssh
-git config --global user.signingkey ~/.ssh/id_ed25519.pub
-git config --global commit.gpgsign true
-git config --global tag.gpgsign true
+git config --global user.signingKey ~/.ssh/id_ed25519.pub
+git config --global commit.gpgSign true
+git config --global tag.gpgSign true
 
 git clone https://aur.archlinux.org/installaur-git.git /tmp/installaur
 cd /tmp/installaur
