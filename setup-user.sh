@@ -48,7 +48,6 @@ mkdir .local
 mkdir .local/share
 mkdir .local/share/applications
 mkdir .config
-mkdir .config/sublime-text
 mkdir Videos
 mkdir Pictures
 mkdir Documents
@@ -63,7 +62,7 @@ mv $dotfiles/.icons .
 ln -sr ".themes/Colloid-Dark-Nord/gtk-3.0" .config/gtk-3.0
 ln -sr ".themes/Colloid-Dark-Nord/gtk-4.0" .config/gtk-4.0
 
-mv $dotfiles/.config/sublime-text/Packages .config/sublime-text/
+mv $dotfiles/.local/share/zed .local/share
 
 mv $dotfiles/wallpapers Pictures/Wallpapers
 
@@ -91,7 +90,7 @@ cd ~
 
 # for android-sdk
 sudo pacman -Syu jdk-openjdk libxtst fontconfig freetype2 lib32-gcc-libs lib32-glibc libx11 libxext libxrender zlib
-installaur clapper-git zen-browser-bin sublime-text-4 unityhub android-sdk wlrobs minecraft-launcher looking-glass mkinitcpio-firmware
+installaur clapper-git zen-browser-bin unityhub android-sdk wlrobs minecraft-launcher looking-glass mkinitcpio-firmware
 
 docker container create --name mysql-server -e MYSQL_ALLOW_EMPTY_PASSWORD=yes -e MYSQL_ROOT_PASSWORD= mysql:latest
 

@@ -1,0 +1,4 @@
+name = "Linker Script"
+grammar = "linkerscript"
+path_suffixes = ["ld"]
+block_comment = ["/* ", " */"]

@@ -1,0 +1,164 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+	"cli_default_open_behavior": "new_window",
+	"use_system_prompts": false,
+	"use_system_path_prompts": false,
+	"git": {
+		"inline_blame": {
+			"enabled": false,
+		},
+	},
+	"server_url": "https://zed.dev",
+	"proxy": "",
+	"disable_ai": true,
+	"agent": {
+		"button": false,
+		"favorite_models": [],
+		"model_parameters": [],
+	},
+	"collaboration_panel": {
+		"button": false,
+	},
+	"git_panel": {
+		"show_count_badge": false,
+		"diff_stats": true,
+		"folder_icons": false,
+		"file_icons": false,
+		"sort_by_path": false,
+		"collapse_untracked_diff": false,
+		"tree_view": true,
+		"default_width": 340.0,
+		"button": true,
+	},
+	"outline_panel": {
+		"file_icons": true,
+		"button": false,
+	},
+	"window_decorations": "client",
+	"bottom_dock_layout": "contained",
+	"focus_follows_mouse": {
+		"enabled": false,
+	},
+	"preview_tabs": {
+		"enabled": true,
+	},
+	"tabs": {
+		"show_close_button": "hover",
+		"show_diagnostics": "errors",
+		"activate_on_close": "left_neighbour",
+		"file_icons": false,
+		"git_status": false,
+	},
+	"tab_bar": {
+		"show_pinned_tabs_in_separate_row": false,
+		"show_tab_bar_buttons": true,
+		"show_nav_history_buttons": true,
+		"show": true,
+	},
+	"title_bar": {
+		"button_layout": "standard",
+		"show_menus": false,
+		"show_user_picture": false,
+		"show_user_menu": true,
+		"show_sign_in": false,
+		"show_onboarding_banner": true,
+		"show_project_items": true,
+		"show_branch_name": true,
+		"show_branch_status_icon": false,
+	},
+	"debugger": {
+		"save_breakpoints": false,
+		"dock": "bottom",
+		"button": true,
+	},
+	"diagnostics": {
+		"button": true,
+	},
+	"terminal": {
+		"show_count_badge": false,
+		"button": true,
+	},
+	"status_bar": {
+		"show_active_file": true,
+		"cursor_position_button": true,
+		"active_encoding_button": "non_utf8",
+		"active_language_button": true,
+	},
+	"project_panel": {
+		"hide_hidden": false,
+		"hide_root": false,
+		"sticky_scroll": true,
+		"git_status_indicator": false,
+		"diagnostic_badges": false,
+		"scrollbar": {
+			"show": "auto",
+		},
+		"bold_folder_labels": false,
+		"auto_reveal_entries": true,
+		"indent_size": 20.0,
+		"git_status": true,
+		"folder_icons": false,
+		"file_icons": true,
+		"entry_spacing": "comfortable",
+		"hide_gitignore": false,
+		"default_width": 220.0,
+		"dock": "left",
+		"button": true,
+	},
+	"search": {
+		"button": false,
+		"center_on_match": true,
+		"regex": true,
+		"case_sensitive": false,
+	},
+	"indent_guides": {
+		"coloring": "fixed",
+		"enabled": true,
+	},
+	"hard_tabs": true,
+	"tab_size": 4,
+	"toolbar": {
+		"code_actions": false,
+		"agent_review": true,
+		"selections_menu": true,
+		"quick_actions": false,
+		"breadcrumbs": true,
+	},
+	"minimap": {
+		"thumb": "always",
+		"show": "never",
+	},
+	"gutter": {
+		"min_line_number_digits": 3,
+		"runnables": true,
+		"breakpoints": true,
+		"folds": true,
+		"bookmarks": false,
+	},
+	"buffer_line_height": "comfortable",
+	"telemetry": {
+		"diagnostics": false,
+		"metrics": false,
+	},
+	"session": {
+		"trust_all_worktrees": true,
+	},
+	"base_keymap": "SublimeText",
+	"ui_font_size": 16,
+	"buffer_font_size": 15,
+	"theme": {
+		"mode": "system",
+		"light": "One Light",
+		"dark": "One Dark",
+	},
+	"file_types": {
+		"XML": ["*.csproj", "*.vcxproj"],
+	},
+}

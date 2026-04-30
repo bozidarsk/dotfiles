@@ -1,6 +1,0 @@
-[
-	{ "keys": [ "`", "`" ], "command": "insert_snippet", "args": { "contents": "()" } },
-	{ "keys": [ "c", "w", "tab" ], "command": "insert_snippet", "args": { "contents": "Console.Write()" } },
-	{ "keys": [ "c", "w", "l", "tab" ], "command": "insert_snippet", "args": { "contents": "Console.WriteLine()" } },
-	{ "keys": [ "c", "r", "l", "tab" ], "command": "insert_snippet", "args": { "contents": "Console.ReadLine()" } }
-]

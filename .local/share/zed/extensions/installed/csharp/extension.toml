@@ -1,0 +1,37 @@
+id = "csharp"
+name = "C#"
+version = "1.0.4"
+schema_version = 1
+description = "C# support."
+repository = "https://github.com/zed-extensions/csharp"
+authors = ["fminkowski <fminkowski@gmail.com>", "Fabian Freimueller <fabianfreimueller@gmail.com>"]
+themes = []
+icon_themes = []
+languages = ["languages/csharp"]
+capabilities = []
+
+[lib]
+kind = "Rust"
+version = "0.7.0"
+
+[grammars.c_sharp]
+repository = "https://github.com/tree-sitter/tree-sitter-c-sharp"
+rev = "485f0bae0274ac9114797fc10db6f7034e4086e3"
+
+[language_servers.omnisharp]
+language = "CSharp"
+languages = []
+
+[language_servers.omnisharp.language_ids]
+
+[language_servers.roslyn]
+language = "CSharp"
+languages = []
+
+[language_servers.roslyn.language_ids]
+
+[context_servers]
+
+[agent_servers]
+
+[slash_commands]

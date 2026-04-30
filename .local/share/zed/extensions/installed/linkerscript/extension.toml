@@ -1,0 +1,25 @@
+id = "linkerscript"
+name = "Linker Script"
+version = "0.1.0"
+schema_version = 1
+description = "Linker Script syntax highlighting"
+repository = "https://github.com/notpeter/linkerscript-zed"
+authors = ["Peter Tripp <petertripp@gmail.com>"]
+themes = []
+icon_themes = []
+languages = ["languages/linkerscript"]
+capabilities = []
+
+[lib]
+
+[grammars.linkerscript]
+repository = "https://github.com/tree-sitter-grammars/tree-sitter-linkerscript"
+rev = "f99011a3554213b654985a4b0a65b3b032ec4621"
+
+[language_servers]
+
+[context_servers]
+
+[agent_servers]
+
+[slash_commands]

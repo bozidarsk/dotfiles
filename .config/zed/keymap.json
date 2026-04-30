@@ -1,0 +1,101 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+	{
+		"context": "Workspace",
+		"bindings": {
+			// "shift shift": "file_finder::Toggle"
+		},
+	},
+	{
+		"context": "Editor && vim_mode == insert",
+		"bindings": {
+			// "j k": "vim::NormalBefore"
+		},
+	},
+	{
+		"context": "Editor",
+		"unbind": {
+			"ctrl-k ctrl-c": [
+				"editor::ToggleComments",
+				{
+					"advance_downwards": false,
+				},
+			],
+		},
+	},
+	{
+		"context": "Workspace",
+		"unbind": {
+			"ctrl-?": "agent::ToggleFocus",
+		},
+	},
+	{
+		"context": "Editor",
+		"bindings": {
+			"ctrl-?": "editor::ToggleBlockComments",
+		},
+	},
+	{
+		"context": "Editor",
+		"unbind": {
+			"ctrl-k ctrl-/": "editor::ToggleBlockComments",
+		},
+	},
+	{
+		"context": "Editor",
+		"bindings": {
+			"ctrl-shift-enter": "editor::NewlineAbove",
+		},
+	},
+	{
+		"context": "Editor",
+		"bindings": {
+			"ctrl-enter": "editor::NewlineBelow",
+		},
+	},
+	{
+		"context": "Editor",
+		"unbind": {
+			"ctrl-k ctrl-b": "editor::BlameHover",
+		},
+	},
+	{
+		"context": "Workspace",
+		"bindings": {
+			"ctrl-shift-g": "git_panel::ToggleFocus",
+		},
+	},
+ {
+  "context": "Workspace",
+  "bindings": {
+   "ctrl-k ctrl-g": "workspace::ToggleRightDock"
+  }
+ },
+ {
+  "context": "Workspace",
+  "unbind": {
+   "ctrl-alt-b": "workspace::ToggleRightDock"
+  }
+ },
+ {
+  "bindings": {
+   "ctrl-k ctrl-c": "editor::ScrollCursorCenter"
+  }
+ },
+ {
+  "bindings": {
+   "ctrl-shift-backspace": "editor::DeleteToBeginningOfLine"
+  }
+ },
+ {
+  "bindings": {
+   "ctrl-k ctrl-/": "editor::ToggleHunkDiff"
+  }
+ }
+]

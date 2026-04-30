@@ -1,0 +1,58 @@
+[
+  {
+    "label": "CMake: Configure Debug",
+    "command": "cmake",
+    "args": ["-DCMAKE_BUILD_TYPE=Debug", "-B", "build"],
+    "tags": ["cmake-project"]
+  },
+  {
+    "label": "CMake: Configure Release",
+    "command": "cmake",
+    "args": ["-DCMAKE_BUILD_TYPE=Release", "-B", "build"],
+    "tags": ["cmake-project"]
+  },
+  {
+    "label": "CMake: Build All",
+    "command": "cmake",
+    "args": ["--build", "build", "--parallel"],
+    "tags": ["cmake-project"]
+  },
+  {
+    "label": "CMake: Build $ZED_SYMBOL",
+    "command": "cmake",
+    "args": ["--build", "build", "--target", "$ZED_SYMBOL", "--parallel"],
+    "tags": ["cmake-executable", "cmake-library", "cmake-custom-target"]
+  },
+  {
+    "label": "CMake: Run $ZED_SYMBOL",
+    "command": "./build/$ZED_SYMBOL",
+    "tags": ["cmake-executable"]
+  },
+  {
+    "label": "CMake: Run Test $ZED_SYMBOL",
+    "command": "ctest",
+    "args": ["--test-dir", "build", "-R", "$ZED_SYMBOL", "--output-on-failure"],
+    "tags": ["cmake-test"]
+  },
+  {
+    "label": "CMake: Run All Tests",
+    "command": "ctest",
+    "args": ["--test-dir", "build", "--output-on-failure"],
+    "tags": ["cmake-project"]
+  },
+  {
+    "label": "CMake: Install",
+    "command": "cmake",
+    "args": ["--install", "build"]
+  },
+  {
+    "label": "CMake: Reconfigure",
+    "command": "cmake",
+    "args": ["build", "--fresh"]
+  },
+  {
+    "label": "CMake: Clean",
+    "command": "cmake",
+    "args": ["--build", "build", "--target", "clean"]
+  }
+]

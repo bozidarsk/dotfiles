@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>roslyn-language-server.linux-x64</id>
+    <version>5.5.0-2.26103.6</version>
+    <authors>Microsoft</authors>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <icon>Icon.png</icon>
+    <readme>README.md</readme>
+    <projectUrl>https://github.com/dotnet/roslyn</projectUrl>
+    <description>Package Description
+      More details at https://aka.ms/roslyn-packages
+      This package was built from the source at https://github.com/dotnet/roslyn/commit/58efd1373c4755c7402677c3249046886807d820.</description>
+    <copyright>© Microsoft Corporation. All rights reserved.</copyright>
+    <tags>Roslyn CodeAnalysis Compiler CSharp VB VisualBasic Parser Scanner Lexer Emit CodeGeneration Metadata IL Compilation Scripting Syntax Semantics</tags>
+    <serviceable>true</serviceable>
+    <packageTypes>
+      <packageType name="DotnetToolRidPackage" />
+    </packageTypes>
+    <repository type="git" url="https://github.com/dotnet/roslyn" branch="main" commit="58efd1373c4755c7402677c3249046886807d820" />
+  </metadata>
+</package>
