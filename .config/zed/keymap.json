@@ -97,5 +97,16 @@
   "bindings": {
    "ctrl-k ctrl-/": "editor::ToggleHunkDiff"
   }
+ },
+ {
+  "context": "Editor",
+  "unbind": {
+   "ctrl-.": "editor::GoToHunk"
+  }
+ },
+ {
+  "bindings": {
+   "ctrl-.": "terminal_panel::Toggle"
+  }
  }
 ]
