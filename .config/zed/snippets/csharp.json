@@ -1,0 +1,17 @@
+{
+	"Console.WriteLine": {
+		"prefix": "cwl",
+		"body": ["Console.WriteLine(${1})"],
+		"description": null
+	},
+	"Console.Write": {
+		"prefix": "cw",
+		"body": ["Console.Write(${1})"],
+		"description": null
+	},
+	"Console.ReadLine": {
+		"prefix": "cr",
+		"body": ["Console.ReadLine()"],
+		"description": null
+	}
+}
