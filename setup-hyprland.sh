@@ -9,7 +9,7 @@ mv $dotfiles/.config/hypr .config/
 mv $dotfiles/.config/quickshell .config/
 mv $dotfiles/.config/alacritty .config/
 
-cat $dotfiles/settings/hyprland | sed -E 's/(.+)/gsettings set \1/' > /tmp/gsettings.sh
+cat settings/hyprland.gsettings | sed -E 's/([^ ]+) ([^ ]+) (.+)/gsettings set \1 \2 \"\3\"/' > /tmp/gsettings.sh
 chmod +x /tmp/gsettings.sh
 /tmp/gsettings.sh 
 
