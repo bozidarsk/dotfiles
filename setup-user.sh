@@ -13,6 +13,7 @@ read printername
 printf 'dotfiles: '
 read dotfiles
 
+sudo dinitctl enable dinit-user-spawn
 dinitctl enable pipewire
 dinitctl enable pipewire-pulse
 dinitctl enable wireplumber
