@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
-  <Relationship Type="http://schemas.microsoft.com/packaging/2010/07/manifest" Target="/roslyn-language-server.linux-x64.nuspec" Id="RAED81247A0C7EB87" />
-  <Relationship Type="http://schemas.openxmlformats.org/package/2006/relationships/metadata/core-properties" Target="/package/services/metadata/core-properties/1b23178fac184745b988ebe25c167eeb.psmdcp" Id="R345A9E04C0F5DD87" />
-</Relationships>
