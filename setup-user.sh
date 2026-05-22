@@ -90,8 +90,6 @@ cd /tmp/installaur
 makepkg -si
 cd ~
 
-# for android-sdk
-sudo pacman -Syu jdk-openjdk libxtst fontconfig freetype2 lib32-gcc-libs lib32-glibc libx11 libxext libxrender zlib
 installaur clapper-git zen-browser-bin unityhub android-sdk wlrobs minecraft-launcher looking-glass mkinitcpio-firmware
 
 docker container create --name mysql-server -e MYSQL_ALLOW_EMPTY_PASSWORD=yes -e MYSQL_ROOT_PASSWORD= mysql:latest
