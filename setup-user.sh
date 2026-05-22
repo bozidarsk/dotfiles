@@ -45,15 +45,12 @@ if [[ "$edev" != "" ]]; then
     ln -sr /mnt/external/Projects Projects
 fi
 
-mkdir .local
-mkdir .local/share
-mkdir .local/share/applications
-mkdir .config
-mkdir Videos
-mkdir Pictures
-mkdir Documents
-mkdir "Google Drive"
-mkdir "Proton Drive"
+dirs=(.local/share/applications .config Desktop Documents Music Pictures Videos Downloads 'Google Drive' 'Proton Drive')
+for dir in $dirs; do
+	if [[ ! -d "$dir" ]]; then
+		mkdir -p "$dir"
+	fi
+done
 
 mkdir /tmp/thumbnails
 ln -sr /tmp/thumbnails .config/thumbnails
