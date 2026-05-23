@@ -91,8 +91,15 @@ makepkg -si
 cd ~
 
 installaur clapper-git zen-browser-bin unityhub android-sdk wlrobs minecraft-launcher looking-glass mkinitcpio-firmware
+installaur android-sdk android-sdk-cmdline-tools-latest android-sdk-build-tools android-sdk-platform-tools android-emulator
 
 docker container create --name mysql-server -e MYSQL_ALLOW_EMPTY_PASSWORD=yes -e MYSQL_ROOT_PASSWORD= mysql:latest
+
+export PATH="$ANDROID_SDK_ROOT/cmdline-tools/latest/bin:$PATH"
+ANDROID_TOOLS="$ANDROID_SDK_ROOT/cmdline-tools/latest/bin"
+
+sudo $ANDROID_TOOLS/sdkmanager --install "system-images;android-36;google_apis_playstore;x86_64" "platforms;android-36"
+$ANDROID_TOOLS/avdmanager create avd --name test --package "system-images;android-36;google_apis_playstore;x86_64" --device pixel_9
 
 # WINE BEGIN
 echo "WARNING: COMPILING WINE WILL TAKE A LOT OF TIME (HOURS), A LOT OF DISK SPACE (~5.5GB) AND ALL OF YOUR BATTERY"
