@@ -85,7 +85,7 @@ cd /tmp/installaur
 makepkg -si
 cd ~
 
-installaur clapper-git zen-browser-bin unityhub android-sdk wlrobs minecraft-launcher looking-glass mkinitcpio-firmware
+installaur clapper-git zen-browser-bin unityhub wlrobs minecraft-launcher looking-glass mkinitcpio-firmware
 installaur android-sdk android-sdk-cmdline-tools-latest android-sdk-build-tools android-sdk-platform-tools android-emulator
 
 docker container create --name mysql-server -e MYSQL_ALLOW_EMPTY_PASSWORD=yes -e MYSQL_ROOT_PASSWORD= mysql:latest
