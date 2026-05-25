@@ -10,7 +10,6 @@ read dotfiles
 dinitctl enable dhcpcd
 dinitctl enable iwd
 
-printf "\n[lib32]\nInclude = /etc/pacman.d/mirrorlist\n" >> /etc/pacman.conf
 pacman -Syy \
     sudo man-db man-pages base-devel dinit-user-spawn glib2-devel qt6-wayland libadwaita gtk4 ttf-liberation \
     ntfs-3g dosfstools exfatprogs mtools libisoburn android-udev android-file-transfer \
