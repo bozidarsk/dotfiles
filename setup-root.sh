@@ -19,7 +19,7 @@ pacman -Syy \
     cups cups-dinit cups-pdf sane sane-dinit avahi avahi-dinit \
     playerctl pipewire pipewire-dinit pipewire-pulse pipewire-pulse-dinit wireplumber wireplumber-dinit jack2 gstreamer gst-plugin-pipewire mpv x265 x264 ffmpegthumbnailer \
     steam gamemode lib32-gamemode \
-    obs-studio blender loupe rclone htop brightnessctl wl-clipboard \
+    obs-studio blender loupe rclone htop nvtop brightnessctl wl-clipboard \
     jdk-openjdk libxtst fontconfig freetype2 lib32-gcc-libs lib32-glibc libx11 libxext libxrender zlib geocode-glib-2 \
 
 
