@@ -1,6 +1,3 @@
-org.cinnamon.desktop.interface automatic-mnemonics true
-org.gnome.Terminal.Legacy.Settings mnemonics-enabled false
-org.gnome.shell favorite-apps ['discord.desktop', 'nemo.desktop', 'zen.desktop', 'dev.zed.Zed.desktop', 'unityhub.desktop', 'blender.desktop', 'com.obsproject.Studio.desktop', 'Spotify - WebView.desktop']
 org.nemo.compact-view all-columns-have-same-width false
 org.nemo.compact-view default-zoom-level 'standard'
 org.nemo.desktop background-fade true
