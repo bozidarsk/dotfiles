@@ -52,7 +52,7 @@ for dir in $dirs; do
 done
 
 mkdir /tmp/thumbnails
-ln -sr /tmp/thumbnails .config/thumbnails
+ln -sr /tmp/thumbnails .cache/thumbnails
 
 mv $dotfiles/.themes .
 mv $dotfiles/.icons .
