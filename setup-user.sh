@@ -45,7 +45,7 @@ if [[ "$edev" != "" ]]; then
 fi
 
 dirs=(.local/share/applications .config Desktop Documents Music Pictures Videos Downloads 'Google Drive' 'Proton Drive')
-for dir in $dirs; do
+for dir in ${dirs[*]}; do
 	if [[ ! -d "$dir" ]]; then
 		mkdir -p "$dir"
 	fi
