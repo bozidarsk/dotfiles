@@ -72,6 +72,9 @@ done
 
 chmod +x /usr/local/bin/*
 
+cp $dotfiles/.sh/fix-zed-on-suspend /lib/elogind/system-sleep
+chmod +x /lib/elogind/system-sleep/fix-zed-on-suspend
+
 mv $dotfiles/fonts /usr/local/share/
 fc-cache -fv
 

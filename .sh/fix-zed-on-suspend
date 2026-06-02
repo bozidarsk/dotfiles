@@ -1,0 +1,12 @@
+#!/bin/bash
+
+case "$1/$2" in
+    pre/suspend)
+        pkill -STOP -x zed-editor 2> /dev/null
+        sleep 0.2 # let any in-flight syscalls drain
+        ;;
+    post/suspend)
+        pkill -CONT -x zed-editor 2> /dev/null
+        ;;
+esac
+
