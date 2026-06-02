@@ -55,10 +55,12 @@ groupmems -g docker -a "$user"
 groupmems -g video -a "$user"
 cd "/home/$user"
 
+mkdir /mnt/movies
 mkdir /mnt/external
 mkdir /mnt/android
 mkdir /mnt/usb
 
+chown "$user:$user" /mnt/movies
 chown "$user:$user" /mnt/android
 chown "$user:$user" /mnt/external
 

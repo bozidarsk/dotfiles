@@ -56,6 +56,8 @@ done
 mkdir /tmp/thumbnails
 ln -sr /tmp/thumbnails .cache/thumbnails
 
+ln -sr /mnt/movies Videos/Movies
+
 mv $dotfiles/.themes .
 mv $dotfiles/.icons .
 ln -sr ".themes/Colloid-Dark-Nord/gtk-3.0" .config/gtk-3.0
