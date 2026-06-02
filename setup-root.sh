@@ -52,6 +52,7 @@ chown -R "$user:$user" "/home/$user"
 groupmems -g input -a "$user"
 groupmems -g uucp -a "$user"
 groupmems -g docker -a "$user"
+groupmems -g video -a "$user"
 cd "/home/$user"
 
 mkdir /mnt/external
