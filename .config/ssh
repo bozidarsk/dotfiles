@@ -1,0 +1,8 @@
+Host github.com
+	IdentityFile = ~/.ssh/git
+
+Host gitlab.com
+	IdentityFile = ~/.ssh/git
+
+Host aur.archlinux.org
+	IdentityFile = ~/.ssh/git

@@ -67,7 +67,10 @@ mv $dotfiles/wallpapers/* Pictures/Wallpapers
 
 mv $dotfiles/.desktop/* .local/share/applications/
 
+echo for path enter '~/.ssh/git'
 ssh-keygen -t ed25519 -C "$gitemail"
+
+mv $dotfiles/.config/ssh .ssh/config
 
 curl https://gist.githubusercontent.com/bozidarsk/0fd6584ed7b52e5b24768569e49728be/raw/0cae895abf7f391f840fc153dbded9e799a9b33a/.gitignore > .gitignore
 git config --global init.defaultBranch main
@@ -78,7 +81,7 @@ git config --global core.excludesfile .gitignore
 git config --global core.autocrlf false
 git config --global push.autoSetupRemote true
 git config --global gpg.format ssh
-git config --global user.signingKey ~/.ssh/id_ed25519
+git config --global user.signingKey ~/.ssh/git
 git config --global commit.gpgSign true
 git config --global tag.gpgSign true
 
