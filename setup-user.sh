@@ -63,7 +63,7 @@ ln -sr ".themes/Colloid-Dark-Nord/gtk-4.0" .config/gtk-4.0
 
 mv $dotfiles/.config/zed .config
 
-mv $dotfiles/wallpapers Pictures/Wallpapers
+mv $dotfiles/wallpapers/* Pictures/Wallpapers
 
 mv $dotfiles/.desktop/* .local/share/applications/
 
