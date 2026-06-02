@@ -5,7 +5,7 @@ set -e
 printf 'dotfiles: '
 read dotfiles
 
-sudo pacman -Sy hyprland xdg-desktop-portal-hyprland hyprpaper hyprpicker hyprlock alacritty nemo grim slurp rofi wl-clip-persist quickshell
+sudo pacman -Sy hyprland xdg-desktop-portal-hyprland hyprpaper hyprpicker hyprlock alacritty nemo grim slurp rofi wl-clip-persist quickshell upower
 
 mv $dotfiles/.config/hypr .config/
 mv $dotfiles/.config/quickshell .config/
