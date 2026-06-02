@@ -44,7 +44,7 @@ if [[ "$edev" != "" ]]; then
     ln -sr /mnt/external/Projects Projects
 fi
 
-dirs=(.local/share/applications .config Desktop Documents Music Pictures Videos Downloads 'Google Drive' 'Proton Drive')
+dirs=(.local/share/applications .config .cache Desktop Documents Music Pictures/Screenshots Pictures/Wallpapers Videos Downloads 'Google Drive' 'Proton Drive')
 for dir in ${dirs[*]}; do
 	if [[ ! -d "$dir" ]]; then
 		mkdir -p "$dir"
