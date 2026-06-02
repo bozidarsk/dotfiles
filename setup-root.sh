@@ -10,6 +10,8 @@ read dotfiles
 dinitctl enable dhcpcd
 dinitctl enable iwd
 
+curl 'https://gitea.artixlinux.org/packages/artix-mirrorlist/raw/branch/master/mirrorlist' > /etc/pacman.d/mirrorlist
+
 pacman -Syy \
     sudo man-db man-pages base-devel dinit-user-spawn glib2-devel qt6-wayland libadwaita gtk4 ttf-liberation \
     ntfs-3g dosfstools exfatprogs mtools libisoburn android-udev android-file-transfer \
