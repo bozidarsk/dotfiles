@@ -13,7 +13,7 @@ basestrap /mnt base base-devel dinit elogind-dinit linux linux-firmware
 fstabgen -U /mnt >> /mnt/etc/fstab
 artix-chroot /mnt
 
-pacman -Syu git iwd dhcpcd-dinit grub efibootmgr
+pacman -Syu git iwd iwd-dhcpcd dhcpcd dhcpcd-dinit grub efibootmgr
 
 cd /usr
 git clone https://github.com/bozidarsk/dotfiles.git -b Linux-Artix
