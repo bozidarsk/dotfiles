@@ -1,3 +1,5 @@
+#!/bin/zsh
+
 set -e
 
 printf 'dotfiles: '
@@ -11,6 +13,6 @@ mv $dotfiles/.config/alacritty .config/
 
 cat $dotfiles/settings/hyprland.gsettings | sed -E 's/([^ ]+) ([^ ]+) (.+)/gsettings set \1 \2 \"\3\"/' > /tmp/gsettings.sh
 chmod +x /tmp/gsettings.sh
-/tmp/gsettings.sh 
+/tmp/gsettings.sh
 
 sudo rm -rf $dotfiles

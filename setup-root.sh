@@ -1,3 +1,5 @@
+#!/bin/zsh
+
 set -e
 
 printf 'user: '
