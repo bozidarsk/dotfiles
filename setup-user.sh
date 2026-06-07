@@ -46,7 +46,7 @@ if [[ "$edev" != "" ]]; then
     ln -sr /mnt/external/Projects Projects
 fi
 
-dirs=(.local/share/applications .config .cache Desktop Documents Music Pictures/Screenshots Pictures/Wallpapers Videos Downloads 'Google Drive' 'Proton Drive')
+dirs=(.local/share/applications .config .config/git .cache Desktop Documents Music Pictures/Screenshots Pictures/Wallpapers Videos Downloads 'Google Drive' 'Proton Drive')
 for dir in ${dirs[*]}; do
 	if [[ ! -d "$dir" ]]; then
 		mkdir -p "$dir"
@@ -72,6 +72,8 @@ ssh-keygen -t ed25519 -C "$gitemail"
 
 mv $dotfiles/.config/ssh .ssh/config
 
+echo "$gitemail $(cat ~/.ssh/git.pub)" > .config/git/allowed-signers
+
 curl 'https://gist.githubusercontent.com/bozidarsk/0fd6584ed7b52e5b24768569e49728be/raw/310cf8d40da5c186bdc4b4b66380d7b177da999f/.gitignore' -o .gitconfig
 git config --global init.defaultBranch main
 git config --global user.email "$gitemail"
@@ -82,6 +84,7 @@ git config --global core.autocrlf false
 git config --global push.autoSetupRemote true
 git config --global gpg.format ssh
 git config --global user.signingKey ~/.ssh/git
+git config --global gpg.ssh.allowedSignersFile ~/.config/git/allowed-signers
 git config --global commit.gpgSign true
 git config --global tag.gpgSign true
 
