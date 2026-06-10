@@ -14,4 +14,3 @@ bindkey "^[[H" beginning-of-line
 bindkey "^[[1;6H" beginning-of-line
 bindkey "^[[F"  end-of-line
 bindkey "^[[1;6F" end-of-line
-
