@@ -17,7 +17,7 @@ printf '\n[lib32]\nInclude = /etc/pacman.d/mirrorlist\n' >> /etc/pacman.conf
 
 pacman -Syy \
     sudo man-db man-pages base-devel dinit-user-spawn glib2-devel qt6-wayland libadwaita gtk4 ttf-liberation \
-    ntfs-3g dosfstools exfatprogs mtools libisoburn android-udev android-file-transfer \
+    ntfs-3g ntfsprogs dosfstools exfatprogs mtools libisoburn android-udev android-file-transfer \
     openssh openssh-dinit ntp ntp-dinit ufw ufw-dinit vim git zsh wget less tree zip unzip unrar gnu-netcat strace tmux \
     zed dotnet-sdk mono nasm gtk-sharp-3 gtk-layer-shell rust docker docker-compose docker-dinit arduino-cli gnu-efi \
     qemu-full qemu-ui-gtk edk2-ovmf swtpm virt-viewer \
