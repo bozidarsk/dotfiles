@@ -97,6 +97,7 @@ installaur clapper-git zen-browser-bin unityhub wlrobs minecraft-launcher lookin
 installaur android-sdk android-sdk-cmdline-tools-latest android-sdk-build-tools android-sdk-platform-tools android-emulator
 
 docker container create --name mysql-server -p 3306:3306 -p 33060:33060 -e MYSQL_ALLOW_EMPTY_PASSWORD=yes -e MYSQL_ROOT_PASSWORD= mysql:latest
+docker container create --name mssql-server -p 1433:1433 -e ACCEPT_EULA=Y -e MSSQL_SA_PASSWORD= mcr.microsoft.com/mssql/server:2025-latest
 
 export PATH="$ANDROID_SDK_ROOT/cmdline-tools/latest/bin:$PATH"
 ANDROID_TOOLS="$ANDROID_SDK_ROOT/cmdline-tools/latest/bin"
