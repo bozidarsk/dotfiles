@@ -7,7 +7,36 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-	"cli_default_open_behavior": "new_window",
+	"line_ending": "enforce_lf",
+ "lsp": {
+    "roslyn-razor": {
+      "settings": {
+        "roslyn_source_repository_root": ".cache/dotnet-roslyn-src"
+      }
+    },
+  },
+	"diff_view_style": "split",
+ "languages": {
+  "HLSL": {
+   "enable_language_server": false
+  },
+  "GLSL": {
+   "enable_language_server": false,
+   "format_on_save": "off",
+   "indent_guides": {
+    "enabled": true
+   }
+  },
+  "QML": {
+   "format_on_save": "off"
+  }
+ },
+ "icon_theme": {
+  "mode": "dark",
+  "light": "Zed (Default)",
+  "dark": "Zed (Default)"
+ },
+ "cli_default_open_behavior": "new_window",
 	"use_system_prompts": false,
 	"use_system_path_prompts": false,
 	"git": {
@@ -27,9 +56,9 @@
 		"button": false,
 	},
 	"git_panel": {
-		"show_count_badge": false,
+		"folder_indicator": "chevron",
+  "show_count_badge": false,
 		"diff_stats": true,
-		"folder_icons": false,
 		"file_icons": false,
 		"sort_by_path": false,
 		"collapse_untracked_diff": false,
@@ -79,7 +108,10 @@
 		"button": true,
 	},
 	"diagnostics": {
-		"button": true,
+		"inline": {
+   "enabled": false
+  },
+  "button": true,
 	},
 	"terminal": {
 		"show_count_badge": false,
@@ -92,7 +124,9 @@
 		"active_language_button": true,
 	},
 	"project_panel": {
-		"hide_hidden": false,
+		"folder_indicator": "chevron",
+  "show_diagnostics": "all",
+  "hide_hidden": false,
 		"hide_root": false,
 		"sticky_scroll": true,
 		"git_status_indicator": false,
@@ -104,7 +138,6 @@
 		"auto_reveal_entries": true,
 		"indent_size": 20.0,
 		"git_status": true,
-		"folder_icons": false,
 		"file_icons": true,
 		"entry_spacing": "comfortable",
 		"hide_gitignore": false,
@@ -154,7 +187,7 @@
 	"ui_font_size": 16,
 	"buffer_font_size": 15,
 	"theme": {
-		"mode": "system",
+		"mode": "dark",
 		"light": "One Light",
 		"dark": "One Dark",
 	},
