@@ -94,16 +94,16 @@ makepkg -si
 cd ~
 
 installaur clapper-git zen-browser-bin unityhub wlrobs minecraft-launcher looking-glass mkinitcpio-firmware
-installaur android-sdk android-sdk-cmdline-tools-latest android-sdk-build-tools android-sdk-platform-tools android-emulator
+installaur android-sdk android-sdk-cmdline-tools-latest android-sdk-build-tools android-sdk-platform-tools android-emulator android-platform android-platform-36
 
 docker container create --name mysql-server -p 3306:3306 -p 33060:33060 -e MYSQL_ALLOW_EMPTY_PASSWORD=yes -e MYSQL_ROOT_PASSWORD= mysql:latest
 docker container create --name mssql-server -p 1433:1433 -e ACCEPT_EULA=Y -e MSSQL_SA_PASSWORD= mcr.microsoft.com/mssql/server:2025-latest
 
-export PATH="$ANDROID_SDK_ROOT/cmdline-tools/latest/bin:$PATH"
-ANDROID_TOOLS="$ANDROID_SDK_ROOT/cmdline-tools/latest/bin"
-
-sudo $ANDROID_TOOLS/sdkmanager --install "system-images;android-36;google_apis_playstore;x86_64" "platforms;android-36"
-$ANDROID_TOOLS/avdmanager create avd --name test --package "system-images;android-36;google_apis_playstore;x86_64" --device pixel_9
+sudo \
+	ANDROID_HOME=/opt/android-sdk \
+	ANDROID_SDK_ROOT=/opt/android-sdk \
+	PATH="$PATH:/opt/android-sdk/emulator:/opt/android-sdk/cmdline-tools/latest/bin:/opt/android-sdk/platform-tools:/opt/android-sdk/tools:/opt/android-sdk/tools/bin" \
+	android emulator create medium_phone
 
 # WINE BEGIN
 echo "WARNING: COMPILING WINE WILL TAKE A LOT OF TIME (HOURS), A LOT OF DISK SPACE (~5.5GB) AND ALL OF YOUR BATTERY"
