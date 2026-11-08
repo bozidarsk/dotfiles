@@ -133,6 +133,14 @@ PanelWindow
 					Layout.preferredWidth: height
 				}
 
+				AnnotateButton
+				{
+					id: annotateButton
+
+					Layout.fillHeight: true
+					Layout.preferredWidth: height
+				}
+
 				ColorPickerButton
 				{
 					id: colorPickerButton

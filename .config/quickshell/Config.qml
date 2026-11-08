@@ -177,6 +177,15 @@ Scope
 					}
 				}
 
+				property var annotate: JsonObject
+				{
+					property var button: JsonObject
+					{
+						property var padding: 14
+						property var radius: 20
+					}
+				}
+
 				property var colorPicker: JsonObject
 				{
 					property var button: JsonObject
