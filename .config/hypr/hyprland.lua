@@ -114,7 +114,7 @@ hl.gesture({ fingers = 3, direction = "down", action = function() hl.dispatch(hl
 hl.gesture({ fingers = 4, direction = "up", action = function() hl.dispatch(hl.dsp.window.fullscreen({ action = "set", mode = "fullscreen" })) end })
 hl.gesture({ fingers = 4, direction = "down", action = function() hl.dispatch(hl.dsp.window.fullscreen({ action = "unset", mode = "fullscreen" })) end })
 
-hl.bind("CONTROL + ALT + Delete", hl.dsp.exec_cmd("hyprctl dispatch exit"), { locked = true })
+hl.bind("CONTROL + ALT + Delete", hl.dsp.exit(), { locked = true })
 hl.bind("SUPER + C", hl.dsp.window.close())
 hl.bind("ALT + F4", hl.dsp.window.close())
 

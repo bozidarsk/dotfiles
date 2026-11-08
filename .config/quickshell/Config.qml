@@ -248,7 +248,7 @@ Scope
 						JsonObject
 						{
 							property var name: "Exit"
-							property var command: "hyprctl dispatch exit"
+							property var command: "hyprctl dispatch 'hl.dsp.exit()'"
 						},
 						JsonObject
 						{
