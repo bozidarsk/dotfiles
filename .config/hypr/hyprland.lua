@@ -156,6 +156,7 @@ hl.bind("SUPER + T", hl.dsp.exec_cmd("alacritty"))
 hl.bind("SUPER + E", hl.dsp.exec_cmd("nemo"))
 hl.bind("SUPER + R", hl.dsp.exec_cmd("rofi -show run"))
 hl.bind("SUPER + P", hl.dsp.exec_cmd("hyprpicker | wl-copy"))
+hl.bind("SUPER + H", hl.dsp.exec_cmd("noctalia msg annotate"))
 hl.bind("SUPER + SHIFT + S", hl.dsp.exec_cmd([[grim -g "$(slurp)" /proc/self/fd/1 | tee "$HOME/Pictures/Screenshots/Screenshot_$(date +'%Y%m%d_%H%M%S').png" | wl-copy]]))
 
 hl.bind("SUPER + KP_Add", hl.dsp.exec_cmd([[zsh -c "hyprctl eval \"hl.config({ cursor = { zoom_factor = $(hyprctl getoption cursor:zoom_factor | grep float | sed -E 's/float: (.+)/\1/' | awk '{ x = $1 + 0.1; print (x > 5.0 ? 5.0 : x) }') } })\""]]), { repeating = true })
