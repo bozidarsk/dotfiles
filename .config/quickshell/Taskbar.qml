@@ -28,6 +28,8 @@ PanelWindow
 
 	implicitHeight: Config.options.dock.height + 2*Config.options.dock.padding + 2*Config.options.dock.border.size
 
+	Component.onCompleted: IpcHandlers.shell.update.connect(() => process.running = true)
+
 	Rectangle
 	{
 		id: background
@@ -48,6 +50,15 @@ PanelWindow
 
 			spacing: Config.options.dock.padding
 
+			Component.onCompleted: IpcHandlers.appLauncher.run.connect(index =>
+				{
+					var apps = pinnedApps.children.filter(x => x.clicked).concat(openedApps.children.filter(x => x.clicked));
+
+					if (index >= 0 && index < apps.length)
+						apps[index].clicked();
+				}
+			)
+
 			RowLayout
 			{
 				id: left
@@ -60,8 +71,6 @@ PanelWindow
 				AppLauncherButton
 				{
 					id: appLauncherButton
-
-					launcher: appLauncher
 
 					contextMenu.relativeLayerNamespace: root.layerNamespace
 					contextMenu.relativeTo: appLauncherButton
@@ -110,6 +119,20 @@ PanelWindow
 				Layout.alignment: Qt.AlignRight
 				Layout.fillHeight: true
 
+				SystemTrayButton
+				{
+					id: systemTrayButton
+
+					systemTray: SystemTray
+					{
+						relativeLayerNamespace: root.layerNamespace
+						relativeTo: systemTrayButton
+					}
+
+					Layout.fillHeight: true
+					Layout.preferredWidth: height
+				}
+
 				ColorPickerButton
 				{
 					id: colorPickerButton
@@ -122,14 +145,6 @@ PanelWindow
 				{
 					id: clipboardButton
 
-					clipboard: Clipboard
-					{
-						id: clipboard
-
-						relativeLayerNamespace: root.layerNamespace
-						relativeTo: clipboardButton
-					}
-
 					Layout.fillHeight: true
 					Layout.preferredWidth: height
 				}
@@ -140,155 +155,107 @@ PanelWindow
 
 					languages: Languages
 					{
-						id: languages
-
 						relativeLayerNamespace: root.layerNamespace
 						relativeTo: languagesButton
 					}
 
 					Layout.fillHeight: true
 					Layout.preferredWidth: height
-
-					IpcHandler
-					{
-						target: "languages"
-
-						function update()
-						{
-							languagesButton.update();
-						}
-					}
 				}
 
 				ControlsButton
 				{
 					id: controlsButton
 
-					controls: Controls
+					Layout.fillHeight: true
+
+					StyledOverlay
 					{
-						id: controls
+						id: rfkillOverlay
 
-						soundIndicator.overlay: StyledOverlay
-						{
-							id: soundOverlay
+						implicitWidth: 25
+						implicitHeight: 25
 
-							implicitWidth: 130
-							implicitHeight: 25
+						icon.source: "icons/airplane-mode-disabled-symbolic.svg"
+						level.visible: false
+						label.visible: false
 
-							label.visible: false
-
-							IpcHandler
+						Component.onCompleted: IpcHandlers.rfkill.update.connect(() =>
 							{
-								target: "sound"
+								rfkillProcess.running = true;
+								rfkillOverlay.open();
+							}
+						)
 
-								function update()
+						Process
+						{
+							id: rfkillProcess
+
+							command: [ "rfkill", "-J" ]
+							running: true
+
+							stdout: StdioCollector
+							{
+								waitForEnd: true
+
+								onStreamFinished:
 								{
-									controls.soundIndicator.update();
-									controlsButton.soundIndicator.update();
-									soundOverlay.open();
+									const json = JSON.parse(this.text);
+									rfkillOverlay.icon.source = (json.rfkilldevices[0].soft === "unblocked") ? "icons/airplane-mode-disabled-symbolic.svg" : "icons/airplane-mode-symbolic.svg";
 								}
 							}
 						}
-
-						brightnessIndicator.overlay: StyledOverlay
-						{
-							id: brightnessOverlay
-
-							implicitWidth: 130
-							implicitHeight: 25
-
-							icon.source: "icons/display-brightness-symbolic.svg"
-							label.visible: false
-
-							IpcHandler
-							{
-								target: "brightness"
-
-								function update()
-								{
-									controls.brightnessIndicator.update();
-									brightnessOverlay.open();
-								}
-							}
-						}
-
-						relativeLayerNamespace: root.layerNamespace
-						relativeTo: controlsButton
 					}
 
-					Layout.fillHeight: true
+					StyledOverlay
+					{
+						id: touchpadtoggleOverlay
+
+						implicitWidth: 25
+						implicitHeight: 25
+
+						icon.source: "icons/input-touchpad-symbolic.svg"
+						level.visible: false
+						label.visible: false
+
+						Component.onCompleted: IpcHandlers.touchpadtoggle.update.connect(state =>
+							{
+								touchpadtoggleOverlay.icon.source = state ? "icons/input-touchpad-symbolic.svg" : "icons/touchpad-disabled-symbolic.svg";
+								touchpadtoggleOverlay.open();
+							}
+						)
+					}
 				}
 
 				DateButton
 				{
 					id: dateButton
 
-					date: Date
-					{
-						id: date
-
-						relativeLayerNamespace: root.layerNamespace
-						relativeTo: dateButton
-					}
-
 					Layout.fillHeight: true
-
-					IpcHandler
-					{
-						target: "date"
-
-						function update()
-						{
-							dateButton.update();
-						}
-					}
 				}
 			}
 		}
 	}
 
-	AppLauncher
+	Process
 	{
-		id: appLauncher
+		id: process
 
-		margin: Config.options.dock.padding + Config.options.dock.border.size + Config.options.appLauncher.margin
+		command: [ "hyprctl", "-j", "activewindow" ]
+		running: false
 
-		relativeLayerNamespace: root.layerNamespace
-		relativeTo:
+		stdout: StdioCollector
 		{
-			switch (Config.options.appLauncher.position)
+			waitForEnd: true
+
+			onStreamFinished:
 			{
-				case 0: return background;
-				case 1: return appLauncherButton;
-				case 2: return items;
-				default: return null;
+				var json = JSON.parse(this.text);
+
+				console.log(json.fullscreen);
+
+				root.WlrLayershell.layer = (json.fullscreen === 1) ? WlrLayer.Overlay : WlrLayer.Top;
 			}
-		}
-	}
-
-	IpcHandler
-	{
-		target: "appLauncher"
-
-		function open() { appLauncher.open(); }
-		function close() { appLauncher.close(); }
-
-		function toggle()
-		{
-			if (appLauncher.isOpen)
-				appLauncher.close();
-			else
-				appLauncher.open();
-		}
-
-		function run(index: int)
-		{
-			const appButtons = pinnedApps.children.filter(x => x.clicked).concat(openedApps.children.filter(x => x.clicked))
-
-			if (index < 0 || index >= appButtons.length)
-				return;
-
-			appButtons[index].clicked();
 		}
 	}
 }

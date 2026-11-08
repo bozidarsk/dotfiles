@@ -1,0 +1,192 @@
+{
+    "options": {
+        "appIcons": [
+            {
+                "desktop": "nemo",
+                "icon": "file:///usr/share/icons/hicolor/scalable/apps/nemo.svg"
+            }
+        ],
+        "appLauncher": {
+            "border": {
+                "radius": 10,
+                "size": 2
+            },
+            "contextMenuOptions": [
+                {
+                    "command": "quickshell ipc call shell reload",
+                    "name": "Reload Shell"
+                },
+                {
+                    "command": "hyprctl dispatch exit",
+                    "name": "Exit"
+                },
+                {
+                    "command": "reboot",
+                    "name": "Restart"
+                },
+                {
+                    "command": "poweroff",
+                    "name": "Power Off"
+                }
+            ],
+            "icon": "icons/distro-arch.svg",
+            "iconPadding": 10,
+            "margin": 5,
+            "padding": 10,
+            "position": 1,
+            "scrollHeigth": 400,
+            "scrollWidth": 250
+        },
+        "clipboard": {
+            "border": {
+                "radius": 10,
+                "size": 1
+            },
+            "button": {
+                "padding": 14,
+                "radius": 20
+            },
+            "margin": 5,
+            "maxLength": 30,
+            "padding": 10
+        },
+        "colorPicker": {
+            "button": {
+                "padding": 14,
+                "radius": 20
+            }
+        },
+        "contextMenu": {
+            "border": {
+                "radius": 10,
+                "size": 1
+            },
+            "padding": 5,
+            "spacing": 5
+        },
+        "controls": {
+            "border": {
+                "radius": 10,
+                "size": 1
+            },
+            "button": {
+                "padding": 9,
+                "radius": 20,
+                "spacing": 2
+            },
+            "margin": 5,
+            "nightlightTemperature": 5000,
+            "padding": 10
+        },
+        "date": {
+            "border": {
+                "radius": 10,
+                "size": 1
+            },
+            "button": {
+                "padding": 10,
+                "radius": 20
+            },
+            "format": "%H:%M%n%d/%m/%Y",
+            "margin": 5,
+            "padding": 10
+        },
+        "dock": {
+            "apps": [
+                "Alacritty",
+                "nemo",
+                "zen",
+                "dev.zed.Zed",
+                "unityhub",
+                "blender",
+                "com.obsproject.Studio"
+            ],
+            "border": {
+                "radius": 10,
+                "size": 1
+            },
+            "height": 45,
+            "iconPadding": 5,
+            "includeAllWorkspaces": true,
+            "margin": 10,
+            "padding": 8,
+            "spacing": 10,
+            "tooltip": {
+                "margin": 5,
+                "padding": 8
+            }
+        },
+        "languages": {
+            "border": {
+                "radius": 10,
+                "size": 1
+            },
+            "button": {
+                "padding": 14,
+                "radius": 20
+            },
+            "margin": 5,
+            "padding": 10
+        },
+        "notification": {
+            "border": {
+                "radius": 10,
+                "size": 2
+            },
+            "margin": 5,
+            "padding": 10
+        },
+        "panels": {
+            "appLauncher": {
+                "context": null,
+                "id": "launcher"
+            },
+            "clipboard": {
+                "context": null,
+                "id": "clipboard"
+            },
+            "controls": {
+                "context": null,
+                "id": "control-center"
+            },
+            "date": {
+                "context": "calendar",
+                "id": "control-center"
+            },
+            "systemTray": {
+                "context": null,
+                "id": "control-center"
+            }
+        },
+        "systemTray": {
+            "border": {
+                "radius": 10,
+                "size": 1
+            },
+            "button": {
+                "padding": 14,
+                "radius": 20
+            },
+            "itemPadding": 8,
+            "itemSize": 20,
+            "margin": 5,
+            "padding": 10
+        },
+        "wifi": {
+            "border": {
+                "radius": 10,
+                "size": 2
+            },
+            "margin": 0,
+            "padding": 10
+        }
+    },
+    "style": {
+        "active": "#89a3c2",
+        "background": "#ee181818",
+        "border": "#454951",
+        "hovered": "#373940",
+        "selected": "#606267",
+        "text": "lightgray"
+    }
+}

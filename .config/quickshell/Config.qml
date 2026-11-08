@@ -39,17 +39,45 @@ Scope
 			{
 				id: options
 
+				property var panels: JsonObject
+				{
+					property var appLauncher: JsonObject
+					{
+						property var id: "launcher"
+						property var context: null
+					}
+
+					property var clipboard: JsonObject
+					{
+						property var id: "clipboard"
+						property var context: null
+					}
+
+					property var controls: JsonObject
+					{
+						property var id: "control-center"
+						property var context: null
+					}
+
+					property var date: JsonObject
+					{
+						property var id: "control-center"
+						property var context: "calendar"
+					}
+
+					property var systemTray: JsonObject
+					{
+						property var id: "control-center"
+						property var context: null
+					}
+				}
+
 				property list<JsonObject> appIcons:
 				[
 					JsonObject
 					{
 						property var desktop: "nemo"
 						property var icon: "file:///usr/share/icons/hicolor/scalable/apps/nemo.svg"
-					},
-					JsonObject
-					{
-						property var desktop: "dev.zed.Zed"
-						property var icon: "file:///usr/share/icons/hicolor/512x512/apps/zed.png"
 					},
 				]
 
@@ -72,10 +100,12 @@ Scope
 					}
 				}
 
-				property var controls: JsonObject
+				property var systemTray: JsonObject
 				{
 					property var margin: 5
 					property var padding: 10
+					property var itemSize: 20
+					property var itemPadding: 8
 
 					property var border: JsonObject
 					{
@@ -85,7 +115,26 @@ Scope
 
 					property var button: JsonObject
 					{
-						property var padding: 8
+						property var padding: 14
+						property var radius: 20
+					}
+				}
+
+				property var controls: JsonObject
+				{
+					property var margin: 5
+					property var padding: 10
+					property var nightlightTemperature: 5000
+
+					property var border: JsonObject
+					{
+						property var size: 1
+						property var radius: 10
+					}
+
+					property var button: JsonObject
+					{
+						property var padding: 9
 						property var spacing: 2
 						property var radius: 20
 					}
@@ -149,6 +198,30 @@ Scope
 					}
 				}
 
+				property var wifi: JsonObject
+				{
+					property var margin: 0
+					property var padding: 10
+
+					property var border: JsonObject
+					{
+						property var size: 2
+						property var radius: 10
+					}
+				}
+
+				property var notification: JsonObject
+				{
+					property var margin: 5
+					property var padding: 10
+
+					property var border: JsonObject
+					{
+						property var size: 2
+						property var radius: 10
+					}
+				}
+
 				property var appLauncher: JsonObject
 				{
 					property var margin: 5
@@ -197,7 +270,7 @@ Scope
 					property var margin: 10
 					property var padding: 8
 					property var iconPadding: 5
-					property var includeAllWorkspaces: false
+					property var includeAllWorkspaces: true
 
 					property var border: JsonObject
 					{

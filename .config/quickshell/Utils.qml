@@ -8,6 +8,14 @@ import Quickshell.Hyprland
 
 Scope
 {
+	function togglePanel(panel)
+	{
+		if (panel.context)
+			runCommand(`noctalia msg panel-toggle '${panel.id}' '${panel.context}'`);
+		else
+			runCommand(`noctalia msg panel-toggle '${panel.id}'`);
+	}
+
 	function getRunningApps(includeAllWorkspaces = false)
 	{
 		return (includeAllWorkspaces ? Hyprland : Hyprland.focusedWorkspace).toplevels.values.map(x => x.wayland).filter(x => x);

@@ -22,6 +22,8 @@ StyledButton
 		process.running = true;
 	}
 
+	Component.onCompleted: IpcHandlers.languages.update.connect(() => root.update())
+
 	Label
 	{
 		id: label
@@ -51,7 +53,9 @@ StyledButton
 				{
 					var json = JSON.parse(this.text);
 
-					label.text = json.keyboards[0].layout.split(", ")[json.keyboards[0].active_layout_index];
+					const keyboard = json.keyboards.find(x => x.main);
+
+					label.text = keyboard.layout.split(", ")[keyboard.active_layout_index];
 				}
 			}
 		}

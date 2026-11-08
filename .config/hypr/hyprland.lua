@@ -13,11 +13,10 @@ hl.on("hyprland.start", function()
     hl.exec_cmd('rclone mount "Google Drive:" "$HOME/Google Drive"')
     hl.exec_cmd('rclone mount "Proton Drive:" "$HOME/Proton Drive"')
     hl.exec_cmd("wl-clip-persist --clipboard regular")
-    hl.exec_cmd([[wl-paste --type text --watch $SHELL -c 'tee /tmp/clipboard-text && quickshell ipc call clipboard storeText']])
-    hl.exec_cmd([[wl-paste --type image --watch $SHELL -c 'base64 | tee /tmp/clipboard-image && quickshell ipc call clipboard storeImage']])
     hl.exec_cmd("hyprpaper")
     hl.exec_cmd("hypridle")
     hl.exec_cmd("hyprsunset -i")
+    hl.exec_cmd("noctalia")
     hl.exec_cmd("quickshell")
     hl.exec_cmd("quickshell ipc call shell reload")
     hl.exec_cmd('sh -c \'eval $(ssh-agent)\'')
@@ -110,10 +109,10 @@ hl.animation({ leaf = "zoomFactor", enabled = true, speed = 7, bezier = "quick" 
 
 hl.gesture({ fingers = 3, direction = "horizontal", action = "workspace" })
 hl.gesture({ fingers = 4, direction = "horizontal", action = "workspace" })
-hl.gesture({ fingers = 3, direction = "up", action = "fullscreen", mode = "maximize" })
-hl.gesture({ fingers = 3, direction = "down", action = "fullscreen", mode = "maximize" })
-hl.gesture({ fingers = 4, direction = "up", action = "fullscreen" })
-hl.gesture({ fingers = 4, direction = "down", action = "fullscreen" })
+hl.gesture({ fingers = 3, direction = "up", action = function() hl.dispatch(hl.dsp.window.fullscreen({ action = "set", mode = "maximized" })) end })
+hl.gesture({ fingers = 3, direction = "down", action = function() hl.dispatch(hl.dsp.window.fullscreen({ action = "unset", mode = "maximized" })) end })
+hl.gesture({ fingers = 4, direction = "up", action = function() hl.dispatch(hl.dsp.window.fullscreen({ action = "set", mode = "fullscreen" })) end })
+hl.gesture({ fingers = 4, direction = "down", action = function() hl.dispatch(hl.dsp.window.fullscreen({ action = "unset", mode = "fullscreen" })) end })
 
 hl.bind("CONTROL + ALT + Delete", hl.dsp.exec_cmd("hyprctl dispatch exit"), { locked = true })
 hl.bind("SUPER + C", hl.dsp.window.close())
@@ -151,8 +150,8 @@ hl.bind("SUPER + J", hl.dsp.layout("togglesplit"))
 
 hl.bind("SUPER + Space", hl.dsp.exec_cmd("hyprctl switchxkblayout all next && quickshell ipc call languages update"))
 hl.bind("SUPER + SHIFT + Space", hl.dsp.exec_cmd("hyprctl switchxkblayout all prev && quickshell ipc call languages update"))
-hl.bind("SUPER + L", hl.dsp.exec_cmd("hyprlock"))
-hl.bind("SUPER + V", hl.dsp.exec_cmd("quickshell ipc call clipboard open"))
+hl.bind("SUPER + L", hl.dsp.exec_cmd("noctalia msg session lock"))
+hl.bind("SUPER + V", hl.dsp.exec_cmd("quickshell ipc call clipboard toggle"))
 hl.bind("SUPER + T", hl.dsp.exec_cmd("alacritty"))
 hl.bind("SUPER + E", hl.dsp.exec_cmd("nemo"))
 hl.bind("SUPER + R", hl.dsp.exec_cmd("rofi -show run"))
@@ -172,7 +171,7 @@ hl.bind("SUPER + mouse:273", hl.dsp.window.resize(), { mouse = true })
 hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+ && quickshell ipc call sound update"), { repeating = true, locked = true })
 hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%- && quickshell ipc call sound update"), { repeating = true, locked = true })
 hl.bind("XF86AudioMute", hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle && quickshell ipc call sound update"), { locked = true })
-hl.bind("XF86Launch6", hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"), { locked = true })
+hl.bind("XF86Launch6", hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle && quickshell ipc call sound update"), { locked = true })
 hl.bind("XF86MonBrightnessUp", hl.dsp.exec_cmd("brightnessctl --machine --class backlight set 5%+ && quickshell ipc call brightness update"), { repeating = true, locked = true })
 hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd("brightnessctl --machine --class backlight set 5%- && quickshell ipc call brightness update"), { repeating = true, locked = true })
 hl.bind("XF86AudioNext", hl.dsp.exec_cmd("playerctl next"), { locked = true })
@@ -184,7 +183,6 @@ hl.bind("XF86TouchpadOn", hl.dsp.exec_cmd("quickshell ipc call touchpadtoggle up
 hl.bind("XF86TouchpadOff", hl.dsp.exec_cmd("quickshell ipc call touchpadtoggle update false"), { locked = true })
 
 hl.bind("SUPER_L", hl.dsp.exec_cmd("quickshell ipc call appLauncher toggle"), { release = true })
-hl.bind("SUPER_L", hl.dsp.exec_cmd("noctalia msg panel-toggle launcher"), { release = true })
 
 hl.window_rule({
     name = "suppress-maximize-events",
@@ -198,4 +196,3 @@ hl.window_rule({
     match = { class = "^$", title = "^$", xwayland = true, float = true, fullscreen = false, pin = false },
     no_focus = true,
 })
-

@@ -1,28 +1,23 @@
 import QtQuick
-import QtQuick.Layouts
-import QtQuick.Controls
-import Quickshell
-import Quickshell.Io
 import Quickshell.Services.UPower
 
 Indicator
 {
 	id: root
 
-	property UPowerDevice device: UPower.devices.values.filter(x => x.nativePath === "BAT1")[0] ?? null
+	property UPowerDevice device: UPower.devices.values.filter(x => x.nativePath === "BAT1")[0]
 
 	function update()
 	{
 		if (!root.device || root.device.type !== UPowerDeviceType.Battery)
 		{
-			icon.source = "icons/image-missing-symbolic.svg";
-			label.text = "0%";
-			level.value = 0;
+			root.icons = [ "icons/image-missing-symbolic.svg" ];
+			root.value = 0;
 
 			return;
 		}
 
-		const icons = (root.device.state === UPowerDeviceState.Charging)
+		root.icons = (root.device.state === UPowerDeviceState.Charging)
 			? [
 			"icons/battery-level-0-charging-symbolic.svg",
 			"icons/battery-level-10-charging-symbolic.svg",
@@ -51,15 +46,13 @@ Indicator
 			]
 		;
 
-		icon.source = icons[Math.round((icons.length - 1) * root.device.percentage)] ?? "icons/image-missing-symbolic.svg";
-		label.text = `${Math.round(root.device.percentage * 100.0)}%`;
-		level.value = root.device.percentage;
+		root.value = root.device.percentage;
 	}
+
+	Component.onCompleted: IpcHandlers.battery.update.connect(() => root.update())
 
 	Timer
 	{
-		id: timer
-
 		interval: 1000
 		running: true
 		repeat: true

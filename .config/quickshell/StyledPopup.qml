@@ -9,6 +9,8 @@ Scope
 {
 	id: root
 
+	property alias window: window
+
 	default property alias content: container.children
 
 	property string layerNamespace: ""

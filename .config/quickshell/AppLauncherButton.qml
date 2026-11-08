@@ -5,11 +5,9 @@ import Quickshell
 
 StyledButton
 {
-	required property AppLauncher launcher
+	color: focus ? Config.style.hovered : 'transparent'
 
-	color: (focus || launcher.isOpen) ? Config.style.hovered : 'transparent'
-
-	onClicked: launcher.open();
+	onClicked: Utils.togglePanel(Config.options.panels.appLauncher)
 
 	contextMenu: StyledContextMenu
 	{

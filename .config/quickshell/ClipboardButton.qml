@@ -8,14 +8,12 @@ StyledButton
 {
 	id: root
 
-	property Clipboard clipboard: null
-
 	implicitWidth: icon.implicitWidth + 2*Config.options.clipboard.button.padding
 	implicitHeight: icon.implicitHeight + 2*Config.options.clipboard.button.padding
 
 	radius: Config.options.clipboard.button.radius
 
-	onClicked: clipboard?.open()
+	onClicked: Utils.togglePanel(Config.options.panels.clipboard)
 
 	Image
 	{

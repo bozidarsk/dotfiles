@@ -7,14 +7,39 @@ Item
 {
 	id: root
 
-	property alias icon: icon
-	property alias label: label
-	property alias level: level
+	property bool hasIcon: true
+	property bool hasLabel: true
+	property bool hasLevel: true
 
-	property bool readonly: false // if the user can move the slider (TODO)
+	property StyledOverlay overlay: null
+
+	property list<string> icons: []
+	property real value: 0
 
 	implicitWidth: items.implicitWidth
 	implicitHeight: items.implicitHeight
+
+	onValueChanged: private.update()
+	onIconsChanged: private.update()
+
+	Scope
+	{
+		id: private
+
+		function update()
+		{
+			icon.source = root.icons[Math.round((root.icons.length - 1) * root.value)] ?? "icons/image-missing-symbolic.svg";
+			label.text = `${Math.round(root.value * 100.0)}%`;
+			level.value = root.value;
+
+			if (root.overlay)
+			{
+				root.overlay.icon.source = icon.source;
+				root.overlay.label.text = label.text;
+				root.overlay.level.value = level.value;
+			}
+		}
+	}
 
 	RowLayout
 	{
@@ -38,6 +63,8 @@ Item
 			{
 				id: icon
 
+				visible: root.hasIcon
+
 				anchors.fill: parent
 				anchors.margins: 5
 
@@ -54,6 +81,8 @@ Item
 			{
 				id: label
 
+				visible: root.hasLabel
+
 				horizontalAlignment: Text.AlignHCenter
 				verticalAlignment: Text.AlignVCenter
 
@@ -67,6 +96,8 @@ Item
 			Item
 			{
 				id: level
+
+				visible: root.hasLevel
 
 				property real value: 0.0
 

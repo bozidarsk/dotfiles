@@ -9,6 +9,7 @@ Rectangle
 	property StyledTooltip tooltip: null
 
 	signal clicked();
+	signal rightClicked();
 
 	focus: false
 	color: focus ? Config.style.hovered : 'transparent'
@@ -46,6 +47,7 @@ Rectangle
 					break
 				case Qt.RightButton:
 					contextMenu?.open(mapToGlobal(mouse.x, mouse.y));
+					root.rightClicked();
 					break;
 			}
 		}

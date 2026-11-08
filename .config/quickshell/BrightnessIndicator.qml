@@ -1,20 +1,18 @@
 import QtQuick
-import QtQuick.Layouts
-import QtQuick.Controls
-import Quickshell
 import Quickshell.Io
 
 Indicator
 {
 	id: root
 
-	property StyledOverlay overlay: null
-	property var device: null
+	property string device: null
 
 	function update()
 	{
 		process.running = true;
 	}
+
+	Component.onCompleted: IpcHandlers.brightness.update.connect(() => root.update())
 
 	Process
 	{
@@ -30,26 +28,15 @@ Indicator
 			onStreamFinished:
 			{
 				var info = this.text.split(',');
-				var value = parseFloat(info[2]) / parseFloat(info[4]);
 
-				icon.source = "icons/display-brightness-symbolic.svg";
-				label.text = `${Math.round(value * 100.0)}%`;
-				level.value = value;
-
-				if (overlay)
-				{
-					overlay.icon.source = icon.source;
-					overlay.label.text = label.text;
-					overlay.level.value = level.value;
-				}
+				root.icons = [ "icons/display-brightness-symbolic.svg" ];
+				root.value = parseFloat(info[2]) / parseFloat(info[4]);
 			}
 		}
 	}
 
 	Timer
 	{
-		id: timer
-
 		interval: 1000
 		running: true
 		repeat: true

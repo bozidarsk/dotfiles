@@ -1,18 +1,13 @@
 import QtQuick
 import QtQuick.Layouts
-import QtQuick.Controls
-import Quickshell
-import Quickshell.Io
-import Quickshell.Services.UPower
 import Quickshell.Services.Pipewire
 
 StyledButton
 {
 	id: root
 
-	property Controls controls: null
-
-	property alias soundIndicator: soundIndicator
+	property alias audioSourceIndicator: audioSourceIndicator
+	property alias audioSinkIndicator: audioSinkIndicator
 	property alias batteryIndicator: batteryIndicator
 
 	implicitWidth: icons.implicitWidth + 2*Config.options.controls.button.padding
@@ -20,7 +15,7 @@ StyledButton
 
 	radius: Config.options.controls.button.radius
 
-	onClicked: controls?.open()
+	onClicked: Utils.togglePanel(Config.options.panels.controls)
 
 	RowLayout
 	{
@@ -31,23 +26,37 @@ StyledButton
 
 		spacing: Config.options.controls.button.spacing
 
-		// Image
-		// {
-		// 	source: "icons/network-wireless-signal-excellent-symbolic.svg"
-		// 	fillMode: Image.Stretch
-
-		// 	Layout.fillHeight: true
-		// 	Layout.preferredWidth: height
-		// }
+// 		Image
+// 		{
+// 			source: "icons/network-wireless-signal-excellent-symbolic.svg"
+// 			fillMode: Image.Stretch
+//
+// 			Layout.fillHeight: true
+// 			Layout.preferredWidth: height
+// 		}
 
 		SoundIndicator
 		{
-			id: soundIndicator
+			id: audioSourceIndicator
+
+			device: Pipewire.defaultAudioSource
 
 			enabled: false
 
-			label.visible: false
-			level.visible: false
+			hasLabel: false
+			hasLevel: false
+
+			Layout.fillHeight: true
+		}
+
+		SoundIndicator
+		{
+			id: audioSinkIndicator
+
+			enabled: false
+
+			hasLabel: false
+			hasLevel: false
 
 			Layout.fillHeight: true
 		}
@@ -58,8 +67,8 @@ StyledButton
 
 			enabled: false
 
-			label.visible: false
-			level.visible: false
+			hasLabel: false
+			hasLevel: false
 
 			Layout.fillHeight: true
 		}

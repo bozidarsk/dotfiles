@@ -7,14 +7,12 @@ StyledButton
 {
 	id: root
 
-	property Date date: null
-
 	implicitWidth: label.contentWidth + 2*Config.options.date.button.padding
 	implicitHeight: label.contentHeight + 2*Config.options.date.button.padding
 
 	radius: Config.options.date.button.radius
 
-	onClicked: date?.open()
+	onClicked: Utils.togglePanel(Config.options.panels.date)
 
 	function update()
 	{
